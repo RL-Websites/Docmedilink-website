@@ -22,6 +22,7 @@
 	border: 0;
 	padding: 40px 0;
 }
+
 .faq-section button.accordion-button:hover {
 	background-color: transparent !important;
 }
@@ -40,4 +41,18 @@
 .accordion-button:not(.collapsed)::after {
 	background-image: url(../../images/icon/minus.svg);
 	background-size: 30px 30px;
+}
+
+/** Terms  & Conditions **/
+.terms-privacy-sec h3 {
+	font-size: 32px;
+	letter-spacing: 0;
+	text-transform: none;
+}
+.terms-privacy-sec p {
+	letter-spacing: 0;
+}
+.terms-privacy-sec p.text-hint {
+	font-size: 24px;
+	margin-bottom: 15px;
 }
