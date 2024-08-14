@@ -1,3 +1,43 @@
 #header {
 	background-color: #c4b100;
 }
+
+.faq-section .faq-item button {
+	background-color: transparent;
+	max-width: unset;
+}
+
+.faq-section .faq-item .accordion-item {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 0;
+}
+.faq-section button.accordion-button {
+	font-size: 26px;
+	letter-spacing: 0;
+	text-transform: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0;
+	padding: 40px 0;
+}
+.faq-section button.accordion-button:hover {
+	background-color: transparent !important;
+}
+.faq-section .accordion-body {
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+	padding: 0px 0 30px;
+}
+.accordion-button::after {
+	background-image: url(../../images/icon/plus.svg);
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url(../../images/icon/minus.svg);
+	background-size: 30px 30px;
+}
