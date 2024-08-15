@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 992px) {
 	.faq-section button.accordion-button {
-		text-wrap: wrap;
+		text-wrap: wrap !important;
 		font-size: 20px;
 		padding: 30px 0;
 	}
