@@ -35,7 +35,7 @@
 .accordion-button::after {
 	background-image: url(../../images/icon/plus.svg);
 	background-size: 30px 30px;
-	width: 50px;
+	width: 30px;
 	height: 30px;
 }
 .accordion-button:not(.collapsed)::after {
