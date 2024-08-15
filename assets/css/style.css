@@ -2,6 +2,14 @@
 	background-color: #c4b100;
 }
 
+.logo {
+	display: flex;
+	align-items: center;
+	img {
+		max-width: 180px;
+	}
+}
+
 .faq-section .faq-item button {
 	background-color: transparent;
 	max-width: unset;
