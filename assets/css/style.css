@@ -35,7 +35,7 @@
 .accordion-button::after {
 	background-image: url(../../images/icon/plus.svg);
 	background-size: 30px 30px;
-	width: 30px;
+	width: 50px;
 	height: 30px;
 }
 .accordion-button:not(.collapsed)::after {
@@ -68,8 +68,8 @@
 	.faq-section button.accordion-button {
 		font-size: 18px;
 		line-height: 26px;
+		text-wrap: wrap;
 		padding: 20px 0;
-		word-wrap: break-word;
 		height: unset;
 	}
 	.faq-section .accordion-body {
