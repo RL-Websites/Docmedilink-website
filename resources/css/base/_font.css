@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Thin.otf") format("opentype"),
+        url("../fonts/CabinetGroteskThin.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGroteskThin.ttf") format("truetype"),
+        url("../fonts/CabinetGroteskThin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Extralight.eot")
+            format("embedded-opentype"),
+        url("../fonts/CabinetGrotesk-Extralight.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Extralight.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Extralight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Light.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGrotesk-Light.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Light.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Regular.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGrotesk-Regular.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Regular.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Medium.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGroteskMedium.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Medium.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Bold.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGroteskBold.woff") format("woff"),
+        url("../fonts/CabinetGroteskBold.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Black.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Extrabold.eot")
+            format("embedded-opentype"),
+        url("../fonts/CabinetGroteskExtrabold.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Extrabold.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Extrabold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../fonts/CabinetGrotesk-Black.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGrotesk-Black.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Black.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}

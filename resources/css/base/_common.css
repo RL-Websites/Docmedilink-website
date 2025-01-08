@@ -1,0 +1,43 @@
+.gradient-heading {
+	background: linear-gradient(90deg, #b7ff70 0%, #0362ff 100%);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 700;
+}
+
+.bottom-border {
+	border-bottom: 1px solid var(--blue-light-1);
+	@apply pb-4;
+}
+.frame-mob {
+	display: none;
+}
+.sm-block {
+	display: none;
+}
+.sm-hidden {
+	display: inline-block;
+}
+
+@media only screen and (max-width: 992px) {
+	section {
+		@apply px-4;
+	}
+
+	.sm-block {
+		display: inline-block;
+	}
+	.sm-hidden {
+		display: none;
+	}
+
+	.frame-mob {
+		display: block;
+	}
+	.frame-none {
+		@apply hidden;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+}
