@@ -8,6 +8,7 @@ use App\Http\Controllers\ProfileController;
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('services', 'services');
+    Route::get('clinicians', 'clinicians');
 });
 
 

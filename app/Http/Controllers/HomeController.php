@@ -17,4 +17,10 @@ class HomeController extends Controller
         $data['page_name'] = 'services';
         return view('frontend.services', $data);
     }
+
+    public function clinicians()
+    {
+        $data['page_name'] = 'clinicians';
+        return view('frontend.clinicians', $data);
+    }
 }
