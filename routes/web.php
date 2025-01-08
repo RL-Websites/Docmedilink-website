@@ -9,6 +9,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('services', 'services');
     Route::get('clinicians', 'clinicians');
+    Route::post('form-submissions', 'formSubmit');
 });
 
 

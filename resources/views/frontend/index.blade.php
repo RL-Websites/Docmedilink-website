@@ -586,6 +586,7 @@
                 <div>
                     <div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5">
                         <form>
+                            <input type="text" name="contact" id="contactForm" value="contact">
                             <div class="input__item">
                                 <label class="input__label" for="companyName">
                                     Company Name
