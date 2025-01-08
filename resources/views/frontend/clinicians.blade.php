@@ -1,0 +1,505 @@
+@extends('layouts/frontend_main')
+@section('content')
+		<!--====||  Main Section Start ||====-->
+		<main class="lg:pt-[130px] pt-[50px] overflow-x-hidden">
+			<!--====|| Hero Section Start ||====-->
+			<section class="hero">
+				<img
+					class="hero__img"
+					src="assets/img/clinicians.webp"
+					alt="Hero Image"
+				/>
+				<div class="hero__content hero__content--alt">
+					<h1 class="font-medium"
+						><span class="gradient-heading"> Clinicians</span>
+					</h1>
+					<h4 class="font-bold h4-alt"
+						>Empowering healthcare providers to <br />
+						<span class="text-primary"> Expand Their Reach </span>
+					</h4>
+				</div>
+			</section>
+			<!--====|| Hero Section End ||====-->
+
+			<!--====|| Service Section Start ||====-->
+			<section class="services relative z-10">
+				<!--Frame Integration Start-->
+				<div>
+					<img
+						class="absolute -z-10 -left-[122px] -top-20"
+						src="assets/img/frame/gear-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 -top-20 left-3/4"
+						src="assets/img/frame/star-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 top-3/4 left-7 w-8"
+						src="assets/img/frame/clip-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 top-1/2 right-10 w-8"
+						src="assets/img/frame/gear-2.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 top-3/4 left-2/3 w-[137px]"
+						src="assets/img/frame/blink-1.svg"
+						alt="Frame"
+					/>
+				</div>
+				<!--Frame Integration End-->
+				<div class="container mx-auto">
+					<h1 class="font-bold md:text-start text-center">
+						<span class="text-primary">Key Features</span> for <br />
+						Clinicians
+					</h1>
+					<div
+						class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10"
+					>
+						<div class="services__card">
+							<h5 class="services__card__heading bg-green"
+								>Customizable Scheduling Tools</h5
+							>
+							<p
+								>Manage your availability with ease and ensure a seamless
+								booking experience for your patients. 
+							</p>
+						</div>
+						<!-- Single Service Card End -->
+						<div class="services__card">
+							<h5 class="services__card__heading bg-yellow"
+								>Seamless Experience</h5
+							>
+							<p
+								>Offer secure video consultations, messaging, and prescription
+								management, all within a HIPAA-compliant environment.
+							</p>
+						</div>
+						<!-- Single Service Card End -->
+						<div class="services__card">
+							<h5 class="services__card__heading bg-cyan"
+								>Patient Management Dashboard</h5
+							>
+							<p
+								>Track patient records, medical history, and lab results—all in
+								one place.
+							</p>
+						</div>
+						<!-- Single Service Card End -->
+						<div class="services__card">
+							<h5 class="services__card__heading bg-light-purple"
+								>Prescription Fulfillment</h5
+							>
+							<p
+								>Simplify the e-prescription process and connect patients with
+								their preferred pharmacies. 
+							</p>
+						</div>
+						<!-- Single Service Card End -->
+						<div class="services__card">
+							<h5 class="services__card__heading bg-aqua-1"
+								>Data-Driven Insights</h5
+							>
+							<p
+								>Gain actionable insights to optimize operations and enhance
+								patient outcomes.
+							</p>
+						</div>
+						<!-- Single Service Card End -->
+					</div>
+				</div>
+			</section>
+			<!--====|| Service Section End ||====-->
+
+			<!--====|| How It Works Section Start ||====-->
+			<section class="work lg:pt-[100px] md:pt-[80px] pt-[50px] relative z-10" relative z-10">
+				<!--Frame Integration Start-->
+				<div >
+					<img
+						class="absolute -z-10 lg:-right-[150px] -right-unset lg:left-[unset] -left-[120px] lg:-top-20 top-0 lg:w-[340px] md:w-[200px] rotate-[130deg]"
+						src="assets/img/frame/dice-1.svg"
+						alt="Frame"
+					/>
+				</div>
+				<!--Frame Integration End-->
+				<div class="container mx-auto">
+					<h1 class="font-bold md:text-start text-center"
+						>How it <span class="text-primary">Works</span>
+					</h1>
+				</div>
+				<div class="work__cards">
+					<div class="container mx-auto relative z-10">
+						<!--Frame Integration Start-->
+						<div>
+							<img
+								class="absolute -z-10 -left-16 -top-16 w-[138px]"
+								src="assets/img/frame/star-1.svg"
+								alt="Frame"
+							/>
+							<img
+								class="absolute -z-10 -right-24 -bottom-4 w-[130px]"
+								src="assets/img/frame/blink-1.svg"
+								alt="Frame"
+							/>
+							<img
+								class="absolute -z-10 left-1/4 -bottom-16 w-[35px] rotate-45"
+								src="assets/img/frame/d-1.svg"
+								alt="Frame"
+							/>
+						</div>
+						<!--Frame Integration End-->
+						<div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-[unset] gap-7  mt-20">
+							<div class="work__card">
+								<img
+									class="work__frame"
+									src="assets/img/frame.png"
+									alt="Frame"
+								/>
+								<div class="work__content">
+									<span class="work__number bg-light-purple">1</span>
+									<h4 class="work__heading">PATIENT REGISTERS</h4>
+									<img
+										class="work__img w-[100px]"
+										src="assets/img/services/service-1.png"
+										alt="PATIENT REGISTER"
+									/>
+								</div>
+							</div>
+							<!--Work Card End-->
+
+							<div class="work__card work__card--alt">
+								<img
+									class="work__frame"
+									src="assets/img/frame.png"
+									alt="Frame"
+								/>
+								<div class="work__content">
+									<span
+										class="work__number work__number--alt bg-aqua-1 -bottom-2"
+										>2</span
+									>
+									<h4 class="work__heading"
+										>CLINICIAN REVIEWS PATIENT REQUEST</h4
+									>
+									<img
+										class="work__img w-[100px]"
+										src="assets/img/services/service-2.png"
+										alt="PATIENT REGISTER"
+									/>
+								</div>
+							</div>
+							<!--Work Card End-->
+
+							<div class="work__card">
+								<img
+									class="work__frame"
+									src="assets/img/frame.png"
+									alt="Frame"
+								/>
+								<div class="work__content">
+									<span class="work__number bg-yellow">3</span>
+									<h4 class="work__heading"
+										>CLINICIAN SCHEDULES A VIRTUAL CONSULT VISIT</h4
+									>
+									<img
+										class="work__img"
+										src="assets/img/consult.png"
+										alt="CLINICIAN SCHEDULES A VIRTUAL CONSULT VISIT"
+									/>
+								</div>
+							</div>
+							<!--Work Card End-->
+
+							<div class="work__card work__card--alt">
+								<img
+									class="work__frame"
+									src="assets/img/frame.png"
+									alt="Frame"
+								/>
+								<div class="work__content">
+									<span
+										class="work__number work__number--alt bg-green -bottom-6"
+										>4</span
+									>
+									<h4 class="work__heading"
+										>Happy <br />
+										Patient</h4
+									>
+									<img
+										class="work__img"
+										src="assets/img/happy-patient.png"
+										alt="Happy Patient"
+									/>
+								</div>
+							</div>
+							<!--Work Card End-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--====|| How It Works Section End ||====-->
+
+			<!--====|| Docmedilink Ideology Section Start ||====-->
+			<section class="ideology lg:pt-[100px] relative z-10">
+				<!--Frame Integration Start-->
+				<div>
+					<img
+						class="absolute -z-10 -left-[240px] top-0 w-[340px] rotate-180"
+						src="assets/img/frame/dice-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 -right-4 top-[100px] w-[42px] rotate-180"
+						src="assets/img/frame/gear-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 right-4 bottom-[50px] w-[42px] rotate-45"
+						src="assets/img/frame/d-1.svg"
+						alt="Frame"
+					/>
+				</div>
+				<!--Frame Integration End-->
+				<div class="container mx-auto">
+					<h1 class="font-bold md:text-start text-center">
+						<span class="text-primary">Docmedilink</span> is Ideal For 
+					</h1>
+					<div class="serve-cards grid md:grid-cols-3 md:text-start text-center lg:gap-20 md:gap-10 gap-5 mt-16">
+						<div class="serve-card">
+							<i class="icon-graph text-[130px]"></i>
+							<h4 class="font-bold mt-2 text-[30px]">Clinics Seeking Growth</h4>
+							<p class="text-lg"
+								>Connect with more patients and expand your presence beyond
+								physical boundaries.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card">
+							<i class="icon-suitcase-2 text-[130px]"></i>
+							<h4 class="font-bold mt-2 text-[30px]">Busy Healthcare Providers</h4>
+							<p class="text-lg"
+								>Simplify your workflow with tools designed to save time and
+								improve efficiency. 
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card">
+							<i class="icon-user text-[130px]"></i>
+							<h4 class="font-bold mt-2 text-[30px]"
+								>Practices Focused on Patient-Centric Care</h4
+							>
+							<p class="text-lg"
+								>Enhance patient satisfaction with modern, accessible, and
+								secure healthcare solutions.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+					</div>
+				</div>
+			</section>
+			<!--====|| Docmedilink Ideology Section End ||====-->
+
+			<!--====|| Community Section Start ||====-->
+			<section class="community lg:pt-[180px] md:pt-[100px] pt-[80px] relative z-10">
+				<!--Frame Integration Start-->
+				<div>
+					<img
+						class="absolute -z-10 left-20 top-1/2 w-[42px]"
+						src="assets/img/frame/gear-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 left-1/3 top-[100px] w-[42px]"
+						src="assets/img/frame/blink-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 -right-8 top-2/3"
+						src="assets/img/frame/hash-1.svg"
+						alt="Frame"
+					/>
+				</div>
+				<!--Frame Integration End-->
+				<div class="container mx-auto">
+					<div
+						class="bg-[#F7F4F4] lg:py-20 md:py-10 py-7  lg:px-16 md:px-8 px-5 text-center max-w-[930px] mx-auto rounded-[10px] relative -rotate-[5deg]"
+					>
+						<img
+							class="absolute top-[-40px] left-1/2 -translate-x-1/2"
+							src="assets/img/pin.svg"
+							alt="Pin"
+						/>
+						<h3 class="font-bold"
+							>Join the
+							<span class="text-primary">Docmedilink</span> Community</h3
+						>
+						<p class="text-lg mt-3"
+							>Take your clinic to the next level with a platform designed to
+							grow with you. Docmedilink ensures you have the tools to deliver
+							outstanding care, manage your operations efficiently, and reach
+							new patients effectively. </p
+						>
+					</div>
+				</div>
+			</section>
+			<!--====|| Community Section End ||====-->
+
+			<!--====|| Contact Section Start ||====-->
+			<section class="contact lg:pt-[180px] md:pt-[100px] pt-[80px] lg:pb-[150px] md:pb-[80px] pb-[50px] relative z-10">
+				<div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
+					<div class="lg:pe-24 pe-0 relative">
+						<!--Frame Integration Start-->
+						<div>
+							<img
+								class="absolute -z-10 -left-20 top-12 w-[90px]"
+								src="assets/img/frame/clip-1.svg"
+								alt="Frame"
+							/>
+							<img
+								class="absolute -z-10 right-28 bottom-1/3 w-[20px]"
+								src="assets/img/frame/d-1.svg"
+								alt="Frame"
+							/>
+							<img
+								class="absolute -z-10 left-1/2 bottom-0 w-[100px]"
+								src="assets/img/frame/blink-1.svg"
+								alt="Frame"
+							/>
+						</div>
+						<!--Frame Integration End-->
+						<h2 class="font-bold md:text-start text-center"
+							>Get Started <span class="text-primary block">Today </span></h2
+						>
+						<p class="text-lg mt-7 md:text-start text-center"
+							>Ready to transform your clinic’s operations and patient care?
+							Join the Docmedilink network and discover the difference our
+							platform can make. </p
+						>
+						<img
+							class="w-2/3 relative -z-10 md:block hidden"
+							src="assets/img/contact-2.png"
+							alt="Contact"
+						/>
+					</div>
+					<div class="relative z-10">
+						<!--Frame Integration Start-->
+						<div>
+							<img
+								class="absolute -z-10 -right-12 top-1/3 w-[60px]"
+								src="assets/img/frame/clip-2.svg"
+								alt="Frame"
+							/>
+						</div>
+						<!--Frame Integration End-->
+						<div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5">
+							<form>
+								<div class="md:flex  lg:gap-5 gap-3">
+									<div class="input__item">
+										<label class="input__label" for="clinicName">
+											Clinic Name
+											<span class="font-normal">(If applicable)</span></label
+										>
+										<input class="input__box" id="clinicName" type="text" />
+									</div>
+									<div class="input__item">
+										<label class="input__label" for="contactName">
+											Contact Name
+										</label>
+										<input class="input__box" id="contactName" type="text" />
+									</div>
+								</div>
+								<div class="md:flex lg:gap-5 gap-3">
+									<div class="input__item">
+										<label class="input__label" for="contactEmail">
+											Email Address
+										</label>
+										<input class="input__box" id="contactEmail" type="text" />
+									</div>
+									<div class="input__item">
+										<label class="input__label" for="contactPhone">
+											Phone Number</label
+										>
+										<input class="input__box" id="contactPhone" type="text" />
+									</div>
+								</div>
+
+								<div class="input__item">
+									<label class="input__label" for="specialization">
+										Specialization</label
+									>
+									<div class="input__select">
+										<select class="input__box" id="specialization">
+											<option>Select an option</option>
+											<option>Psychiatry</option>
+											<option>Psychology </option>
+											<option>Therapy</option>
+											<option>Dermatology</option>
+										</select>
+										<i class="icon-arrow-down input__select-icon"></i>
+									</div>
+								</div>
+								<div class="input__item">
+									<label class="input__label" for="practiceSize">
+										Practice Size</label
+									>
+									<div class="input__select">
+										<select class="input__box" id="practiceSize">
+											<option>Select an option</option>
+											<option>Solo Practitioner</option>
+											<option>Small Group </option>
+											<option>Large Clinic </option>
+										</select>
+										<i class="icon-arrow-down input__select-icon"></i>
+									</div>
+								</div>
+								<div class="input__item">
+									<label class="input__label" for="telehealth">
+										Tell us about your current telehealth needs</label
+									>
+									<textarea
+										class="input__box"
+										id="telehealth"
+										rows="4"
+									></textarea>
+								</div>
+								<div class="input__item">
+									<label class="input__label" for="time">
+										Preferred Demo Time</label
+									>
+									<input class="input__box" id="time" type="text" />
+								</div>
+
+								<div class="input__item">
+									<label class="input__label" for="aboutUs">
+										How did you hear about us?</label
+									>
+									<div class="input__select">
+										<select class="input__box" id="aboutUs">
+											<option>Select an option</option>
+											<option>Facebook Ad/Post</option>
+											<option>Instagram Ad/Post</option>
+											<option>Google Search</option>
+											<option>Newspaper Ad</option>
+											<option>Television Ad</option>
+											<option>Word of Mouth (Through a Friend)</option>
+										</select>
+										<i class="icon-arrow-down input__select-icon"></i>
+									</div>
+								</div>
+
+								<div class="flex items-center justify-between">
+									<a class="dml-btn dml-btn__primary" type="button"> Submit </a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--====|| Contact Section End ||====-->
+		</main>
+		<!--====||  Main Section End ||====-->
+@endsection

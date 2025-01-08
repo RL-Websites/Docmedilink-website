@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class HomeController extends Controller
 {
     // Method to handle the homepage route
@@ -16,5 +18,15 @@ class HomeController extends Controller
     {
         $data['page_name'] = 'services';
         return view('frontend.services', $data);
+    }
+
+    public function clinicians()
+    {
+        $data['page_name'] = 'clinicians';
+        return view('frontend.clinicians', $data);
+    }
+
+    public function formSubmit(Request $request) {
+        dd($$request->all());
     }
 }
