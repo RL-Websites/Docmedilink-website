@@ -11,124 +11,65 @@
         @endif
         <!--====|| Hero Section End ||====-->
 
-        			<!--====|| Service Section Start ||====-->
-			<section
-            class="services lg:pt-[150px] pt-0 relative z-10"
-            id="our-services"
-        >
+        <!--====|| Service Section Start ||====-->
+        <section class="services lg:pt-[150px] pt-0 relative z-10" id="our-services">
             <!--Frame Integration Start-->
             <div class="frame-none">
-                <img
-                    class="absolute -z-10 -left-[122px]"
-                    src="assets/img/frame/gear-1.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 right-1/3"
-                    src="assets/img/frame/star-1.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 -bottom-[200px] -right-[140px]"
-                    src="assets/img/frame/dice-1.svg"
-                    alt="Frame"
-                />
+                <img class="absolute -z-10 -left-[122px]" src="assets/img/frame/gear-1.svg" alt="Frame" />
+                <img class="absolute -z-10 right-1/3" src="assets/img/frame/star-1.svg" alt="Frame" />
+                <img class="absolute -z-10 -bottom-[200px] -right-[140px]" src="assets/img/frame/dice-1.svg"
+                    alt="Frame" />
             </div>
             <!--Frame Integration End-->
 
             <div class="container mx-auto">
-                <h1
-                    class="font-bold md:text-start text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    >Our <span class="text-primary">Services</span>
+                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Our <span
+                        class="text-primary">Services</span>
                 </h1>
-                <div
-                    class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10"
-                >
-                    <div
-                        class="services__card"
-                        data-aos="zoom-in"
-                        data-aos-duration="700"
-                    >
-                        <h5 class="services__card__heading bg-green"
-                            >Virtual Consultations</h5
-                        >
-                        <p
-                            >Offer seamless, secure, and HIPAA-compliant video and audio
+                <div class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10">
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
+                        <h5 class="services__card__heading bg-green">Virtual Consultations</h5>
+                        <p>Offer seamless, secure, and HIPAA-compliant video and audio
                             consultations, enabling healthcare providers to deliver
                             high-quality care from anywhere.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div
-                        class="services__card"
-                        data-aos="zoom-in"
-                        data-aos-duration="700"
-                    >
-                        <h5 class="services__card__heading bg-yellow"
-                            >E-Prescription & Lab Integration</h5
-                        >
-                        <p
-                            >Simplify the prescription process with our e-prescription
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
+                        <h5 class="services__card__heading bg-yellow">E-Prescription & Lab Integration</h5>
+                        <p>Simplify the prescription process with our e-prescription
                             functionality, integrated directly into the patient care
                             workflow.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div
-                        class="services__card"
-                        data-aos="zoom-in"
-                        data-aos-duration="700"
-                    >
-                        <h5 class="services__card__heading bg-cyan"
-                            >Data Security & Analysis</h5
-                        >
-                        <p
-                            >Leverage advanced analytics to gain insights into patient care
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
+                        <h5 class="services__card__heading bg-cyan">Data Security & Analysis</h5>
+                        <p>Leverage advanced analytics to gain insights into patient care
                             trends and operational efficiency. Our solutions prioritize data
                             protection through robust encryption ...
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div
-                        class="services__card"
-                        data-aos="zoom-in"
-                        data-aos-duration="900"
-                    >
-                        <h5 class="services__card__heading bg-light-purple"
-                            >Customize Workflows</h5
-                        >
-                        <p
-                            >From managing patient intake forms to automating routine tasks,
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="900">
+                        <h5 class="services__card__heading bg-light-purple">Customize Workflows</h5>
+                        <p>From managing patient intake forms to automating routine tasks,
                             our solutions are tailored to fit the unique needs of your
                             healthcare business.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div
-                        class="services__card"
-                        data-aos="zoom-in"
-                        data-aos-duration="900"
-                    >
-                        <h5 class="services__card__heading bg-aqua-1"
-                            >Patient Engagement Tools</h5
-                        >
-                        <p
-                            >Engage patients with reminders, educational materials, and
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="900">
+                        <h5 class="services__card__heading bg-aqua-1">Patient Engagement Tools</h5>
+                        <p>Engage patients with reminders, educational materials, and
                             self-service options, improving satisfaction and retention while
-                            reducing administrative burden. 
+                            reducing administrative burden.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div
-                        class="services__card flex justify-center items-center border-none !pt-5"
-                        data-aos="zoom-in"
-                        data-aos-duration="500"
-                    >
-                        <a href="{{ url('our-services') }}" class="dml-btn dml-btn__outline"
-                            >Learn More</a
-                        >
+                    <div class="services__card flex justify-center items-center border-none !pt-5" data-aos="zoom-in"
+                        data-aos-duration="500">
+                        <a href="{{ url('our-services') }}" class="dml-btn dml-btn__outline">Learn More</a>
                     </div>
                     <!-- Single Service Card End -->
                 </div>
@@ -136,214 +77,133 @@
         </section>
         <!--====|| Service Section End ||====-->
 
-       <!--====|| Who We Serve Section Start ||====-->
-			<section class="serve lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10">
-				<!--Frame Integration Start-->
-				<div>
-					<img
-						class="absolute -z-10 -right-[100px] -top-24 w-[200px] md:hidden block"
-						src="assets/img/frame/dice-1.svg"
-						alt="Frame"
-					/>
-					<img
-						class="absolute -z-10 left-5 top-1/2"
-						src="assets/img/frame/star-1.svg"
-						alt="Frame"
-					/>
-					<img
-						class="absolute -z-10 left-3/4 top-20"
-						src="assets/img/frame/gear-2.svg"
-						alt="Frame"
-					/>
-					<img
-						class="absolute -z-10 md:top-1/2 top-[55%] right-5"
-						src="assets/img/frame/blink-1.svg"
-						alt="Frame"
-					/>
-					<img
-						class="absolute -z-10 -bottom-10 md:left-1/4 left-0"
-						src="assets/img/frame/blink-1.svg"
-						alt="Frame"
-					/>
-				</div>
-				<!--Frame Integration End-->
+        <!--====|| Who We Serve Section Start ||====-->
+        <section class="serve lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10">
+            <!--Frame Integration Start-->
+            <div>
+                <img class="absolute -z-10 -right-[100px] -top-24 w-[200px] md:hidden block"
+                    src="assets/img/frame/dice-1.svg" alt="Frame" />
+                <img class="absolute -z-10 left-5 top-1/2" src="assets/img/frame/star-1.svg" alt="Frame" />
+                <img class="absolute -z-10 left-3/4 top-20" src="assets/img/frame/gear-2.svg" alt="Frame" />
+                <img class="absolute -z-10 md:top-1/2 top-[55%] right-5" src="assets/img/frame/blink-1.svg"
+                    alt="Frame" />
+                <img class="absolute -z-10 -bottom-10 md:left-1/4 left-0" src="assets/img/frame/blink-1.svg"
+                    alt="Frame" />
+            </div>
+            <!--Frame Integration End-->
 
-				<div class="container mx-auto relative z-10">
-					<!--Frame Integration Start-->
-					<div>
-						<img
-							class="absolute -z-10 md:-bottom-8 -bottom-2 right-16"
-							src="assets/img/frame/d-1.svg"
-							alt="Frame"
-						/>
-						<img
-							class="absolute -z-10 md:-bottom-28 -bottom-20 right-0"
-							src="assets/img/frame/diamond.svg"
-							alt="Frame"
-						/>
-					</div>
-					<!--Frame Integration End-->
-					<h1
-						class="font-bold md:text-start text-center"
-						data-aos="fade-up"
-						data-aos-duration="500"
-						>Who <span class="text-primary">We Serve</span>
-					</h1>
-					<div
-						class="serve-cards grid md:grid-cols-2 grid-cols-1 md:gap-20 sm:gap-10 gap-5 mt-16"
-					>
-						<div
-							class="serve-card md:text-start text-center"
-							data-aos="fade-up-right"
-							data-aos-duration="700"
-						>
-							<i class="icon-stethoscope text-[130px]"></i>
-							<h3
-								class="font-bold mt-4"
-								data-aos="fade-up-right"
-								data-aos-duration="900"
-								>Healthcare Providers</h3
-							>
-							<p
-								class="serve__desc mt-2"
-								data-aos="fade-up-right"
-								data-aos-duration="1000"
-								>Expand your practice with our cutting-edge telehealth platform,
-								specifically designed to cater to the diverse needs of patients.
-								Whether it's weight management, urgent care, or specialized
-								programs like hair loss treatment, sexual health support, and
-								brain health . . .
-							</p>
-						</div>
-						<!-- Serve Card End -->
-						<div
-							class="serve-card md:text-start text-center"
-							data-aos="fade-up-left"
-							data-aos-duration="700"
-						>
-							<i class="icon-suitcase text-[130px]"></i>
-							<h3
-								class="font-bold mt-4"
-								data-aos="fade-up-left"
-								data-aos-duration="900"
-								>Healthcare Entrepreneurs</h3
-							>
-							<p
-								class="serve__desc mt-2"
-								data-aos="fade-up-left"
-								data-aos-duration="1000"
-								>Are you ready to venture into the thriving world of virtual
-								healthcare? Our turnkey telehealth solutions make it easy for
-								entrepreneurs to establish robust virtual services with minimal
-								hassle. From launching innovative programs like weight loss
-								management, testosterone . . .
-							</p>
-						</div>
-						<!-- Serve Card End -->
-					</div>
-					<div class="flex justify-center mt-8">
-						<!-- <a href="who-we-serve.html"
-							><img
-								class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-								src="assets/img/lg-arrow-right.svg"
-								alt="Arrow"
-						/></a> -->
-						<a
-							href="who-we-serve.html"
-							class="dml-btn dml-btn__outline"
-							data-aos="zoom-in"
-							data-aos-duration="1000"
-							>Read More</a
-						>
-					</div>
-				</div>
-			</section>
-			<!--====|| Who We Serve Section End ||====-->
+            <div class="container mx-auto relative z-10">
+                <!--Frame Integration Start-->
+                <div>
+                    <img class="absolute -z-10 md:-bottom-8 -bottom-2 right-16" src="assets/img/frame/d-1.svg"
+                        alt="Frame" />
+                    <img class="absolute -z-10 md:-bottom-28 -bottom-20 right-0" src="assets/img/frame/diamond.svg"
+                        alt="Frame" />
+                </div>
+                <!--Frame Integration End-->
+                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Who <span
+                        class="text-primary">We Serve</span>
+                </h1>
+                <div class="serve-cards grid md:grid-cols-2 grid-cols-1 md:gap-20 sm:gap-10 gap-5 mt-16">
+                    <div class="serve-card md:text-start text-center" data-aos="fade-up-right" data-aos-duration="700">
+                        <i class="icon-stethoscope text-[130px]"></i>
+                        <h3 class="font-bold mt-4" data-aos="fade-up-right" data-aos-duration="900">Healthcare Providers
+                        </h3>
+                        <p class="serve__desc mt-2" data-aos="fade-up-right" data-aos-duration="1000">Expand your practice
+                            with our cutting-edge telehealth platform,
+                            specifically designed to cater to the diverse needs of patients.
+                            Whether it's weight management, urgent care, or specialized
+                            programs like hair loss treatment, sexual health support, and
+                            brain health . . .
+                        </p>
+                    </div>
+                    <!-- Serve Card End -->
+                    <div class="serve-card md:text-start text-center" data-aos="fade-up-left" data-aos-duration="700">
+                        <i class="icon-suitcase text-[130px]"></i>
+                        <h3 class="font-bold mt-4" data-aos="fade-up-left" data-aos-duration="900">Healthcare Entrepreneurs
+                        </h3>
+                        <p class="serve__desc mt-2" data-aos="fade-up-left" data-aos-duration="1000">Are you ready to
+                            venture into the thriving world of virtual
+                            healthcare? Our turnkey telehealth solutions make it easy for
+                            entrepreneurs to establish robust virtual services with minimal
+                            hassle. From launching innovative programs like weight loss
+                            management, testosterone . . .
+                        </p>
+                    </div>
+                    <!-- Serve Card End -->
+                </div>
+                <div class="flex justify-center mt-8">
+                    <!-- <a href="who-we-serve.html"
+               ><img
+                class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                src="assets/img/lg-arrow-right.svg"
+                alt="Arrow"
+              /></a> -->
+                    <a href="who-we-serve.html" class="dml-btn dml-btn__outline" data-aos="zoom-in"
+                        data-aos-duration="1000">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!--====|| Who We Serve Section End ||====-->
 
         <!--====|| Features Section Start ||====-->
-			<section
-            class="features lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10"
-        >
+        <section class="features lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10">
             <!--Frame Integration Start-->
             <div class="frame-none">
-                <img
-                    class="absolute -z-10 top-[180px] -left-[122px]"
-                    src="assets/img/frame/gear-1.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 top-2/3 left-5"
-                    src="assets/img/frame/star-1.svg"
-                    alt="Frame"
-                />
+                <img class="absolute -z-10 top-[180px] -left-[122px]" src="assets/img/frame/gear-1.svg" alt="Frame" />
+                <img class="absolute -z-10 top-2/3 left-5" src="assets/img/frame/star-1.svg" alt="Frame" />
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1
-                    class="font-bold md:text-start text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    >Telehealth <span class="text-primary">Features</span>
+                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Telehealth
+                    <span class="text-primary">Features</span>
                 </h1>
                 <div>
                     <div class="features__img mt-[100px] md:block hidden">
-                        <img
-                            class="w-full"
-                            src="assets/img/features.svg"
-                            alt="Features"
-                            data-aos="zoom-in"
-                            data-aos-duration="1500"
-                        />
+                        <img class="w-full" src="assets/img/features.svg" alt="Features" data-aos="zoom-in"
+                            data-aos-duration="1500" />
                     </div>
                 </div>
 
-                <div
-                    class="serve-cards grid md:grid-cols-2 grid-cols-1 md:gap-20 sm:gap-10 gap-7 mt-16 md:hidden"
-                >
+                <div class="serve-cards grid md:grid-cols-2 grid-cols-1 md:gap-20 sm:gap-10 gap-7 mt-16 md:hidden">
                     <div class="serve-card md:text-start text-center">
                         <i class="icon-video-cal text-[60px]"></i>
-                        <p class="serve__desc mt-2"
-                            >Connect directly with patients through secure, scheduled video
+                        <p class="serve__desc mt-2">Connect directly with patients through secure, scheduled video
                             or audio consultations.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card md:text-start text-center">
                         <i class="icon-calendar text-[60px]"></i>
-                        <p class="serve__desc mt-2"
-                            >Leverage integrated lab solutions to seamlessly schedule tests,
+                        <p class="serve__desc mt-2">Leverage integrated lab solutions to seamlessly schedule tests,
                             review results, and prescribe treatments in one platform.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card md:text-start text-center">
                         <i class="icon-certification text-[60px]"></i>
-                        <p class="serve__desc mt-2"
-                            >Optimize medication management with our SureScripts-certified
+                        <p class="serve__desc mt-2">Optimize medication management with our SureScripts-certified
                             prescription platform.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card md:text-start text-center">
                         <i class="icon-paint-board text-[60px]"></i>
-                        <p class="serve__desc mt-2"
-                            >Tailor our white-label solutions to align with your brand’s
+                        <p class="serve__desc mt-2">Tailor our white-label solutions to align with your brand’s
                             unique needs and identity.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card md:text-start text-center">
                         <i class="icon-map text-[60px]"></i>
-                        <p class="serve__desc mt-2"
-                            >Access a nationwide provider network, offering consistent,
+                        <p class="serve__desc mt-2">Access a nationwide provider network, offering consistent,
                             top-tier healthcare services across all 50 states.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card md:text-start text-center">
                         <i class="icon-gear-round text-[60px]"></i>
-                        <p class="serve__desc mt-2"
-                            >Simplify patient interactions with detailed and convenient
+                        <p class="serve__desc mt-2">Simplify patient interactions with detailed and convenient
                             asynchronous questionnaires.
                         </p>
                     </div>
@@ -353,166 +213,95 @@
         </section>
         <!--====|| Features Section End ||====-->
 
-       <!--====|| CTA Section Start ||====-->
-			<section
-            class="cta lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10"
-            id="clinicians"
-        >
+        <!--====|| CTA Section Start ||====-->
+        <section class="cta lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10" id="clinicians">
             <!--Frame Integration Start-->
             <div>
-                <img
-                    class="absolute -z-10 md:-top-5 top-5 md:left-1/4 left-2"
-                    src="assets/img/frame/blink-1.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 md:top-28 top-32 md:left-10 -left-6"
-                    src="assets/img/frame/clip-1.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 -top-5 -right-6 md:w-[122px] w-[62px]"
-                    src="assets/img/frame/hash-1.svg"
-                    alt="Frame"
-                />
+                <img class="absolute -z-10 md:-top-5 top-5 md:left-1/4 left-2" src="assets/img/frame/blink-1.svg"
+                    alt="Frame" />
+                <img class="absolute -z-10 md:top-28 top-32 md:left-10 -left-6" src="assets/img/frame/clip-1.svg"
+                    alt="Frame" />
+                <img class="absolute -z-10 -top-5 -right-6 md:w-[122px] w-[62px]" src="assets/img/frame/hash-1.svg"
+                    alt="Frame" />
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto text-center">
-                <h1 class="font-medium" data-aos="fade-up" data-aos-duration="500"
-                    >Empowering <br />
+                <h1 class="font-medium" data-aos="fade-up" data-aos-duration="500">Empowering <br />
                     Healthcare Providers <br />
                     to
                     <span class="text-primary">Expand Their Reach</span>
                 </h1>
-                <p class="text-lg mt-5" data-aos="fade-up" data-aos-duration="700"
-                    >At Docmedilink, we understand the challenges clinicians face in
+                <p class="text-lg mt-5" data-aos="fade-up" data-aos-duration="700">At Docmedilink, we understand the
+                    challenges clinicians face in
                     today’s dynamic healthcare environment. Our platform is crafted to
                     empower clinics of all sizes, enabling them to connect with more
                     patients, enhance service delivery, and streamline their daily
-                    operations. </p
-                >
-                <a
-                     href="/clinicians"
-                    class="dml-btn dml-btn__outline mt-10"
-                    data-aos="zoom-in"
-                    data-aos-duration="900"
-                    >Learn More</a
-                >
+                    operations. </p>
+                <a href="/clinicians" class="dml-btn dml-btn__outline mt-10" data-aos="zoom-in"
+                    data-aos-duration="900">Learn More</a>
             </div>
         </section>
         <!--====|| CTA Section End ||====-->
 
-       <!--====|| Why Choose Section Start ||====-->
-			<section
-            class="why-choose lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10"
-        >
+        <!--====|| Why Choose Section Start ||====-->
+        <section class="why-choose lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10">
             <!--Frame Integration Start-->
             <div>
-                <img
-                    class="absolute -z-10 top-0 md:right-0 -right-2 md:w-[168px] w-[80px]"
-                    src="assets/img/frame/blink-1.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 md:-bottom-[170px] bottom-[200px] md:-left-[140px] -left-[80px] rotate-180 md:w-[340px] w-[180px]"
-                    src="assets/img/frame/dice-1.svg"
-                    alt="Frame"
-                />
+                <img class="absolute -z-10 top-0 md:right-0 -right-2 md:w-[168px] w-[80px]"
+                    src="assets/img/frame/blink-1.svg" alt="Frame" />
+                <img class="absolute -z-10 md:-bottom-[170px] bottom-[200px] md:-left-[140px] -left-[80px] rotate-180 md:w-[340px] w-[180px]"
+                    src="assets/img/frame/dice-1.svg" alt="Frame" />
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1
-                    class="font-bold md:text-start text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    >Why Choose <span class="text-primary">Docmedilink?</span>
+                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Why Choose
+                    <span class="text-primary">Docmedilink?</span>
                 </h1>
                 <div
-                    class="why-choose__cards grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 md:mt-16 sm:mt-12 mt-8 md:text-start text-center"
-                >
+                    class="why-choose__cards grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 md:mt-16 sm:mt-12 mt-8 md:text-start text-center">
                     <div class="why-choose__card">
-                        <i
-                            class="icon-idea md:text-[120px] sm:text-[80px] text-[60px] inline-block"
-                            data-aos="fade-up"
-                            data-aos-duration="700"
-                        ></i>
-                        <h4
-                            class="font-bold mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="700"
-                            >Innovation
+                        <i class="icon-idea md:text-[120px] sm:text-[80px] text-[60px] inline-block" data-aos="fade-up"
+                            data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2" data-aos="fade-up" data-aos-duration="700">Innovation
                         </h4>
-                        <p
-                            class="why-choose__desc mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="900"
-                            >At Docmedilink, we leverage cutting-edge technologies to design
+                        <p class="why-choose__desc mt-2" data-aos="fade-up" data-aos-duration="900">At Docmedilink, we
+                            leverage cutting-edge technologies to design
                             custom-built software tailored to meet your specific healthcare
                             needs...
                         </p>
                     </div>
                     <!-- why-choose Card End -->
                     <div class="why-choose__card">
-                        <i
-                            class="icon-mobile md:text-[120px] sm:text-[80px] text-[60px] inline-block"
-                            data-aos="fade-up"
-                            data-aos-duration="700"
-                        ></i>
-                        <h4
-                            class="font-bold mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="900"
-                            >Usability
+                        <i class="icon-mobile md:text-[120px] sm:text-[80px] text-[60px] inline-block" data-aos="fade-up"
+                            data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2" data-aos="fade-up" data-aos-duration="900">Usability
                         </h4>
-                        <p
-                            class="why-choose__desc mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="1100"
-                            >Ease of use is at the core of our platform design. Our
+                        <p class="why-choose__desc mt-2" data-aos="fade-up" data-aos-duration="1100">Ease of use is at
+                            the core of our platform design. Our
                             intuitive interfaces minimize the learning curve for healthcare
                             providers making it easy for...
                         </p>
                     </div>
                     <!-- why-choose Card End -->
                     <div class="why-choose__card">
-                        <i
-                            class="icon-lock md:text-[120px] sm:text-[80px] text-[60px] inline-block"
-                            data-aos="fade-up"
-                            data-aos-duration="700"
-                        ></i>
-                        <h4
-                            class="font-bold mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="900"
-                            >Security
+                        <i class="icon-lock md:text-[120px] sm:text-[80px] text-[60px] inline-block" data-aos="fade-up"
+                            data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2" data-aos="fade-up" data-aos-duration="900">Security
                         </h4>
-                        <p
-                            class="why-choose__desc mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="1100"
-                            >We understand the critical importance of safeguarding sensitive
+                        <p class="why-choose__desc mt-2" data-aos="fade-up" data-aos-duration="1100">We understand the
+                            critical importance of safeguarding sensitive
                             patient data. That’s why our solutions are engineered with
                             robust security measures...
                         </p>
                     </div>
                     <!-- why-choose Card End -->
                     <div class="why-choose__card">
-                        <i
-                            class="icon-handshake md:text-[120px] sm:text-[80px] text-[60px] inline-block"
-                            data-aos="fade-up"
-                            data-aos-duration="700"
-                        ></i>
-                        <h4
-                            class="font-bold mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="900"
-                            >Reliability
+                        <i class="icon-handshake md:text-[120px] sm:text-[80px] text-[60px] inline-block"
+                            data-aos="fade-up" data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2" data-aos="fade-up" data-aos-duration="900">Reliability
                         </h4>
-                        <p
-                            class="why-choose__desc mt-2"
-                            data-aos="fade-up"
-                            data-aos-duration="1100"
-                            >Our platforms are built to provide dependable and scalable
+                        <p class="why-choose__desc mt-2" data-aos="fade-up" data-aos-duration="1100">Our platforms are
+                            built to provide dependable and scalable
                             solutions for your healthcare needs. Designed with redundancy...
                         </p>
                     </div>
@@ -520,62 +309,36 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-                        ><img
-                            class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                            src="assets/img/lg-arrow-right.svg"
-                            alt="Arrow"
-                    /></a> -->
-                    <a
-                        href="{{ url('why-choose-docmedilink') }}"
-                        class="dml-btn dml-btn__outline"
-                        data-aos="zoom-in"
-                        data-aos-duration="1500"
-                        >Read More</a
-                    >
+                                ><img
+                                    class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                                    src="assets/img/lg-arrow-right.svg"
+                                    alt="Arrow"
+                            /></a> -->
+                    <a href="{{ url('why-choose-docmedilink') }}" class="dml-btn dml-btn__outline" data-aos="zoom-in"
+                        data-aos-duration="1500">Read More</a>
                 </div>
             </div>
         </section>
         <!--====|| Why Choose Section End ||====-->
 
         <!--====|| About Us Section Start ||====-->
-			<section
-            class="about lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10"
-            id="about-us"
-        >
+        <section class="about lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10" id="about-us">
             <!--Frame Integration Start-->
             <div>
-                <img
-                    class="absolute -z-10 md:top-10 -top-[500px] md:right-12 right-2"
-                    src="assets/img/frame/clip-2.svg"
-                    alt="Frame"
-                />
-                <img
-                    class="absolute -z-10 md:top-[200px] -top-[250px] md:right-0 -right-10"
-                    src="assets/img/frame/diamond.svg"
-                    alt="Frame"
-                />
+                <img class="absolute -z-10 md:top-10 -top-[500px] md:right-12 right-2" src="assets/img/frame/clip-2.svg"
+                    alt="Frame" />
+                <img class="absolute -z-10 md:top-[200px] -top-[250px] md:right-0 -right-10"
+                    src="assets/img/frame/diamond.svg" alt="Frame" />
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto text-center">
-                <img
-                    class="mx-auto"
-                    src="{{ URL::asset('assets') }}/img/about-us.png"
-                    alt="About Us"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                />
-                <h1
-                    class="font-bold my-5 text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                >
+                <img class="mx-auto" src="{{ URL::asset('assets') }}/img/about-us.png" alt="About Us" data-aos="fade-up"
+                    data-aos-duration="500" />
+                <h1 class="font-bold my-5 text-center" data-aos="fade-up" data-aos-duration="700">
                     About <span class="text-primary">Us</span>
                 </h1>
-                <p
-                    class="md:text-lg text-base"
-                    data-aos="fade-up"
-                    data-aos-duration="900"
-                    >At Docmedilink, we prioritize innovation, empathy, and excellence
+                <p class="md:text-lg text-base" data-aos="fade-up" data-aos-duration="900">At Docmedilink, we prioritize
+                    innovation, empathy, and excellence
                     to transform healthcare delivery. By staying at the forefront of
                     technology, we develop solutions that enhance efficiency, improve
                     patient care, and meet the ever-evolving needs of the industry.
@@ -584,8 +347,7 @@
                     healthcare. Our commitment to excellence drives us to deliver
                     tailored, reliable, and affordable solutions that empower clients to
                     achieve their goals while setting new standards for quality and
-                    impact in healthcare.</p
-                >
+                    impact in healthcare.</p>
             </div>
         </section>
         <!--====|| About Us Section End ||====-->
@@ -800,7 +562,7 @@
                         <img class="max-w-[400px]" src="assets/img/contact.png" alt="Contact" />
                     </div>
                 </div>
-                <div class="relative" id="contactForm">
+                <div class="relative" id="contactFormWrapper">
                     <div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5" data-aos="fade-left" data-aos-duration="800">
                         <form id="contactForm">
                             <div class="input__item">
@@ -809,64 +571,66 @@
                             </div>
                             <div class="md:flex block lg:gap-5 gap-3">
                                 <div class="input__item">
-                                    <label class="input__label" for="first_name"> First Name <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span></label>
+                                    <label class="input__label" for="first_name">
+                                        First Name <span
+                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
+                                    </label>
                                     <input class="input__box" id="first_name" type="text" />
                                 </div>
                                 <div class="input__item">
-                                    <label class="input__label" for="last_name"> Last Name </label>
+                                    <label class="input__label" for="last_name">Last Name</label>
                                     <input class="input__box" id="last_name" type="text" />
                                 </div>
                             </div>
                             <div class="md:flex block lg:gap-5 gap-3">
                                 <div class="input__item">
-                                    <label class="input__label" for="email">Email Address <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span></label>
-                                    <input class="input__box" id="email" type="text"/>
+                                    <label class="input__label" for="email">
+                                        Email Address <span
+                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
+                                    </label>
+                                    <input class="input__box" id="email" type="email" />
                                 </div>
                                 <div class="input__item">
-                                    <label class="input__label" for="phone">Phone Number <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span></label>
-                                    <input class="input__box" id="phone" type="text"  maxlength="12" />
+                                    <label class="input__label" for="phone">
+                                        Phone Number <span
+                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
+                                    </label>
+                                    <input class="input__box" id="phone" type="text" maxlength="12" />
                                 </div>
                             </div>
-
                             <div class="input__item">
                                 <label class="input__label" for="services">What services are you interested in?</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="services">
-                                        <option disabled selected>Select an option</option>
-                                        <option value="Telehealth Platform">Telehealth Platform</option>
-                                        <option value="Physician Services">Physician Services</option>
-                                        <option value="Pharmacy Services">Pharmacy Services</option>
-                                        <option value="Partnership Opportunities">Partnership Opportunities</option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
+                                <select class="input__box" id="services">
+                                    <option disabled selected>Select an option</option>
+                                    <option value="Telehealth Platform">Telehealth Platform</option>
+                                    <option value="Physician Services">Physician Services</option>
+                                    <option value="Pharmacy Services">Pharmacy Services</option>
+                                    <option value="Partnership Opportunities">Partnership Opportunities</option>
+                                </select>
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="about">Please share a little about yourself</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="about">
-                                        <option disabled selected>Select an option</option>
-                                        <option>Customer</option>
-                                        <option>Provider</option>
-                                        <option>Partner</option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
+                                <select class="input__box" id="about">
+                                    <option disabled selected>Select an option</option>
+                                    <option value="Customer">Customer</option>
+                                    <option value="Provider">Provider</option>
+                                    <option value="Partner">Partner</option>
+                                </select>
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="details">Do you want to share more details with
                                     us?</label>
                                 <textarea class="input__box" id="details" rows="4"></textarea>
                             </div>
-
                             <div class="flex items-center justify-between">
-                                <button name="contact" value="contact" class="dml-btn dml-btn__primary"
-                                    type="submit">Submit</button>
+                                <button name="contact" value="contact" class="dml-btn dml-btn__primary" type="submit">
+                                    Submit
+                                </button>
                             </div>
                         </form>
                     </div>
-                    <!--Form Modal End-->
                 </div>
+
             </div>
         </section>
         <!--====|| Contact Section End ||====-->
@@ -877,71 +641,80 @@
 @endsection
 
 @section('scripts')
-<script>
-    $(document).ready(function () {
-        $('#contactForm').on('submit', async function (event) {
-            event.preventDefault();
+    <script>
+        $(document).ready(function() {
+            // Allow only numeric input for the phone field
+            $('#phone').on('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, ''); // Remove any non-numeric characters
+            });
 
-            // Remove previous error messages
-            $('.text-danger').remove();
+            $('#contactForm').on('submit', async function(event) {
+                event.preventDefault();
 
-            // Get form values
-            const firstName = $('#first_name').val();
-            const email = $('#email').val();
-            const phone = $('#phone').val();
+                // Remove previous error messages
+                $('.text-danger').remove();
 
-            let isValid = true; // Flag to track validation status
+                // Get form values
+                const firstName = $('#first_name').val();
+                const email = $('#email').val();
+                const phone = $('#phone').val();
 
-            // First Name Validation
-            const namePattern = /^[A-Za-z\s]+$/; // Allows alphabets and spaces
-            if (!firstName || !namePattern.test(firstName)) {
-                $('#first_name').after('<p class="text-danger pt-1">Please enter a valid first name (letters and spaces only).</p>');
-                isValid = false;
-            }
+                let isValid = true; // Flag to track validation status
 
-            // Email Validation
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email pattern
-            if (!email || !emailPattern.test(email)) {
-                $('#email').after('<p class="text-danger pt-1">Please enter a valid email address.</p>');
-                isValid = false;
-            }
+                // First Name Validation
+                const namePattern = /^[A-Za-z\s]+$/; // Allows alphabets and spaces
+                if (!firstName || !namePattern.test(firstName)) {
+                    $('#first_name').after(
+                        '<p class="text-danger pt-1">Please enter a valid first name (letters and spaces only).</p>'
+                    );
+                    isValid = false;
+                }
 
-            // Phone Validation
-            const phonePattern = /^\+?[0-9]{10,12}$/; // Allows 10-12 digits, optional "+" at the start
-            if (!phone || !phonePattern.test(phone)) {
-                $('#phone').after('<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits).</p>');
-                isValid = false;
-            }
+                // Email Validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email pattern
+                if (!email || !emailPattern.test(email)) {
+                    $('#email').after(
+                        '<p class="text-danger pt-1">Please enter a valid email address.</p>');
+                    isValid = false;
+                }
 
-            // Stop form submission if any validation fails
-            if (!isValid) return;
+                // Phone Validation
+                const phonePattern = /^[0-9]{10,12}$/; // Allows only 10-12 digits
+                if (!phone || !phonePattern.test(phone)) {
+                    $('#phone').after(
+                        '<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits).</p>'
+                    );
+                    isValid = false;
+                }
 
-            // Collect other form data
-            const formData = {
-                company_name: $('#company_name').val(),
-                first_name: firstName,
-                last_name: $('#last_name').val(),
-                email: email,
-                phone: phone,
-                services: $('#services').val(),
-                about: $('#about').val(),
-                details: $('#details').val(),
-                submitButton: $('button[name="contact"]').val()
-            };
+                if (!isValid) return;
 
-            try {
-                const response = await axios.post('{{ url('form-submissions') }}', formData, {
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
+                // Collect other form data
+                const formData = {
+                    company_name: $('#company_name').val(),
+                    first_name: firstName,
+                    last_name: $('#last_name').val(),
+                    email: email,
+                    phone: phone,
+                    services: $('#services').val(),
+                    about: $('#about').val(),
+                    details: $('#details').val(),
+                    submitButton: $('button[name="contact"]').val()
+                };
 
-                console.log('Response:', response);
+                try {
+                    const response = await axios.post('{{ url('form-submissions') }}', formData, {
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
 
-                if (response.data.success) {
-                    $('#contactForm').append(`
-                        <div class="form-modal hidden lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
+                    console.log('Response:', response);
+
+                    if (response.data.success) {
+                        $('#contactForm').append(`
+                        <div class="form-modal lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
                             <div class="form-modal--content">
                                 <div class="success-animation">
                                     <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
@@ -955,21 +728,34 @@
                         </div>
                     `);
 
-                    $('.form-modal').removeClass('hidden');
+                        // Add modal logic
+                        setTimeout(function() {
+                            $('.form-modal').fadeOut(500, function() {
+                                $(this).remove();
+                            });
+                        }, 3000);
 
-                    setTimeout(function () {
-                        $('.form-modal').addClass('hidden');
-                    }, 3000);
+                        // Reset the form safely
+                        const formElement = document.getElementById('contactForm');
+                        if (formElement) {
+                            formElement.reset();
+                        } else {
+                            console.error('Form element not found for resetting.');
+                        }
 
-                    $('#contactForm')[0].reset();
-                } else {
-                    $('#contactForm').append('<p class="text-danger pt-1">There was an issue with your submission.</p>');
+                        $('#contactForm')[0].reset();
+                    } else {
+                        $('#contactForm').append(
+                            '<p class="text-danger pt-1">There was an issue with your submission.</p>'
+                        );
+                    }
+                } catch (error) {
+                    console.error('Error submitting form:', error);
+                    $('#contactForm').append(
+                        '<p class="text-danger pt-1">An error occurred. Please try again later.</p>'
+                    );
                 }
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                $('#contactForm').append('<p class="text-danger pt-1">An error occurred. Please try again later.</p>');
-            }
+            });
         });
-    });
-</script>
+    </script>
 @endsection
