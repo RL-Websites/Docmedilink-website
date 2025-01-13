@@ -358,7 +358,7 @@
                                         <span
                                             class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
-                                    <input class="input__box" id="contact_phone" type="text" maxlength="12" />
+                                    <input class="input__box" id="contact_phone" type="text" maxlength="16" />
                                 </div>
                             </div>
 
@@ -435,6 +435,11 @@
             $('#contact_phone').on('input', function() {
                 this.value = this.value.replace(/[^0-9]/g, '');
             });
+            $('#contact_phone').on('input', function() {
+                var formattedPhone = formatPhone($(this).val());
+                $(this).val(formattedPhone);
+            });
+
             $('#clinicForm').on('submit', function(e) {
                 e.preventDefault();
 

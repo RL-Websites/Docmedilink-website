@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="{{ URL::asset('assets') }}/img/favicon.png" type="image/x-icon" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!--====||  All CSS Integration Start ||====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -177,11 +178,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="{{ URL::asset('assets') }}/js/jquery-3.6.4.min.js"></script>
     <script src="{{ URL::asset('assets') }}/js/main.js"></script>
-    <!-- Toastr CSS (in the <head> section) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
 
-    <!-- Toastr JS (at the bottom of the <body> section) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        function formatPhone(phone) {
+            phone = phone.replace(/\D/g, '');
+            if (phone.length <= 3) {
+                return phone.replace(/(\d{3})(\d{0,})/, '($1) $2');
+            } else if (phone.length <= 6) {
+                return phone.replace(/(\d{3})(\d{3})(\d{0,})/, '($1) $2-$3');
+            } else {
+                return phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+            }
+        }
+    </script>
     @yield('scripts')
 </body>
+
 </html>
