@@ -615,7 +615,7 @@
                             <div class="md:flex block lg:gap-5 gap-3">
                                 <div class="input__item">
                                     <label class="input__label" for="first_name"> First Name <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span></label>
-                                    <input class="input__box" id="first_name" type="text" required />
+                                    <input class="input__box" id="first_name" type="text" />
                                 </div>
                                 <div class="input__item">
                                     <label class="input__label" for="last_name"> Last Name </label>
@@ -625,11 +625,11 @@
                             <div class="md:flex block lg:gap-5 gap-3">
                                 <div class="input__item">
                                     <label class="input__label" for="email">Email Address <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span></label>
-                                    <input class="input__box" id="email" type="email" required/>
+                                    <input class="input__box" id="email" type="text"/>
                                 </div>
                                 <div class="input__item">
                                     <label class="input__label" for="phone">Phone Number <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span></label>
-                                    <input class="input__box" id="phone" type="text" required />
+                                    <input class="input__box" id="phone" type="text"  maxlength="12" />
                                 </div>
                             </div>
 
@@ -683,16 +683,51 @@
 
 @section('scripts')
 <script>
-    $(document).ready(function() {
-        $('#contactForm').on('submit', async function(event) {
+    $(document).ready(function () {
+        $('#contactForm').on('submit', async function (event) {
             event.preventDefault();
 
+            // Remove previous error messages
+            $('.text-danger').remove();
+
+            // Get form values
+            const firstName = $('#first_name').val();
+            const email = $('#email').val();
+            const phone = $('#phone').val();
+
+            let isValid = true; // Flag to track validation status
+
+            // First Name Validation
+            const namePattern = /^[A-Za-z\s]+$/; // Allows alphabets and spaces
+            if (!firstName || !namePattern.test(firstName)) {
+                $('#first_name').after('<p class="text-danger pt-1">Please enter a valid first name (letters and spaces only).</p>');
+                isValid = false;
+            }
+
+            // Email Validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email pattern
+            if (!email || !emailPattern.test(email)) {
+                $('#email').after('<p class="text-danger pt-1">Please enter a valid email address.</p>');
+                isValid = false;
+            }
+
+            // Phone Validation
+            const phonePattern = /^\+?[0-9]{10,12}$/; // Allows 10-12 digits, optional "+" at the start
+            if (!phone || !phonePattern.test(phone)) {
+                $('#phone').after('<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits).</p>');
+                isValid = false;
+            }
+
+            // Stop form submission if any validation fails
+            if (!isValid) return;
+
+            // Collect other form data
             const formData = {
                 company_name: $('#company_name').val(),
-                first_name: $('#first_name').val(),
+                first_name: firstName,
                 last_name: $('#last_name').val(),
-                email: $('#email').val(),
-                phone: $('#phone').val(),
+                email: email,
+                phone: phone,
                 services: $('#services').val(),
                 about: $('#about').val(),
                 details: $('#details').val(),
@@ -727,16 +762,17 @@
 
                     $('.form-modal').removeClass('hidden');
 
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $('.form-modal').addClass('hidden');
                     }, 3000);
 
                     $('#contactForm')[0].reset();
                 } else {
-                    toastr.error('There was an issue with your submission.');
+                    $('#contactForm').append('<p class="text-danger pt-1">There was an issue with your submission.</p>');
                 }
             } catch (error) {
                 console.error('Error submitting form:', error);
+                $('#contactForm').append('<p class="text-danger pt-1">An error occurred. Please try again later.</p>');
             }
         });
     });
