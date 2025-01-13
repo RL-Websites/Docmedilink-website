@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	const $firstQuestion = $(".question-btn").first();
+	const firstTargetId = $firstQuestion.data("toggle");
+	const $firstTarget = $("#" + firstTargetId);
+
+	$firstTarget.slideDown();
+	$firstQuestion.find(".accordion__icon").addClass("rotate-180");
+
 	$(".question-btn").click(function () {
 		const targetId = $(this).data("toggle");
 		const $target = $("#" + targetId);
@@ -18,6 +25,7 @@ $(document).ready(function () {
 			$icon.removeClass("rotate-0").addClass("rotate-180");
 		}
 	});
+
 	// Accordion configuration done
 
 	const header = $("header");

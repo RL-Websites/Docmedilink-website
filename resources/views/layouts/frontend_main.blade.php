@@ -127,6 +127,7 @@
     </header>
     <!--====||  Header Section End ||====-->
     @yield('content')
+    <!--====||  footer Section Start ||====-->
     <footer class="footer">
         <div class="container mx-auto">
             <div class="footer__content grid md:grid-cols-3 grid-cols-1">
