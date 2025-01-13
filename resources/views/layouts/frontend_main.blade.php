@@ -228,10 +228,9 @@
                         $('.form-modal').removeClass('hidden');
 
                         setTimeout(function() {
-                            $('.form-modal').addClass('hidden'); // Hide the modal after 4 seconds
+                            $('.form-modal').addClass('hidden');
                         }, 3000);
 
-                        // Reset the form
                         $('#contactForm')[0].reset();
                     } else {
                         toastr.error('There was an issue with your submission.');
