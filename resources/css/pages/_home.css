@@ -25,6 +25,14 @@
 
 /*===| Who Serve CSS  End |===*/
 
+@media only screen and (max-width: 1240px) {
+	.hero {
+		&__content {
+			top: 100px;
+		}
+	}
+}
+
 @media only screen and (max-width: 992px) {
 	.hero {
 		@apply py-[50px];

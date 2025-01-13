@@ -182,7 +182,65 @@
     <!-- Toastr JS (at the bottom of the <body> section) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').on('submit', async function(event) {
+                event.preventDefault();
+
+                const formData = {
+                    company_name: $('#company_name').val(),
+                    first_name: $('#first_name').val(),
+                    last_name: $('#last_name').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                    services: $('#services').val(),
+                    about: $('#about').val(),
+                    details: $('#details').val(),
+                    submitButton: $('button[name="contact"]').val()
+                };
+
+                try {
+                    const response = await axios.post('{{ url('form-submissions') }}', formData, {
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    console.log('Response:', response);
+
+                    if (response.data.success) {
+                        $('body').append(`
+                            <div class="form-modal hidden lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
+                                <div class="form-modal--content">
+                                    <div class="success-animation">
+                                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-bold mt-5">Thank You</h3>
+                                    <p class="mt-2 text-lg">Thank you for submitting your information! We've emailed you the details, and our team will get in touch with you shortly.</p>
+                                </div>
+                            </div>
+                        `);
+
+                        $('.form-modal').removeClass('hidden');
+
+                        setTimeout(function() {
+                            $('.form-modal').addClass('hidden');
+                        }, 3000);
+
+                        $('#contactForm')[0].reset();
+                    } else {
+                        toastr.error('There was an issue with your submission.');
+                    }
+                } catch (error) {
+                    console.error('Error submitting form:', error);
+                }
+            });
+        });
+    </script>
     @yield('scripts')
 </body>
 </html>
