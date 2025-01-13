@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Formatter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#phone').on('input', function() {
+                var phone = $(this).val().replace(/\D/g, '');
+                if (phone.length <= 3) {
+                    phone = phone.replace(/(\d{3})(\d{0,})/, '($1) $2');
+                } else if (phone.length <= 6) {
+                    phone = phone.replace(/(\d{3})(\d{3})(\d{0,})/, '($1) $2-$3');
+                } else {
+                    phone = phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+                }
+                $(this).val(phone);
+            });
+        });
+    </script>
+</head>
+<body>
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" maxlength="13">
+</body>
+</html>

@@ -5,7 +5,6 @@
     <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
         <!--====|| Hero Section Start ||====-->
 
-
         @if ($page_name == 'frontend_home')
             @include('../frontend/inc/home_banner')
         @endif
@@ -134,11 +133,11 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-               ><img
-                class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                src="assets/img/lg-arrow-right.svg"
-                alt="Arrow"
-              /></a> -->
+                                       ><img
+                                        class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                                        src="assets/img/lg-arrow-right.svg"
+                                        alt="Arrow"
+                                      /></a> -->
                     <a href="who-we-serve.html" class="dml-btn dml-btn__outline" data-aos="zoom-in"
                         data-aos-duration="1000">Read More</a>
                 </div>
@@ -309,11 +308,11 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-                                ><img
-                                    class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                                    src="assets/img/lg-arrow-right.svg"
-                                    alt="Arrow"
-                            /></a> -->
+                                                        ><img
+                                                            class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                                                            src="assets/img/lg-arrow-right.svg"
+                                                            alt="Arrow"
+                                                    /></a> -->
                     <a href="{{ url('why-choose-docmedilink') }}" class="dml-btn dml-btn__outline" data-aos="zoom-in"
                         data-aos-duration="1500">Read More</a>
                 </div>
@@ -595,7 +594,8 @@
                                         Phone Number <span
                                             class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
-                                    <input class="input__box" id="phone" type="text" maxlength="12" />
+                                    <input class="input__box" id="phone" type="text" maxlength="16"
+                                        onchange="formatPhoneOnChange(this)" />
                                 </div>
                             </div>
                             <div class="input__item">
@@ -642,15 +642,17 @@
 @section('scripts')
     <script>
         $(document).ready(function() {
-            // Allow only numeric input for the phone field
             $('#phone').on('input', function() {
-                this.value = this.value.replace(/[^0-9]/g, ''); // Remove any non-numeric characters
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+            $('#phone').on('input', function() {
+                var formattedPhone = formatPhone($(this).val());
+                $(this).val(formattedPhone);
             });
 
             $('#contactForm').on('submit', async function(event) {
                 event.preventDefault();
 
-                // Disable the submit button to prevent repeated submissions
                 const $submitButton = $('button[name="contact"]');
                 $submitButton.prop('disabled', true).text('Submitting...');
 
@@ -761,11 +763,9 @@
                         '<p class="text-danger pt-1">An error occurred. Please try again later.</p>'
                     );
                 } finally {
-                    // Re-enable submit button after submission attempt (whether successful or not)
                     $submitButton.prop('disabled', false).text('Submit');
                 }
             });
         });
     </script>
 @endsection
-
