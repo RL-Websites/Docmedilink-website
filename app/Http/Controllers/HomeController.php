@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ClinicSubmission;
+use App\Mail\ClinicFormSubmitted;
 use App\Models\ContactSubmission;
 use App\Mail\ContactFormSubmitted;
 use Illuminate\Support\Facades\Mail;
@@ -60,6 +61,7 @@ class HomeController extends Controller
         $clinicSubmission = new ClinicSubmission();
         $clinicSubmission->fill($request->validated());
         $clinicSubmission->save();
+        Mail::to('docmedilink_web@yopmail.com')->send(new ClinicFormSubmitted($clinicSubmission));
         return response()->json(['success' => true, 'message' => 'Form submitted successfully']);
     }
 }

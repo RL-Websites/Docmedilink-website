@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Query</title>
+    <title>New Clinic Form Submission</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
         }
         h4 {
             text-align: center;
-            color: #333;
+            color: #4CAF50;
             font-size: 22px;
         }
         .content p {
@@ -30,7 +30,7 @@
             font-size: 16px;
         }
         .content strong {
-            color: #555;
+            color: #333;
         }
         .footer {
             text-align: center;
@@ -38,11 +38,14 @@
             color: #888;
             margin-top: 20px;
         }
+        .footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h4>Contact Query</h4>
+        <h4>New Clinic Form Submission</h4>
         <div class="content">
             <p><strong>First Name:</strong> {{ $first_name }}</p>
             <p><strong>Email:</strong> {{ $email }}</p>
