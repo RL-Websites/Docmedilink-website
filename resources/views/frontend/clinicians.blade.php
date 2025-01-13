@@ -1,79 +1,79 @@
 @extends('layouts/frontend_main')
 
 @section('styles')
-<style>
-    .success-animation {
-        margin: 0px auto;
-    }
+    <style>
+        .success-animation {
+            margin: 0px auto;
+        }
 
-    .checkmark {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        display: block;
-        stroke-width: 2;
-        stroke: #4bb71b;
-        stroke-miterlimit: 10;
-        box-shadow: inset 0px 0px 0px #4bb71b;
-        animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-        position: relative;
-        top: 5px;
-        right: 5px;
-        margin: 0 auto;
-    }
-
-    .checkmark__circle {
-        stroke-dasharray: 166;
-        stroke-dashoffset: 166;
-        stroke-width: 4;
-        stroke-miterlimit: 10;
-        stroke: #4bb71b;
-        fill: #fff;
-        animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-    }
-
-    .checkmark__check {
-        transform-origin: 50% 50%;
-        stroke-dasharray: 48;
-        stroke-dashoffset: 48;
-        stroke-width: 3;
-        animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-    }
-
-    .form-modal {
-        z-index: 100;
-        background: rgba(255, 255, 255, 0.92);
-
-        &--content {
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 2;
+            stroke: #4bb71b;
+            stroke-miterlimit: 10;
+            box-shadow: inset 0px 0px 0px #4bb71b;
+            animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
             position: relative;
-            top: 25%;
-        }
-    }
-
-    @keyframes stroke {
-        100% {
-            stroke-dashoffset: 0;
-        }
-    }
-
-    @keyframes scale {
-
-        0%,
-        100% {
-            transform: none;
+            top: 5px;
+            right: 5px;
+            margin: 0 auto;
         }
 
-        50% {
-            transform: scale3d(1.1, 1.1, 1);
+        .checkmark__circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 4;
+            stroke-miterlimit: 10;
+            stroke: #4bb71b;
+            fill: #fff;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
         }
-    }
 
-    @keyframes fill {
-        100% {
-            box-shadow: inset 0px 0px 0px 30px #4bb71b;
+        .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            stroke-width: 3;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
         }
-    }
-</style>
+
+        .form-modal {
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.92);
+
+            &--content {
+                position: relative;
+                top: 25%;
+            }
+        }
+
+        @keyframes stroke {
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes scale {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            50% {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+
+        @keyframes fill {
+            100% {
+                box-shadow: inset 0px 0px 0px 30px #4bb71b;
+            }
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -337,25 +337,28 @@
                                 <div class="input__item">
                                     <label class="input__label" for="contact_name">
                                         Contact Name
-                                        <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
+                                        <span
+                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
-                                    <input class="input__box" id="contact_name" type="text"  />
+                                    <input class="input__box" id="contact_name" type="text" />
                                 </div>
                             </div>
                             <div class="md:flex lg:gap-5 gap-3">
                                 <div class="input__item">
                                     <label class="input__label" for="contact_email">
                                         Email Address
-                                        <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
+                                        <span
+                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
                                     <input class="input__box" id="contact_email" type="text" />
                                 </div>
                                 <div class="input__item">
                                     <label class="input__label" for="contact_phone">
                                         Phone Number
-                                        <span class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
+                                        <span
+                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
-                                    <input class="input__box" id="contact_phone" type="text" maxlength="12"  />
+                                    <input class="input__box" id="contact_phone" type="text" maxlength="12" />
                                 </div>
                             </div>
 
@@ -416,38 +419,30 @@
                             </div>
                         </form>
                     </div>
-                    {{-- <div class="form-modal lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
-                        <div class="form-modal--content">
-                            <div class="success-animation">
-                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold mt-5">Thank You</h3>
-                            <p class="mt-2 text-lg">Thank you for submitting your information! We've emailed you the details, and our team will get in touch with you shortly.</p>
-                        </div>
-                    </div> --}}
+
                 </div>
             </div>
 
         </section>
         <!--====|| Contact Section End ||====-->
     </main>
-
-
     <!--====||  Main Section End ||====-->
 @endsection
 
 @section('scripts')
     <script type="text/javascript">
         $(document).ready(function() {
-            console.log('working');
+            $('#contact_phone').on('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
             $('#clinicForm').on('submit', function(e) {
                 e.preventDefault();
 
                 // Remove previous error messages
                 $('.text-danger').remove();
+
+                var $submitButton = $('button[type="submit"]');
+                $submitButton.prop('disabled', true).text('Submitting...');
 
                 var contactName = $('#contact_name').val();
                 var contactEmail = $('#contact_email').val();
@@ -458,26 +453,35 @@
                 // Validate Contact Name (Only letters and spaces)
                 const namePattern = /^[A-Za-z\s]+$/;
                 if (!contactName || !namePattern.test(contactName)) {
-                    $('#contact_name').after('<p class="text-danger pt-1">Please enter a valid contact name (letters and spaces only).</p>');
+                    $('#contact_name').after(
+                        '<p class="text-danger pt-1">Please enter a valid contact name (letters and spaces only).</p>'
+                    );
                     isValid = false;
                 }
 
                 // Validate Contact Email (Simple email pattern)
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!contactEmail || !emailPattern.test(contactEmail)) {
-                    $('#contact_email').after('<p class="text-danger pt-1">Please enter a valid email address.</p>');
+                    $('#contact_email').after(
+                        '<p class="text-danger pt-1">Please enter a valid email address.</p>'
+                    );
                     isValid = false;
                 }
 
-                // Validate Contact Phone (10-12 digits, optional "+" at the start)
-                const phonePattern = /^\+?[0-9]{10,12}$/;
+                // Validate Contact Phone (10-12 digits, numbers only)
+                const phonePattern = /^[0-9]{10,12}$/;
                 if (!contactPhone || !phonePattern.test(contactPhone)) {
-                    $('#contact_phone').after('<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits, optional "+" at the start).</p>');
+                    $('#contact_phone').after(
+                        '<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits only).</p>'
+                    );
                     isValid = false;
                 }
 
                 // If validation fails, stop submission
-                if (!isValid) return;
+                if (!isValid) {
+                    $submitButton.prop('disabled', false).text('Submit');
+                    return;
+                }
 
                 var formData = {
                     clinic_name: $('#clinic_name').val(),
@@ -495,7 +499,6 @@
                 // Send the form data using Axios
                 axios.post("{{ url('clinicians-form-submissions') }}", formData)
                     .then(function(response) {
-                        // Ensure the modal is appended and displayed correctly
                         $('#contact').append(`
                             <div class="form-modal hidden lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
                                 <div class="form-modal--content">
@@ -511,25 +514,23 @@
                             </div>
                         `);
 
-                        // Remove the 'hidden' class to show the modal
                         $('.form-modal').removeClass('hidden').fadeIn();
 
-                        // Optionally, hide the modal after 4 seconds
                         setTimeout(function() {
                             $('.form-modal').fadeOut(function() {
-                                $(this).remove(); // Ensure it is completely removed after fading out
+                                $(this).remove();
                             });
                         }, 3000);
 
-                        // Reset the form after successful submission
                         $('#clinicForm')[0].reset();
                     })
                     .catch(function(error) {
-                        // Display error message using toastr
                         toastr.error('There was an error with your submission.');
+                    })
+                    .finally(function() {
+                        $submitButton.prop('disabled', false).text('Submit');
                     });
             });
         });
     </script>
 @endsection
-

@@ -639,7 +639,6 @@
 
     <!--====||  Footer Section Start ||====-->
 @endsection
-
 @section('scripts')
     <script>
         $(document).ready(function() {
@@ -650,6 +649,10 @@
 
             $('#contactForm').on('submit', async function(event) {
                 event.preventDefault();
+
+                // Disable the submit button to prevent repeated submissions
+                const $submitButton = $('button[name="contact"]');
+                $submitButton.prop('disabled', true).text('Submitting...');
 
                 // Remove previous error messages
                 $('.text-danger').remove();
@@ -687,7 +690,11 @@
                     isValid = false;
                 }
 
-                if (!isValid) return;
+                if (!isValid) {
+                    // Re-enable submit button in case of validation failure
+                    $submitButton.prop('disabled', false).text('Submit');
+                    return;
+                }
 
                 // Collect other form data
                 const formData = {
@@ -714,19 +721,19 @@
 
                     if (response.data.success) {
                         $('#contactForm').append(`
-                        <div class="form-modal lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
-                            <div class="form-modal--content">
-                                <div class="success-animation">
-                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                                    </svg>
+                            <div class="form-modal lg:p-20 md:p-10 p-5 md:mt-0 mt-5 flex flex-col items-center text-center h-full absolute top-0 right-0 bottom-0 left-0">
+                                <div class="form-modal--content">
+                                    <div class="success-animation">
+                                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-bold mt-5">Thank You</h3>
+                                    <p class="mt-2 text-lg">Thank you for submitting your information! We've emailed you the details, and our team will get in touch with you shortly.</p>
                                 </div>
-                                <h3 class="font-bold mt-5">Thank You</h3>
-                                <p class="mt-2 text-lg">Thank you for submitting your information! We've emailed you the details, and our team will get in touch with you shortly.</p>
                             </div>
-                        </div>
-                    `);
+                        `);
 
                         // Add modal logic
                         setTimeout(function() {
@@ -743,7 +750,6 @@
                             console.error('Form element not found for resetting.');
                         }
 
-                        $('#contactForm')[0].reset();
                     } else {
                         $('#contactForm').append(
                             '<p class="text-danger pt-1">There was an issue with your submission.</p>'
@@ -754,8 +760,12 @@
                     $('#contactForm').append(
                         '<p class="text-danger pt-1">An error occurred. Please try again later.</p>'
                     );
+                } finally {
+                    // Re-enable submit button after submission attempt (whether successful or not)
+                    $submitButton.prop('disabled', false).text('Submit');
                 }
             });
         });
     </script>
 @endsection
+
