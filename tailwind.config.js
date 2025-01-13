@@ -1,20 +1,15 @@
-import forms from "@tailwindcss/forms";
-import defaultTheme from "tailwindcss/defaultTheme";
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
     content: [
-        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
-        "./storage/framework/views/*.php",
-        "./resources/views/**/*.blade.php",
+        "./*.html",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.vue",
+        "./resources/**/*.js",
+        "./resources/**/*.css",
+        "./assets/**/*.js",
     ],
-
     theme: {
         extend: {
-            fontFamily: {
-                sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
-                sans2: ["Figtree", ...defaultTheme.fontFamily.sans],
-            },
             colors: {
                 primary: {
                     DEFAULT: "var(--primary)",
@@ -25,6 +20,8 @@ export default {
                 green: "var(--green)",
                 yellow: "var(--yellow)",
                 cyan: "var(--cyan)",
+                danger: "var(--danger)",
+                success: "var(--success)",
                 "grey-1": "var(--grey1)",
                 "grey-2": "var(--grey2)",
                 "aqua-1": "var(--aqua-1)",
@@ -38,10 +35,9 @@ export default {
         },
         container: {
             screens: {
-                "2xl": "1240px",
+                lg: "1240px",
             },
         },
     },
-
-    plugins: [forms],
+    plugins: [],
 };
