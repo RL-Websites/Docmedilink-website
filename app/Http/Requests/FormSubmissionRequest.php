@@ -23,7 +23,7 @@ class FormSubmissionRequest extends FormRequest
             'company_name' => 'required|string',
             'first_name' => 'required|string',
             'last_name' => 'nullable|string',
-            'email' => 'nullable|email|unique:contact_submissions,email',
+            'email' => 'nullable|email',
             'phone' => 'required|string',
             'services' => 'required|in:Telehealth Platform,Physician Services,Pharmacy Services,Partnership Opportunities',
             'about' => 'required|in:Customer,Provider,Partner',
