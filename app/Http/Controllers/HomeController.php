@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ReplyMail;
 use App\Models\ClinicSubmission;
 use App\Mail\ClinicFormSubmitted;
 use App\Models\ContactSubmission;
@@ -47,21 +48,36 @@ class HomeController extends Controller
 
     public function contactFormSubmit(FormSubmissionRequest $request)
     {
-        $formType = 'contact';
-        $formSubmission = new ContactSubmission();
-        $formSubmission->fill($request->validated());
-        $formSubmission->save();
-        Mail::to('docmedilink_web@yopmail.com')->send(new ContactFormSubmitted($formSubmission));
-
-        return response()->json(['success' => true, "message" => 'Form submitted successfully']);
+        return $this->handleFormSubmission(
+            $request->validated(),
+            ContactSubmission::class,
+            'docmedilink_web@yopmail.com',
+            'email',
+            ContactFormSubmitted::class
+        );
     }
 
     public function cliniciansFormSubmit(ClinicSubmissionRequest $request)
     {
-        $clinicSubmission = new ClinicSubmission();
-        $clinicSubmission->fill($request->validated());
-        $clinicSubmission->save();
-        Mail::to('docmedilink_web@yopmail.com')->send(new ClinicFormSubmitted($clinicSubmission));
+        return $this->handleFormSubmission(
+            $request->validated(),
+            ClinicSubmission::class,
+            'docmedilink_web@yopmail.com',
+            'contact_email',
+            ClinicFormSubmitted::class
+        );
+    }
+
+    private function handleFormSubmission(array $validatedData, string $submissionClass, string $adminEmail, string $userEmailField, string $mailClass)
+    {
+        $submission = new $submissionClass();
+        $submission->fill($validatedData);
+        $submission->save();
+
+        // Send emails
+        Mail::to($adminEmail)->send(new $mailClass($submission));
+        Mail::to($validatedData[$userEmailField])->send(new ReplyMail($submission));
+
         return response()->json(['success' => true, 'message' => 'Form submitted successfully']);
     }
 }
