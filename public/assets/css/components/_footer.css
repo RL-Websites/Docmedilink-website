@@ -1,12 +1,12 @@
 .footer {
-	@apply border-t border-blue-light-1 relative overflow-hidden py-[50px];
-	background: url("{{ asset('assets/img/footer.png') }}");
+    background: url("../../../assets/img/footer.png");
 	background-size: contain;
 	background-position: center center;
+	@apply border-t border-blue-light-1 relative overflow-hidden py-[50px];
 	background-repeat: no-repeat;
 
 	&__content {
-		@apply px-5 relative z-10 left-1/2 translate-x-[-50%] max-w-[1240px] w-full;
+		@apply px-5 relative z-10   left-1/2 translate-x-[-50%] max-w-[1240px]  w-full;
 	}
 	&__menus {
 		.active {
@@ -23,3 +23,4 @@
 		}
 	}
 }
+

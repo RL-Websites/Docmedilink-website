@@ -127,49 +127,23 @@
     </header>
     <!--====||  Header Section End ||====-->
     @yield('content')
-   <!--====||  Footer Section Start ||====-->
-		<footer class="footer">
-			<div class="container mx-auto">
-				<div class="footer__content grid md:grid-cols-3 grid-cols-1">
-					<div class="col-span-1 md:text-start text-center">
-						<img
-							class="md:mx-[unset] mx-auto"
-							src="assets/img/logo.svg"
-							alt="DML Logo"
-							data-aos="fade-up"
-							data-aos-duration="500"
-						/>
-						<p
-							class="lg:text-xl md:text-lg text-base lg:mt-5 mt-2"
-							data-aos="fade-up"
-							data-aos-duration="700"
-							>&copy; 2025 Docmedilink. Inc.</p
-						>
-						<div
-							class="flex items-center md:justify-start justify-center lg:gap-10 gap-5 lg:mt-16 mt-7"
-							data-aos="fade-up"
-							data-aos-duration="700"
-						>
-							<img
-								class="w-[100px]"
-								src="assets/img/hippa .svg"
-								alt="Hippa Logo"
-							/>
-							<img
-								class="w-[100px]"
-								src="assets/img/surescripts.svg"
-								alt="Surescript Logo"
-							/>
-						</div>
-					</div>
-					<div
-						class="col-span-2 grid md:grid-cols-3 md:text-start text-center md:mt-0 mt-8"
-					>
-						<div>
-							<h4 class="font-bold" data-aos="fade-up" data-aos-duration="500"
-								>Quick Links</h4
-							>
-							<ul class="footer__menus flex flex-col md:gap-7 gap-4 mt-5 aos-init" data-aos="fade-left"
+    <!--====||  footer Section Start ||====-->
+    <footer class="footer">
+        <div class="container mx-auto">
+            <div class="footer__content grid md:grid-cols-3 grid-cols-1">
+                <div class="col-span-1 md:text-start text-center aos-init" data-aos="fade-right"
+                    data-aos-duration="500">
+                    <img class="md:mx-[unset] mx-auto" src="assets/img/logo.svg" alt="DML Logo">
+                    <p class="lg:text-xl md:text-lg text-base lg:mt-5 mt-2">© 2025 Docmedilink. Inc.</p>
+                    <div class="flex items-center md:justify-start justify-center lg:gap-10 gap-5 lg:mt-16 mt-7">
+                        <img class="w-[100px]" src="assets/img/hippa .svg" alt="Hippa Logo">
+                        <img class="w-[100px]" src="assets/img/surescripts.svg" alt="Surescript Logo">
+                    </div>
+                </div>
+                <div class="col-span-2 grid md:grid-cols-3 md:text-start text-center md:mt-0 mt-8">
+                    <div data-aos="fade-left" data-aos-duration="500" class="aos-init">
+                        <h4 class="font-bold aos-init" data-aos="fade-left" data-aos-duration="700">Quick Links</h4>
+                        <ul class="footer__menus flex flex-col md:gap-7 gap-4 mt-5 aos-init" data-aos="fade-left"
                             data-aos-duration="900">
                             <li><a class="active" href="/">Home</a></li>
                             <li><a href="{{ url('our-services') }}">Services</a></li>
@@ -177,42 +151,26 @@
                             <li><a href="/#about-us">About us</a></li>
                             <li><a href="/#contact-us">Contact us</a></li>
                         </ul>
-						</div>
-						<div class="md:mt-0 mt-12">
-							<h4 class="font-bold" data-aos="fade-up" data-aos-duration="500"
-								>Social Links</h4
-							>
-							<ul
-								class="flex flex-col lg:gap-7 gap-4 mt-5"
-								data-aos="fade-up"
-								data-aos-duration="700"
-							>
-								<li><a href="">Linkedin</a></li>
-								<li><a href="#">Facebook</a></li>
-							</ul>
-						</div>
-						<div class="md:mt-0 mt-12">
-							<h4 class="font-bold" data-aos="fade-up" data-aos-duration="500"
-								>Contacts</h4
-							>
-							<ul
-								class="flex flex-col md:gap-7 gap-4 mt-5"
-								data-aos="fade-up"
-								data-aos-duration="700"
-							>
-								<li
-									><a href="mailto:info@docmedilink.com"
-										>info@docmedilink.com</a
-									></li
-								>
-								<li><a href="tel:(972) 740-4622">(972) 740-4622</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!--====||  footer Section End ||====-->
+                    </div>
+                    <div class="md:mt-0 mt-12 aos-init" data-aos="fade-left" data-aos-duration="500">
+                        <h4 class="font-bold aos-init" data-aos="fade-left" data-aos-duration="700">Social Links</h4>
+                        <ul class="flex flex-col lg:gap-7 gap-4 mt-5 aos-init" data-aos="fade-left"
+                            data-aos-duration="900">
+                            <li><a href="">Linkedin</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="md:mt-0 mt-12 aos-init" data-aos="fade-left" data-aos-duration="500">
+                        <h4 class="font-bold">Contacts</h4>
+                        <ul class="flex flex-col md:gap-7 gap-4 mt-5">
+                            <li><a href="mailto:info@docmedilink.com">info@docmedilink.com</a></li>
+                            <li><a href="tel:(972) 740-4622">(972) 740-4622</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!--====||  footer Section End ||====-->
 
     <!-- jQuery Script -->
