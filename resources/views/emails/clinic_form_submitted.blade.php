@@ -11,10 +11,14 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             max-width: 600px;
-            margin: 20px auto;
+            width: 100%;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
@@ -45,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-        <h4>New Clinic Form Submission</h4>
+        <h3>New Clinic Form Submission</h3>
         <div class="content">
             <p><strong>First Name:</strong> {{ $first_name }}</p>
             <p><strong>Email:</strong> {{ $email }}</p>
@@ -54,7 +58,7 @@
         </div>
         <div class="footer">
             <p>Thank you for your submission. We will get back to you soon.</p>
-            <p>Regards, <br> DocMedLink</p>
+            <p style="font-weight: bold;">Regards, <br> DocMedLink</p>
         </div>
     </div>
 </body>
