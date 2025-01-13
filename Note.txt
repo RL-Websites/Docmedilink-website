@@ -10,10 +10,7 @@ sudo /opt/lampp/xampp start
 
 Date: January 09, 2025
 
-Added seo handing table and seeder for Docmedlink.com website
-generate sitemap.xml
-Add robots.txt for google indexing
-Update favicon
+
 
 git checkout dev
 git pull origin dev
@@ -22,4 +19,3 @@ git status
 git reset HEAD .env
 git checkout -- .
 git push origin dev
-
