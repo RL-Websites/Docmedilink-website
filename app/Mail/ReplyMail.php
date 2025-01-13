@@ -19,7 +19,7 @@ class ReplyMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Reply to '.$this->formSubmission->first_name.' '.$this->formSubmission->last_name)
+        return $this->subject('No reply')
             ->view('emails.reply_email')
             ->with([
                 'first_name' => $this->formSubmission->first_name
