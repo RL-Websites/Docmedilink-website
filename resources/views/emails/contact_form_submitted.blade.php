@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,14 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             max-width: 600px;
-            margin: 20px auto;
+            width: 100%;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
@@ -22,7 +27,7 @@
         }
         h4 {
             text-align: center;
-            color: #333;
+            color: #4CAF50;
             font-size: 22px;
         }
         .content p {
@@ -30,7 +35,7 @@
             font-size: 16px;
         }
         .content strong {
-            color: #555;
+            color: #333;
         }
         .footer {
             text-align: center;
@@ -38,11 +43,15 @@
             color: #888;
             margin-top: 20px;
         }
+        .footer p {
+            margin: 0;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h4>Contact Query</h4>
+        <h3>Contact Query</h3>
         <div class="content">
             <p><strong>First Name:</strong> {{ $first_name }}</p>
             <p><strong>Email:</strong> {{ $email }}</p>
@@ -51,8 +60,9 @@
         </div>
         <div class="footer">
             <p>Thank you for your submission. We will get back to you soon.</p>
-            <p>Regards, <br> DocMedLink</p>
+            <p style="font-weight: bold;">Regards, <br> DocMedLink</p>
         </div>
     </div>
 </body>
+
 </html>
