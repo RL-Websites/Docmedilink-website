@@ -109,7 +109,7 @@
                     <li><a href="{{ url('/') }}#about-us" class="menu-link">About us</a></li>
                     <li><a href="{{ url('/') }}#contact-us" class="menu-link active">Contact us</a></li>
                     <li class="sm-block w-[100px]">
-                        <a target="_blank" href="https://app.docmedilink.com/login"
+                        <a target="_blank" href="{{ url('login') }}"
                             class="dml-btn dml-btn__primary">Login</a>
                     </li>
                 </ul>
