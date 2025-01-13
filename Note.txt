@@ -15,7 +15,6 @@ generate sitemap.xml
 Add robots.txt for google indexing
 Update favicon
 
--
 git checkout dev
 git pull origin dev
 git merge mhannan --no-ff --no-commit
