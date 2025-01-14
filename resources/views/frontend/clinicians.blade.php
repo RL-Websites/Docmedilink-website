@@ -376,7 +376,8 @@
                                         <span
                                             class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
-                                    <input class="input__box" id="contact_phone" type="text" maxlength="16" onchange="formatPhoneOnChange(this)" />
+                                    <input class="input__box" id="contact_phone" type="text" maxlength="16"
+                                        onchange="formatPhoneOnChange(this)" />
                                 </div>
                             </div>
 
@@ -449,9 +450,26 @@
 
 @section('scripts')
     <script type="text/javascript">
+        $(document).ready(function() {
+            var now = new Date();
+
+            var year = now.getFullYear();
+            var month = String(now.getMonth() + 1).padStart(2, '0'); // Month is zero-indexed
+            var day = String(now.getDate()).padStart(2, '0');
+            var hours = String(now.getHours()).padStart(2, '0');
+            var minutes = String(now.getMinutes()).padStart(2, '0');
+
+            // Combine to get the minimum date and time
+            var minDateTime = year + '-' + month + '-' + day + 'T' + hours + ':' + minutes;
+
+            // Set the min attribute for the datetime-local input field
+            $('#time').attr('min', minDateTime);
+        });
+    </script>
+    <script type="text/javascript">
         function formatPhoneOnChange(input) {
             // Access the input value
-            let value = input.value.replace(/[^0-9]/g, '');  // Remove non-numeric characters
+            let value = input.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
 
             // Limit to 12 digits
             if (value.length > 12) {
@@ -472,7 +490,7 @@
         $(document).ready(function() {
             // When the input value changes, format it
             $('#contact_phone').on('input', function() {
-                formatPhoneOnChange(this);  // Pass the DOM element to the formatPhoneOnChange function
+                formatPhoneOnChange(this); // Pass the DOM element to the formatPhoneOnChange function
             });
 
             // Form submission handler
@@ -510,12 +528,13 @@
                 }
 
                 // Validate Contact Phone (Phone format (XXX) XXX-XXXX, up to 12 digits)
-                const phonePattern = /^\(\d{3}\) \d{3}-\d{4,6}$/;  // Allowing up to 12 digits
+                const phonePattern = /^\(\d{3}\) \d{3}-\d{4,6}$/; // Allowing up to 12 digits
                 if (!contactPhone) {
                     $('#contact_phone').after('<p class="text-danger pt-1">Phone is required.</p>');
                     isValid = false;
                 } else if (!phonePattern.test(contactPhone)) {
-                    $('#contact_phone').after('<p class="text-danger pt-1">Valid phone number is required.</p>');
+                    $('#contact_phone').after(
+                        '<p class="text-danger pt-1">Valid phone number is required.</p>');
                     isValid = false;
                 }
 
@@ -576,5 +595,3 @@
         });
     </script>
 @endsection
-
-
