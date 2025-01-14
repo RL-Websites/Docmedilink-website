@@ -39,35 +39,7 @@ $(document).ready(function () {
 	});
 	// Header Sticky added
 
-	var currentPath = window.location.pathname;
 
-	function updateActiveMenu() {
-		const $sections = $("section");
-		const $menuLinks = $(".menu-link");
-
-		let currentSection = "";
-
-		$sections.each(function () {
-			const $section = $(this);
-			const sectionTop = $section.offset().top;
-			const sectionHeight = $section.outerHeight();
-
-			if ($(window).scrollTop() >= sectionTop - sectionHeight / 3) {
-				currentSection = $section.attr("id");
-			}
-		});
-
-		$menuLinks.removeClass("active");
-		$menuLinks.each(function () {
-			const $link = $(this);
-			if ($link.attr("href") === `#${currentSection}`) {
-				$link.addClass("active");
-			}
-		});
-	}
-	// updateActiveMenu();
-
-	$(window).on("scroll", updateActiveMenu);
 
 	// Header Menu Active Class added
 
