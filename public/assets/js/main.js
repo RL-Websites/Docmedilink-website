@@ -65,7 +65,7 @@ $(document).ready(function () {
 			}
 		});
 	}
-	updateActiveMenu();
+	// updateActiveMenu();
 
 	$(window).on("scroll", updateActiveMenu);
 
