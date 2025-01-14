@@ -22,7 +22,7 @@ class ReplyMail extends Mailable
         return $this->subject('No reply')
             ->view('emails.reply_email')
             ->with([
-                'first_name' => $this->formSubmission->first_name
+                'first_name' => $this->formSubmission->first_name ?? $this->formSubmission->contact_name,
             ]);
     }
 }
