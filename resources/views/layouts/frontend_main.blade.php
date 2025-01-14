@@ -97,7 +97,7 @@
     <header class="header">
         <div class="container mx-auto flex justify-between items-center">
             <a href="{{ url('/') }}">
-                <img src="assets/img/logo.svg" alt="Docmedilink Logo" />
+                <img class="md:w-auto w-[170px]" src="assets/img/logo.svg" alt="Docmedilink Logo" />
             </a>
             <nav class="header__menus">
                 <ul class="flex gap-7">
@@ -170,10 +170,7 @@
                             </li>
                             <li><a href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                             <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
-                            <li class="sm-block w-[100px]">
-                                <a target="_blank" href="https://app.docmedilink.com/login"
-                                    class="dml-btn dml-btn__primary">Login</a>
-                            </li>
+
                         </ul>
 
 
@@ -185,9 +182,9 @@
                             <li><a href="#">Facebook</a></li>
                         </ul>
                     </div>
-                    <div class="md:mt-0 mt-12">
-                        <h4 class="font-bold" data-aos="fade-up" data-aos-duration="500">Contacts</h4>
-                        <ul class="flex flex-col md:gap-7 gap-4 mt-5" data-aos="fade-up" data-aos-duration="700">
+                    <div class="md:mt-0 mt-12" data-aos="fade-up" data-aos-duration="500">
+                        <h4 class="font-bold" >Contacts</h4>
+                        <ul class="flex flex-col md:gap-7 gap-4 mt-5" >
                             <li><a href="mailto:info@docmedilink.com">info@docmedilink.com</a></li>
                             <li><a href="tel:(972) 740-4622">(972) 740-4622</a></li>
                         </ul>
