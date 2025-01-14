@@ -468,22 +468,19 @@
     </script>
     <script type="text/javascript">
         function formatPhoneOnChange(input) {
-            // Access the input value
-            let value = input.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
-
+            let value = input.value.replace(/[^0-9]/g, '');
             // Limit to 12 digits
-            if (value.length > 12) {
-                value = value.slice(0, 12); // Cut off extra digits if more than 12
+            if (value.length > 10) {
+                value = value.slice(0, 10);
             }
 
             // Format the number as (XXX) XXX-XXXX
             if (value.length > 3 && value.length <= 6) {
                 value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
             } else if (value.length > 6) {
-                value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 12)}`;
+                value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
             }
 
-            // Set the formatted value back to the input field
             input.value = value;
         }
 
