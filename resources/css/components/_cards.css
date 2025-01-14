@@ -9,7 +9,8 @@
 
 .all-service {
 	&__card {
-		@apply flex  items-center  justify-between  rounded-t-none rounded-e-[10px] rounded-b-[10px] rounded-s-[80px] rounded-tl-none h-full;
+		@apply flex  items-center  justify-between   h-full;
+        border-radius: 0 10px 10px 80px;
 	}
 	&__left {
 		@apply py-12 ps-10 w-8/12;
