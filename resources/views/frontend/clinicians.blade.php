@@ -413,7 +413,7 @@
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="time">Preferred Demo Time</label>
-                                <input type="datetime-local" class="input__box" id="time" type="text" />
+                                <input type="datetime-local" class="input__box min-h-[36px]" id="time" type="text" />
                             </div>
 
                             <div class="input__item">
