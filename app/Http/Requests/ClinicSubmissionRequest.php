@@ -32,7 +32,7 @@ class ClinicSubmissionRequest extends FormRequest
             'practice_size' => 'nullable|string|max:255',
             'telehealth' => 'nullable|string',
             'preferred_demo_time' => 'nullable',
-            'about' => 'nullable|string|max:255',
+            'about_us' => 'nullable|string|max:255',
         ];
     }
 

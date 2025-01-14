@@ -642,8 +642,11 @@
 @section('scripts')
     <script>
         function formatPhoneOnChange(input) {
-            // Access the input value
             let value = input.value.replace(/[^0-9]/g, '');
+            // Limit to 12 digits
+            if (value.length > 10) {
+                value = value.slice(0, 10);
+            }
 
             // Format the number as (XXX) XXX-XXXX
             if (value.length > 3 && value.length <= 6) {
@@ -652,13 +655,13 @@
                 value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
             }
 
-            // Set the formatted value back to the input field
             input.value = value;
         }
-
         $(document).ready(function() {
+
+
             $('#phone').on('input', function() {
-                formatPhone(this);  // Pass the DOM element itself
+                formatPhoneOnChange(this);
             });
 
             $('#contactForm').on('submit', async function(event) {
