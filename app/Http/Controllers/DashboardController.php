@@ -10,13 +10,13 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $data['contactFormSubmissions'] = ContactSubmission::paginate(10);
+        $data['contactFormSubmissions'] = ContactSubmission::latest()->paginate(10);
         return view('dashboard', $data);
     }
 
     public function clinicians()
     {
-        $data['items'] = ClinicSubmission::paginate(10);
+        $data['items'] = ClinicSubmission::latest()->paginate(10);
         return view('clinicians', $data);
     }
 
