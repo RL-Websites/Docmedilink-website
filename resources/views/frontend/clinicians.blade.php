@@ -79,13 +79,18 @@
 @section('content')
     <!--====||  Main Section Start ||====-->
     <main class="lg:pt-[130px] pt-[50px] overflow-x-hidden">
+
+
         <!--====|| Hero Section Start ||====-->
         <section class="hero">
-            <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" />
+            <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" data-aos="fade-left"
+                data-aos-duration="800" />
             <div class="hero__content hero__content--alt">
-                <h1 class="font-medium"><span class="gradient-heading"> Clinicians</span>
+                <h1 class="font-medium" data-aos="fade-up" data-aos-duration="1000"><span class="gradient-heading">
+                        Clinicians</span>
                 </h1>
-                <h4 class="font-bold h4-alt">Empowering healthcare providers to <br />
+                <h4 class="font-bold h4-alt" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare providers to
+                    <br />
                     <span class="text-primary"> Expand Their Reach </span>
                 </h4>
             </div>
@@ -104,40 +109,40 @@
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center">
+                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">
                     <span class="text-primary">Key Features</span> for <br />
                     Clinicians
                 </h1>
                 <div class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10">
-                    <div class="services__card">
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
                         <h5 class="services__card__heading bg-green">Customizable Scheduling Tools</h5>
                         <p>Manage your availability with ease and ensure a seamless
                             booking experience for your patients.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div class="services__card">
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
                         <h5 class="services__card__heading bg-yellow">Seamless Experience</h5>
                         <p>Offer secure video consultations, messaging, and prescription
                             management, all within a HIPAA-compliant environment.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div class="services__card">
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
                         <h5 class="services__card__heading bg-cyan">Patient Management Dashboard</h5>
                         <p>Track patient records, medical history, and lab results—all in
                             one place.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div class="services__card">
+                    <div class="services__card"data-aos="zoom-in" data-aos-duration="900">
                         <h5 class="services__card__heading bg-light-purple">Prescription Fulfillment</h5>
                         <p>Simplify the e-prescription process and connect patients with
                             their preferred pharmacies.
                         </p>
                     </div>
                     <!-- Single Service Card End -->
-                    <div class="services__card">
+                    <div class="services__card" data-aos="zoom-in" data-aos-duration="900">
                         <h5 class="services__card__heading bg-aqua-1">Data-Driven Insights</h5>
                         <p>Gain actionable insights to optimize operations and enhance
                             patient outcomes.
@@ -158,7 +163,8 @@
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center">How it <span class="text-primary">Works</span>
+                <h1 class="font-bold md:text-start text-center md:mb-5 mb-0" data-aos="fade-up" data-aos-duration="500">How
+                    it <span class="text-primary">Works</span>
                 </h1>
             </div>
             <div class="work__cards">
@@ -174,7 +180,7 @@
                     </div>
                     <!--Frame Integration End-->
                     <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-[unset] gap-7  mt-20">
-                        <div class="work__card">
+                        <div class="work__card" data-aos="fade-up" data-aos-duration="500">
                             <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
                             <div class="work__content">
                                 <span class="work__number bg-light-purple">1</span>
@@ -185,7 +191,7 @@
                         </div>
                         <!--Work Card End-->
 
-                        <div class="work__card work__card--alt">
+                        <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1000">
                             <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
                             <div class="work__content">
                                 <span class="work__number work__number--alt bg-aqua-1 -bottom-2">2</span>
@@ -196,7 +202,7 @@
                         </div>
                         <!--Work Card End-->
 
-                        <div class="work__card">
+                        <div class="work__card" data-aos="fade-up" data-aos-duration="1300">
                             <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
                             <div class="work__content">
                                 <span class="work__number bg-yellow">3</span>
@@ -207,7 +213,7 @@
                         </div>
                         <!--Work Card End-->
 
-                        <div class="work__card work__card--alt">
+                        <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1600">
                             <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
                             <div class="work__content">
                                 <span class="work__number work__number--alt bg-green -bottom-6">4</span>
@@ -236,30 +242,39 @@
             </div>
             <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center">
+                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">
                     <span class="text-primary">Docmedilink</span> is Ideal For
                 </h1>
                 <div class="serve-cards grid md:grid-cols-3 md:text-start text-center lg:gap-20 md:gap-10 gap-5 mt-16">
                     <div class="serve-card">
-                        <i class="icon-graph text-[130px]"></i>
-                        <h4 class="font-bold mt-2 text-[30px]">Clinics Seeking Growth</h4>
-                        <p class="text-lg">Connect with more patients and expand your presence beyond
+                        <i class="icon-graph text-[130px] inline-block" data-aos="fade-up-right"
+                            data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up-right" data-aos-duration="900">Clinics
+                            Seeking Growth</h4>
+                        <p class="text-lg" data-aos="fade-up-right" data-aos-duration="1100">Connect with more patients
+                            and expand your presence beyond
                             physical boundaries.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card">
-                        <i class="icon-suitcase-2 text-[130px]"></i>
-                        <h4 class="font-bold mt-2 text-[30px]">Busy Healthcare Providers</h4>
-                        <p class="text-lg">Simplify your workflow with tools designed to save time and
+                        <i class="icon-suitcase-2 text-[130px] inline-block" data-aos="fade-up"
+                            data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up" data-aos-duration="900">Busy Healthcare
+                            Providers</h4>
+                        <p class="text-lg" data-aos="fade-up" data-aos-duration="1100">Simplify your workflow with tools
+                            designed to save time and
                             improve efficiency.
                         </p>
                     </div>
                     <!-- Serve Card End -->
                     <div class="serve-card">
-                        <i class="icon-user text-[130px]"></i>
-                        <h4 class="font-bold mt-2 text-[30px]">Practices Focused on Patient-Centric Care</h4>
-                        <p class="text-lg">Enhance patient satisfaction with modern, accessible, and
+                        <i class="icon-user text-[130px] inline-block" data-aos="fade-up-left"
+                            data-aos-duration="700"></i>
+                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up-left" data-aos-duration="900">Practices
+                            Focused on Patient-Centric Care</h4>
+                        <p class="text-lg" data-aos="fade-up-left" data-aos-duration="1100">Enhance patient satisfaction
+                            with modern, accessible, and
                             secure healthcare solutions.
                         </p>
                     </div>
@@ -279,11 +294,11 @@
                 <img class="absolute -z-10 -right-8 top-2/3" src="assets/img/frame/hash-1.svg" alt="Frame" />
             </div>
             <!--Frame Integration End-->
-            <div class="container mx-auto">
+            <div class="container mx-auto" data-aos="zoom-in" data-aos-duration="1000">
                 <div
                     class="bg-[#F7F4F4] lg:py-20 md:py-10 py-7  lg:px-16 md:px-8 px-5 text-center max-w-[930px] mx-auto rounded-[10px] relative -rotate-[5deg]">
-                    <img class="absolute top-[-40px] left-1/2 -translate-x-1/2" src="assets/img/pin.svg"
-                        alt="Pin" />
+                    <img class="absolute top-[-40px] left-1/2 -translate-x-1/2 inline-block" data-aos="zoom-out"
+                        data-aos-duration="1200" src="assets/img/pin.svg" alt="Pin" />
                     <h3 class="font-bold">Join the
                         <span class="text-primary">Docmedilink</span> Community
                     </h3>
@@ -310,13 +325,16 @@
                             alt="Frame" />
                     </div>
                     <!--Frame Integration End-->
-                    <h2 class="font-bold md:text-start text-center">Get Started <span class="text-primary block">Today
+                    <h2 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Get
+                        Started <span class="text-primary block">Today
                         </span></h2>
-                    <p class="text-lg mt-7 md:text-start text-center">Ready to transform your clinic’s operations and
+                    <p class="text-lg mt-7 md:text-start text-center" data-aos="fade-up" data-aos-duration="700">Ready to
+                        transform your clinic’s operations and
                         patient care?
                         Join the Docmedilink network and discover the difference our
                         platform can make. </p>
-                    <img class="w-2/3 relative -z-10 md:block hidden" src="assets/img/contact-2.png" alt="Contact" />
+                    <img class="w-2/3 relative -z-10 md:block hidden" src="assets/img/contact-2.png" alt="Contact"
+                        data-aos="fade-up" data-aos-duration="900" />
                 </div>
                 <div class="relative z-10" id="contact">
                     <!--Frame Integration Start-->
@@ -325,7 +343,7 @@
                             alt="Frame" />
                     </div>
                     <!--Frame Integration End-->
-                    <div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5">
+                    <div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5" data-aos="fade-left" data-aos-duration="800">
                         <form id="clinicForm">
                             <div class="md:flex lg:gap-5 gap-3">
                                 <div class="input__item">
@@ -358,7 +376,7 @@
                                         <span
                                             class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
                                     </label>
-                                    <input class="input__box" id="contact_phone" type="text" maxlength="16" />
+                                    <input class="input__box" id="contact_phone" type="text" maxlength="16" onchange="formatPhoneOnChange(this)" />
                                 </div>
                             </div>
 
@@ -431,15 +449,33 @@
 
 @section('scripts')
     <script type="text/javascript">
+        function formatPhoneOnChange(input) {
+            // Access the input value
+            let value = input.value.replace(/[^0-9]/g, '');  // Remove non-numeric characters
+
+            // Limit to 12 digits
+            if (value.length > 12) {
+                value = value.slice(0, 12); // Cut off extra digits if more than 12
+            }
+
+            // Format the number as (XXX) XXX-XXXX
+            if (value.length > 3 && value.length <= 6) {
+                value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+            } else if (value.length > 6) {
+                value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 12)}`;
+            }
+
+            // Set the formatted value back to the input field
+            input.value = value;
+        }
+
         $(document).ready(function() {
+            // When the input value changes, format it
             $('#contact_phone').on('input', function() {
-                this.value = this.value.replace(/[^0-9]/g, '');
-            });
-            $('#contact_phone').on('input', function() {
-                var formattedPhone = formatPhone($(this).val());
-                $(this).val(formattedPhone);
+                formatPhoneOnChange(this);  // Pass the DOM element to the formatPhoneOnChange function
             });
 
+            // Form submission handler
             $('#clinicForm').on('submit', function(e) {
                 e.preventDefault();
 
@@ -459,7 +495,7 @@
                 const namePattern = /^[A-Za-z\s]+$/;
                 if (!contactName || !namePattern.test(contactName)) {
                     $('#contact_name').after(
-                        '<p class="text-danger pt-1">Please enter a valid contact name (letters and spaces only).</p>'
+                        '<p class="text-danger pt-1">Name is required.</p>'
                     );
                     isValid = false;
                 }
@@ -468,17 +504,18 @@
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!contactEmail || !emailPattern.test(contactEmail)) {
                     $('#contact_email').after(
-                        '<p class="text-danger pt-1">Please enter a valid email address.</p>'
+                        '<p class="text-danger pt-1">Valid email is required.</p>'
                     );
                     isValid = false;
                 }
 
-                // Validate Contact Phone (10-12 digits, numbers only)
-                const phonePattern = /^[0-9]{10,12}$/;
-                if (!contactPhone || !phonePattern.test(contactPhone)) {
-                    $('#contact_phone').after(
-                        '<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits only).</p>'
-                    );
+                // Validate Contact Phone (Phone format (XXX) XXX-XXXX, up to 12 digits)
+                const phonePattern = /^\(\d{3}\) \d{3}-\d{4,6}$/;  // Allowing up to 12 digits
+                if (!contactPhone) {
+                    $('#contact_phone').after('<p class="text-danger pt-1">Phone is required.</p>');
+                    isValid = false;
+                } else if (!phonePattern.test(contactPhone)) {
+                    $('#contact_phone').after('<p class="text-danger pt-1">Valid phone number is required.</p>');
                     isValid = false;
                 }
 
@@ -539,3 +576,5 @@
         });
     </script>
 @endsection
+
+

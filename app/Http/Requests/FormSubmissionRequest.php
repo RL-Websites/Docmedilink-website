@@ -42,7 +42,7 @@ class FormSubmissionRequest extends FormRequest
             'company_name.required' => 'Company name is required.',
             'first_name.required' => 'First name is required.',
             'last_name.required' => 'Last name is required.',
-            'email.required' => 'Email is required.',
+            'email.required' => 'Valid email is required.',
             'email.email' => 'Please provide a valid email address.',
             'phone.required' => 'Phone number is required.',
             'services.required' => 'Please select a service.',

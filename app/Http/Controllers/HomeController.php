@@ -20,10 +20,10 @@ class HomeController extends Controller
         return view('frontend.index', $data);
     }
 
-    public function test()
+    public function whoWeServe()
     {
-        $data['page_name'] = 'test';
-        return view('frontend.test', $data);
+        $data['page_name'] = 'who_we_serve';
+        return view('frontend.whoWeServe', $data);
     }
 
     // Method to handle the services page route

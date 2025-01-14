@@ -133,12 +133,12 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-                                       ><img
-                                        class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                                        src="assets/img/lg-arrow-right.svg"
-                                        alt="Arrow"
-                                      /></a> -->
-                    <a href="who-we-serve.html" class="dml-btn dml-btn__outline" data-aos="zoom-in"
+                                           ><img
+                                            class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                                            src="assets/img/lg-arrow-right.svg"
+                                            alt="Arrow"
+                                          /></a> -->
+                    <a href="{{ url('who-we-serve') }}" class="dml-btn dml-btn__outline" data-aos="zoom-in"
                         data-aos-duration="1000">Read More</a>
                 </div>
             </div>
@@ -308,11 +308,11 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-                                                        ><img
-                                                            class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                                                            src="assets/img/lg-arrow-right.svg"
-                                                            alt="Arrow"
-                                                    /></a> -->
+                                                            ><img
+                                                                class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                                                                src="assets/img/lg-arrow-right.svg"
+                                                                alt="Arrow"
+                                                        /></a> -->
                     <a href="{{ url('why-choose-docmedilink') }}" class="dml-btn dml-btn__outline" data-aos="zoom-in"
                         data-aos-duration="1500">Read More</a>
                 </div>
@@ -360,8 +360,8 @@
             <!--Frame Integration End-->
 
             <div class="container mx-auto">
-                <h1 class="font-bold mb-7 md:text-start text-center aos-init" data-aos="fade-up-right"
-                    data-aos-duration="500">FAQ
+                <h1 class="font-bold mb-7 md:text-start text-center aos-init" data-aos="fade-up" data-aos-duration="500">
+                    FAQ
                 </h1>
                 <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="700">
                     <button class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
@@ -641,13 +641,24 @@
 @endsection
 @section('scripts')
     <script>
+        function formatPhoneOnChange(input) {
+            // Access the input value
+            let value = input.value.replace(/[^0-9]/g, '');
+
+            // Format the number as (XXX) XXX-XXXX
+            if (value.length > 3 && value.length <= 6) {
+                value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+            } else if (value.length > 6) {
+                value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
+            }
+
+            // Set the formatted value back to the input field
+            input.value = value;
+        }
+
         $(document).ready(function() {
             $('#phone').on('input', function() {
-                this.value = this.value.replace(/[^0-9]/g, '');
-            });
-            $('#phone').on('input', function() {
-                var formattedPhone = formatPhone($(this).val());
-                $(this).val(formattedPhone);
+                formatPhone(this);  // Pass the DOM element itself
             });
 
             $('#contactForm').on('submit', async function(event) {
@@ -670,7 +681,7 @@
                 const namePattern = /^[A-Za-z\s]+$/; // Allows alphabets and spaces
                 if (!firstName || !namePattern.test(firstName)) {
                     $('#first_name').after(
-                        '<p class="text-danger pt-1">Please enter a valid first name (letters and spaces only).</p>'
+                        '<p class="text-danger pt-1">First name is required.</p>'
                     );
                     isValid = false;
                 }
@@ -679,16 +690,18 @@
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email pattern
                 if (!email || !emailPattern.test(email)) {
                     $('#email').after(
-                        '<p class="text-danger pt-1">Please enter a valid email address.</p>');
+                        '<p class="text-danger pt-1">Valid email is required.</p>');
                     isValid = false;
                 }
 
+                const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/; // Updated phone pattern
                 // Phone Validation
-                const phonePattern = /^[0-9]{10,12}$/; // Allows only 10-12 digits
-                if (!phone || !phonePattern.test(phone)) {
+                if (!phone) {
+                    $('#phone').after('<p class="text-danger pt-1">Phone is required.</p>');
+                    isValid = false;
+                } else if (!phonePattern.test(phone)) {
                     $('#phone').after(
-                        '<p class="text-danger pt-1">Please enter a valid phone number (10 to 12 digits).</p>'
-                    );
+                        '<p class="text-danger pt-1">Valid phone format is required (e.g., (123) 456-7890).</p>');
                     isValid = false;
                 }
 
