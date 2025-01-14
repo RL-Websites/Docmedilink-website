@@ -48,10 +48,11 @@ class HomeController extends Controller
 
     public function contactFormSubmit(FormSubmissionRequest $request)
     {
+        $senderMail = env('SENDER_MAIL_ADDRESS') ?? 'docmedilink_web@yopmail.com';
         return $this->handleFormSubmission(
             $request->validated(),
             ContactSubmission::class,
-            'docmedilink_web@yopmail.com',
+            $senderMail,
             'email',
             ContactFormSubmitted::class
         );
@@ -59,10 +60,11 @@ class HomeController extends Controller
 
     public function cliniciansFormSubmit(ClinicSubmissionRequest $request)
     {
+        $senderMail = env('SENDER_MAIL_ADDRESS') ?? 'docmedilink_web@yopmail.com';
         return $this->handleFormSubmission(
             $request->validated(),
             ClinicSubmission::class,
-            'docmedilink_web@yopmail.com',
+            $senderMail,
             'contact_email',
             ClinicFormSubmitted::class
         );
