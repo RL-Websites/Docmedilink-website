@@ -36,6 +36,17 @@
         .content strong {
             color: #333;
         }
+        .header {
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+
+        .header a {
+            font-size: 1.4em;
+            color: #00466a;
+            text-decoration: none;
+            font-weight: 600;
+        }
         .footer {
             text-align: center;
             font-size: 12px;
@@ -49,6 +60,10 @@
 </head>
 <body>
     <div class="container">
+        <div class="header">
+            <a href="#"
+                style="font-size: 1.4em; color: ##175bcc; text-decoration: none; font-weight: 600;">Docmedilink</a>
+        </div>
         @yield('mail-body')
     </div>
 </body>
