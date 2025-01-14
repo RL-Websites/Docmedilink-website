@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	const $firstQuestion = $(".question-btn").first();
+	const firstTargetId = $firstQuestion.data("toggle");
+	const $firstTarget = $("#" + firstTargetId);
+
+	$firstTarget.slideDown();
+	$firstQuestion.find(".accordion__icon").addClass("rotate-180");
+
 	$(".question-btn").click(function () {
 		const targetId = $(this).data("toggle");
 		const $target = $("#" + targetId);
@@ -18,12 +25,13 @@ $(document).ready(function () {
 			$icon.removeClass("rotate-0").addClass("rotate-180");
 		}
 	});
+
 	// Accordion configuration done
 
 	const header = $("header");
 
 	$(window).on("scroll", function () {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 300) {
 			header.addClass("sticky");
 		} else {
 			header.removeClass("sticky");
@@ -31,35 +39,7 @@ $(document).ready(function () {
 	});
 	// Header Sticky added
 
-	var currentPath = window.location.pathname;
 
-	function updateActiveMenu() {
-		const $sections = $("section");
-		const $menuLinks = $(".menu-link");
-
-		let currentSection = "";
-
-		$sections.each(function () {
-			const $section = $(this);
-			const sectionTop = $section.offset().top;
-			const sectionHeight = $section.outerHeight();
-
-			if ($(window).scrollTop() >= sectionTop - sectionHeight / 3) {
-				currentSection = $section.attr("id");
-			}
-		});
-
-		$menuLinks.removeClass("active");
-		$menuLinks.each(function () {
-			const $link = $(this);
-			if ($link.attr("href") === `#${currentSection}`) {
-				$link.addClass("active");
-			}
-		});
-	}
-	updateActiveMenu();
-
-	$(window).on("scroll", updateActiveMenu);
 
 	// Header Menu Active Class added
 
@@ -93,4 +73,6 @@ $(document).ready(function () {
 			);
 		} // End if
 	});
+	// Smooth Scroll Animation
 });
+AOS.init();

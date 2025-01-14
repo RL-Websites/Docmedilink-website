@@ -5,3 +5,16 @@ git status
 git reset HEAD .env
 git checkout -- .
 git push origin dev
+
+sudo /opt/lampp/xampp start
+
+Date: January 09, 2025
+
+
+git checkout dev
+git pull origin dev
+git merge mhannan --no-ff --no-commit
+git status
+git reset HEAD .env
+git checkout -- .
+git push origin dev
