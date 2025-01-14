@@ -192,7 +192,7 @@
                             data-aos-duration="700">
                             <li><a class="active" href="/">Home</a></li>
                             <li><a href="{{ url('our-services') }}">Services</a></li>
-                            <li><a href="/clinicians">Clinicians</a></li>
+                            <li><a href="#clinicians">Clinicians</a></li>
                             <li><a href="/#about-us">About us</a></li>
                             <li><a href="/#contact-us">Contact us</a></li>
                         </ul>
