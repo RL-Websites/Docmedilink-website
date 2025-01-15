@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css"  />
 
-    @vite([ 'resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @yield('styles')
 
 </head>
