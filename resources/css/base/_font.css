@@ -3,9 +3,9 @@
 @font-face {
     font-family: "CabinetGrotesk";
     src: url("../fonts/CabinetGrotesk-Thin.otf") format("opentype"),
-        url("../fonts/CabinetGroteskThin.eot") format("embedded-opentype"),
-        url("../fonts/CabinetGroteskThin.ttf") format("truetype"),
-        url("../fonts/CabinetGroteskThin.woff") format("woff");
+        url("../fonts/CabinetGrotesk-Thin.eot") format("embedded-opentype"),
+        url("../fonts/CabinetGrotesk-Thin.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Thin.woff") format("woff");
     font-weight: 100;
     font-style: normal;
 }
@@ -40,7 +40,7 @@
 @font-face {
     font-family: "CabinetGrotesk";
     src: url("../fonts/CabinetGrotesk-Medium.eot") format("embedded-opentype"),
-        url("../fonts/CabinetGroteskMedium.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Medium.woff") format("woff"),
         url("../fonts/CabinetGrotesk-Medium.ttf") format("truetype"),
         url("../fonts/CabinetGrotesk-Medium.otf") format("opentype");
     font-weight: 500;
@@ -49,9 +49,9 @@
 @font-face {
     font-family: "CabinetGrotesk";
     src: url("../fonts/CabinetGrotesk-Bold.eot") format("embedded-opentype"),
-        url("../fonts/CabinetGroteskBold.woff") format("woff"),
-        url("../fonts/CabinetGroteskBold.ttf") format("truetype"),
-        url("../fonts/CabinetGrotesk-Black.otf") format("opentype");
+        url("../fonts/CabinetGrotesk-Bold.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Bold.ttf") format("truetype"),
+        url("../fonts/CabinetGrotesk-Bold.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
@@ -59,7 +59,7 @@
     font-family: "CabinetGrotesk";
     src: url("../fonts/CabinetGrotesk-Extrabold.eot")
             format("embedded-opentype"),
-        url("../fonts/CabinetGroteskExtrabold.woff") format("woff"),
+        url("../fonts/CabinetGrotesk-Extrabold.woff") format("woff"),
         url("../fonts/CabinetGrotesk-Extrabold.ttf") format("truetype"),
         url("../fonts/CabinetGrotesk-Extrabold.otf") format("opentype");
     font-weight: 800;
