@@ -36,8 +36,10 @@ class HomeController extends Controller
     public function clinicians()
     {
         $data['page_name'] = 'clinicians';
+        $data['dateTime'] = now()->format('Y-m-d\TH:i');
         return view('frontend.clinicians', $data);
     }
+
     public function whyChooseDocmedilink()
     {
         $data['page_name'] = 'whyChooseDocmedilink';
