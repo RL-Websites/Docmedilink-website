@@ -12,7 +12,7 @@
     <!--====||  All CSS Integration Start ||====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css"  />
-    <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/app.css"  />
+    {{-- <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/app.css"  /> --}}
 
 
     <!-- <style>
@@ -88,7 +88,7 @@
             }
         }
     </style> -->
-    @vite([ 'resources/js/app.js'])
+    @vite([ 'resources/js/app.js', "public/assets/css/app.css"])
     @yield('styles')
 
 </head>
