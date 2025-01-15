@@ -549,7 +549,7 @@
         <!--====|| Contact Section Start ||====-->
         <section class="contact lg:py-[150px] md:py-[80px] py-[50px]" id="contact-us">
             <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="xl:pe-24 lg:pe-10 pe-0">
+                <div class="xl:pe-24 lg:pe-10 md:pe-5 pe-0">
                     <h2 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Your
                         Health, <br />
                         Your Way <span class="text-primary block">Get in Touch </span></h2>
