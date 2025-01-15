@@ -12,8 +12,8 @@
     <!--====||  All CSS Integration Start ||====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css" />
-    <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/style.css" />
+    {{-- <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css" />
+    <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/style.css" /> --}}
     <style>
         .success-animation {
             margin: 0px auto;
@@ -87,14 +87,17 @@
             }
         }
     </style>
-    @yield('styles')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @yield('styles')
 
 </head>
 
 <body id="home">
+
+
+
     <!--====||  Header Section Start ||====-->
-    <header class="header">
+    <header class="header bg-black">
         <div class="container mx-auto flex justify-between items-center">
             <a href="{{ url('/') }}">
                 <img class="md:w-auto w-[170px]" src="assets/img/logo.svg" alt="Docmedilink Logo" />
@@ -116,17 +119,14 @@
                     <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
                     <li class="sm-block w-[100px]">
                         <a target="_blank" href="{{ url('login') }}"
-                            class="dml-btn dml-btn__primary">Login</a>
+                            class="dml-btn dml-btn__primary ">Login</a>
                     </li>
                 </ul>
             </nav>
 
-
             <div class="sm-hidden">
-                <a target="_blank" href="https://app.docmedilink.com/login" class="dml-btn dml-btn__primary">Login</a>
+                <a target="_blank" href="https://app.docmedilink.com/login" class="dml-btn dml-btn__primary ">Login</a>
             </div>
-
-
 
             <button class="toggle-menu">
                 <img class="hamburger-icon" src="assets/img/hamburger.svg" alt="Hamburger" />
@@ -221,12 +221,6 @@
                     $('.menu-link').removeClass('active');
                     $("." + plainText).addClass('active');
                 }
-                // console.log("hash,",hash);
-
-                // $('.menu-link').removeClass('active');
-                // if (hash) {
-                //     $(`a[href="${hash}"]`).addClass('active');
-                // }
             };
             setActiveClass();
             $(window).on('hashchange', setActiveClass);
