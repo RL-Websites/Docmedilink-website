@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css"  />
 
 
-    <style>
+    <!-- <style>
         .success-animation {
             margin: 0px auto;
         }
@@ -86,7 +86,7 @@
                 box-shadow: inset 0px 0px 0px 30px #4bb71b;
             }
         }
-    </style>
+    </style> -->
     @vite([ 'resources/js/app.js', 'public/assets/css/app.css'])
     @yield('styles')
 
