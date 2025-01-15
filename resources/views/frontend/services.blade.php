@@ -42,7 +42,7 @@
 					/>
 				</div>
 				<!--Frame Integration End-->
-            <img class="hero__img" src="{{ URL::asset('assets') }}/img/services.webp" alt="Hero Image" data-aos="fade-up"
+            <img class="hero__img" src="assets/img/services.png" alt="Hero Image" data-aos="fade-up"
             data-aos-duration="700">
             <div class="hero__content">
                 <h1

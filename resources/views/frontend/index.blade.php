@@ -159,7 +159,7 @@
                 </h1>
                 <div>
                     <div class="features__img mt-[100px] md:block hidden">
-                        <img class="w-full" src="assets/img/telehealth-features.svg" alt="Features" data-aos="zoom-in"
+                        <img class="w-full" src="assets/img/features.svg" alt="Features" data-aos="zoom-in"
                             data-aos-duration="1500" />
                     </div>
                 </div>

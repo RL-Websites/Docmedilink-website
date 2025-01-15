@@ -6,7 +6,7 @@
 			<section class="hero">
 				<img
 					class="hero__img"
-					src="{{ URL::asset('assets') }}/img/who-serve.webp"
+					src="assets/img/who-serve.png"
 					alt="Hero Image"
 					data-aos="fade-up"
 					data-aos-duration="500"
