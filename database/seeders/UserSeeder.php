@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'Admin',
-            'email' => 'docmedilink_web@yopmail.com',
+            'email' => 'info@docmedilink.com',
             'password' => bcrypt('Test@1234'),
         ]);
     }

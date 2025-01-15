@@ -10,7 +10,6 @@ sudo /opt/lampp/xampp start
 
 Date: January 09, 2025
 
-Update note
 
 git checkout dev
 git pull origin dev
@@ -21,7 +20,15 @@ git checkout -- .
 git push origin dev
 
 
+<<<<<<< HEAD
 -----------------
 npm run dev
 php artisan serve
 
+=======
+
+git checkout main
+git pull origin main
+git merge mhannan --no-ff --no-commit
+git status
+>>>>>>> 880ebad537862e18e7ab6fde6d084e2db2257b6f

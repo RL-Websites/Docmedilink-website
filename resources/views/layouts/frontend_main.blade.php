@@ -92,23 +92,28 @@
 
 </head>
 
-<body>
-    {{-- @dd(Route::currentRouteName()); --}}
+<body id="home">
     <!--====||  Header Section Start ||====-->
-		<header class="header" id="home">
-			<div class="container mx-auto flex justify-between items-center">
-				<a href="{{ url('/') }}">
-					<img src="assets/img/logo.svg" alt="Docmedilink Logo" />
-				</a>
-				<nav class="header__menus">
+    <header class="header">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="{{ url('/') }}">
+                <img class="md:w-auto w-[170px]" src="assets/img/logo.svg" alt="Docmedilink Logo" />
+            </a>
+            <nav class="header__menus">
                 <ul class="flex gap-7">
-                    <li><a href="#home" class="menu-link">Home</a></li>
-                    <li><a href="#our-services"
-                            class="menu-link {{ url()->current() === url('/our-services') ? 'active' : '' }}">Services</a>
+                    <li><a href="{{ request()->path() == '/' ? url('/#home') : '/' }}"
+                            class="menu-link home {{ url()->current() === url('/') ? 'active' : '' }}">Home</a>
                     </li>
-                    <li><a href="#clinicians" class="menu-link">Clinicians</a></li>
-                    <li><a href="{{ url('/') }}#about-us" class="menu-link">About us</a></li>
-                    <li><a href="{{ url('/') }}#contact-us" class="menu-link active">Contact us</a></li>
+
+                    <li><a href="{{ request()->path() == '/' ? '#our-services' : url('/#our-services') }}"
+                            class="menu-link our-services {{ request()->path() === 'our-services' ? 'active' : '' }}">Services</a>
+                    </li>
+
+                    <li><a href="{{ request()->path() == '/' ? '#clinicians' : url('/#clinicians') }}"
+                            class="menu-link clinicians {{ request()->path() === 'clinicians' ? 'active' : '' }}">Clinicians</a>
+                    </li>
+                    <li><a href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
+                    <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
                     <li class="sm-block w-[100px]">
                         <a target="_blank" href="{{ url('login') }}"
                             class="dml-btn dml-btn__primary">Login</a>
@@ -117,30 +122,16 @@
             </nav>
 
 
-				<div class="sm-hidden">
-					<a
-						target="_blank"
-						href="https://app.docmedilink.com/login"
-						class="dml-btn dml-btn__primary"
-						>Login</a
-					>
-				</div>
+            <div class="sm-hidden">
+                <a target="_blank" href="https://app.docmedilink.com/login" class="dml-btn dml-btn__primary">Login</a>
+            </div>
 
 
 
-				<button class="toggle-menu">
-					<img
-						class="hamburger-icon"
-						src="assets/img/hamburger.svg"
-						alt="Hamburger"
-					/>
-					<img
-						class="close-icon"
-						src="assets/img/close.svg"
-						alt="Close"
-						style="display: none"
-					/>
-				</button>
+            <button class="toggle-menu">
+                <img class="hamburger-icon" src="assets/img/hamburger.svg" alt="Hamburger" />
+                <img class="close-icon" src="assets/img/close.svg" alt="Close" style="display: none" />
+            </button>
         </div>
     </header>
     <!--====||  Header Section End ||====-->
@@ -227,6 +218,26 @@
                 return phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
             }
         }
+
+        $(document).ready(function() {
+            const setActiveClass = () => {
+                const hash = window.location.hash;
+
+                if (hash && hash !== undefined) {
+                    const plainText = hash.replace('#', '');
+                    $('.menu-link').removeClass('active');
+                    $("." + plainText).addClass('active');
+                }
+                // console.log("hash,",hash);
+
+                // $('.menu-link').removeClass('active');
+                // if (hash) {
+                //     $(`a[href="${hash}"]`).addClass('active');
+                // }
+            };
+            setActiveClass();
+            $(window).on('hashchange', setActiveClass);
+        });
     </script>
     @yield('scripts')
 </body>

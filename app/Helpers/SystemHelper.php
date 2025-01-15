@@ -9,6 +9,7 @@ class SystemHelper
 
     public static function formatDate($date)
     {
-        return $date ? Carbon::parse($date)->format('F j, Y') : '';
+        return $date ? Carbon::parse($date)->format('F j, Y h:i A') : '';
+
     }
 }

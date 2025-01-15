@@ -19,6 +19,7 @@ class DashboardController extends Controller
         $data['items'] = ClinicSubmission::latest()->paginate(10);
         return view('clinicians', $data);
     }
+    
 
     public function seo()
     {

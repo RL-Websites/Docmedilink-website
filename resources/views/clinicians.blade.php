@@ -15,6 +15,8 @@
                             <thead class="bg-gray-50 text-left">
                                 <tr>
                                     <th scope="col" class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">SL</th>
+                                    <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Requested On</th>
+
                                     <th scope="col" class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Clinic Name</th>
                                     <th scope="col" class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Name</th>
                                     <th scope="col" class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Email</th>
@@ -30,6 +32,9 @@
                                 @forelse ($items as $key => $item)
                                     <tr>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ $key + 1 }}</td>
+                                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                                            {{ \App\Helpers\SystemHelper::formatDate($item->created_at) ?? 'N/A' }}
+                                        </td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ $item->clinic_name ?? 'N/A' }}</td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ $item->contact_name ?? 'N/A' }}</td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ $item->contact_email ?? 'N/A' }}</td>
@@ -41,7 +46,7 @@
                                         </td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ $item->about_us ?? 'N/A' }}</td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">
-                                            {{ \Illuminate\Support\Str::words($item->telehealth, 10, '...') }}
+                                            {{ $item->telehealth ?? 'N/A' }}
                                         </td>
                                     </tr>
                                 @empty

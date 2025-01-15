@@ -15,19 +15,25 @@
                             <thead class="bg-gray-50 text-left">
                                 <tr>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">SL</th>
+                                    <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Requested On</th>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Company Name</th>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">First name</th>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Last name</th>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Email</th>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Phone</th>
+                                    <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Services</th>
+                                    <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Role</th>
                                     <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Details</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200">
                                 @forelse ($contactFormSubmissions as $key => $item)
                                     <tr>
-                                        <td>
+                                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
                                             {{ ++$key }}
+                                        </td >
+                                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                                            {{ \App\Helpers\SystemHelper::formatDate($item->created_at) ?? 'N/A' }}
                                         </td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">
                                             {{ $item->company_name }}
@@ -43,6 +49,14 @@
                                         </td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">
                                             {{ $item->phone }}
+                                        </td>
+
+                                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                                            {{ $item->services }}
+                                        </td>
+
+                                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                                            {{ $item->about }}
                                         </td>
                                         <td class="whitespace-nowrap px-4 py-2 text-gray-700">
                                             {{ $item->details }}
