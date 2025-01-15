@@ -100,7 +100,7 @@
     <header class="header bg-black">
         <div class="container mx-auto flex justify-between items-center">
             <a href="{{ url('/') }}">
-                <img class="md:w-auto w-[170px]" src="assets/img/logo.svg" alt="Docmedilink Logo" />
+                <img class="md:w-auto  max-w-[200px]" src="assets/img/logo.svg" alt="Docmedilink Logo" />
             </a>
             <nav class="header__menus">
                 <ul class="flex gap-7">
@@ -142,21 +142,19 @@
         <div class="container mx-auto">
             <div class="footer__content grid md:grid-cols-3 grid-cols-1">
                 <div class="col-span-1 md:text-start text-center">
-                    <img class="md:mx-[unset] mx-auto" src="assets/img/logo.svg" alt="DML Logo" data-aos="fade-up"
-                        data-aos-duration="500" />
-                    <p class="lg:text-xl md:text-lg text-base lg:mt-5 mt-2" data-aos="fade-up" data-aos-duration="700">
-                        &copy; 2025 Docmedilink. Inc.</p>
-                    <div class="flex items-center md:justify-start justify-center lg:gap-10 gap-5 lg:mt-16 mt-7"
-                        data-aos="fade-up" data-aos-duration="700">
+                    <img class="md:mx-[unset] mx-auto max-w-[200px]" src="assets/img/logo.svg" alt="DML Logo"  />
+                    <p class="lg:text-xl md:text-lg text-base lg:mt-5 mt-2" >
+                        &copy; 2025 Docmedilink. Inc.
+                    </p>
+                    <div class="flex items-center md:justify-start justify-center lg:gap-10 gap-5 lg:mt-16 mt-7">
                         <img class="w-[100px]" src="assets/img/hippa .svg" alt="Hippa Logo" />
                         <img class="w-[100px]" src="assets/img/surescripts.svg" alt="Surescript Logo" />
                     </div>
                 </div>
                 <div class="col-span-2 grid md:grid-cols-3 md:text-start text-center md:mt-0 mt-8">
                     <div>
-                        <h4 class="font-bold" data-aos="fade-up" data-aos-duration="500">Quick Links</h4>
-                        <ul class="footer__menus flex flex-col md:gap-7 gap-4 mt-5 aos-init"data-aos="fade-up"
-                            data-aos-duration="700">
+                        <h4 class="font-bold" >Quick Links</h4>
+                        <ul class="footer__menus flex flex-col md:gap-7 gap-4 mt-5 aos-init">
                             <li><a href="{{ request()->path() == '/' ? url('/#home') : '/' }}"
                                     class="menu-link home {{ url()->current() === url('/') ? 'active' : '' }}">Home</a>
                             </li>
@@ -176,13 +174,13 @@
 
                     </div>
                     <div class="md:mt-0 mt-12">
-                        <h4 class="font-bold" data-aos="fade-up" data-aos-duration="500">Social Links</h4>
-                        <ul class="flex flex-col lg:gap-7 gap-4 mt-5" data-aos="fade-up" data-aos-duration="700">
+                        <h4 class="font-bold" >Social Links</h4>
+                        <ul class="flex flex-col lg:gap-7 gap-4 mt-5" >
                             <li><a href="">Linkedin</a></li>
                             <li><a href="#">Facebook</a></li>
                         </ul>
                     </div>
-                    <div class="md:mt-0 mt-12" data-aos="fade-up" data-aos-duration="500">
+                    <div class="md:mt-0 mt-12" >
                         <h4 class="font-bold" >Contacts</h4>
                         <ul class="flex flex-col md:gap-7 gap-4 mt-5" >
                             <li><a href="mailto:info@docmedilink.com">info@docmedilink.com</a></li>

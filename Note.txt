@@ -21,8 +21,7 @@ git checkout -- .
 git push origin dev
 
 
+-----------------
+npm run dev
+php artisan serve
 
-git checkout main
-git pull origin main
-git merge mhannan --no-ff --no-commit
-git status

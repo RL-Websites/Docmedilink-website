@@ -139,7 +139,7 @@
                                             alt="Arrow"
                                           /></a> -->
                     <a href="{{ url('who-we-serve') }}" class="dml-btn dml-btn__outline" data-aos="zoom-in"
-                        data-aos-duration="1000">Read More</a>
+                        data-aos-duration="1000">Learn More</a>
                 </div>
             </div>
         </section>
@@ -314,7 +314,7 @@
                                                                 alt="Arrow"
                                                         /></a> -->
                     <a href="{{ url('why-choose-docmedilink') }}" class="dml-btn dml-btn__outline" data-aos="zoom-in"
-                        data-aos-duration="1500">Read More</a>
+                        data-aos-duration="1500">Learn More</a>
                 </div>
             </div>
         </section>
