@@ -20,6 +20,7 @@ git reset HEAD .env
 git checkout -- .
 git push origin dev
 
+git merge dev-obaed --no-ff --no-commit
 
 
 git checkout main
