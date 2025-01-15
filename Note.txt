@@ -19,3 +19,9 @@ git status
 git reset HEAD .env
 git checkout -- .
 git push origin dev
+
+
+-----------------
+npm run dev
+php artisan serve
+
