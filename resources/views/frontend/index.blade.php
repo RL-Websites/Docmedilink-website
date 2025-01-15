@@ -549,7 +549,7 @@
         <!--====|| Contact Section Start ||====-->
         <section class="contact lg:py-[150px] md:py-[80px] py-[50px]" id="contact-us">
             <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="xl:pe-24 lg:pe-10 pe-0">
+                <div class="xl:pe-24 lg:pe-10 md:pe-5 pe-0">
                     <h2 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Your
                         Health, <br />
                         Your Way <span class="text-primary block">Get in Touch </span></h2>
@@ -600,22 +600,30 @@
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="services">What services are you interested in?</label>
-                                <select class="input__box" id="services">
-                                    <option disabled selected>Select an option</option>
-                                    <option value="Telehealth Platform">Telehealth Platform</option>
-                                    <option value="Physician Services">Physician Services</option>
-                                    <option value="Pharmacy Services">Pharmacy Services</option>
-                                    <option value="Partnership Opportunities">Partnership Opportunities</option>
-                                </select>
+                                <div class="input__select">
+                                    <select class="input__box" id="services">
+                                        <option disabled selected>Select an option</option>
+                                        <option value="Telehealth Platform">Telehealth Platform</option>
+                                        <option value="Physician Services">Physician Services</option>
+                                        <option value="Pharmacy Services">Pharmacy Services</option>
+                                        <option value="Partnership Opportunities">Partnership Opportunities</option>
+                                    </select>
+                                    <i class="icon-arrow-down input__select-icon"></i>
+                                </div>
+                                
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="about">Please share a little about yourself</label>
-                                <select class="input__box" id="about">
-                                    <option disabled selected>Select an option</option>
-                                    <option value="Customer">Customer</option>
-                                    <option value="Provider">Provider</option>
-                                    <option value="Partner">Partner</option>
-                                </select>
+                                <div class="input__select">
+                                    <select class="input__box" id="about">
+                                        <option disabled selected>Select an option</option>
+                                        <option value="Customer">Customer</option>
+                                        <option value="Provider">Provider</option>
+                                        <option value="Partner">Partner</option>
+                                    </select>
+                                <i class="icon-arrow-down input__select-icon"></i>
+                                </div>
+                               
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="details">Do you want to share more details with

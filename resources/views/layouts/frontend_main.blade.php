@@ -12,8 +12,13 @@
     <!--====||  All CSS Integration Start ||====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css"  />
+    {{-- <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/app.css"  /> --}}
 
+<<<<<<< HEAD
+    @vite([ 'resources/js/app.js', 'public/assets/css/app.css'])
+=======
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+>>>>>>> mhannan
     @yield('styles')
 
 </head>
@@ -42,7 +47,7 @@
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
                     <li class="sm-block w-[100px]">
-                        <a onclick="closeNav()"  target="_blank" href="{{ url('login') }}"
+                        <a onclick="closeNav()"  target="_blank" href="https://app.docmedilink.com/login"
                             class="dml-btn dml-btn__primary ">Login</a>
                     </li>
                 </ul>
@@ -71,7 +76,7 @@
                         &copy; 2025 Docmedilink. Inc.
                     </p>
                     <div class="flex items-center md:justify-start justify-center lg:gap-10 gap-5 lg:mt-16 mt-7">
-                        <img class="w-[100px]" src="assets/img/hippa .svg" alt="Hippa Logo" />
+                        <img class="w-[100px]" src="assets/img/hippa.svg" alt="Hippa Logo" />
                         <img class="w-[100px]" src="assets/img/surescripts.svg" alt="Surescript Logo" />
                     </div>
                 </div>

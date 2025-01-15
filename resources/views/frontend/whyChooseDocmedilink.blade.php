@@ -158,7 +158,7 @@
 						<!-- Serve Card End -->
 						<div class="serve-card md:text-start text-center">
 							<i
-								class="icon-certification text-[130px] inline-block"
+								class="icon-handshake text-[130px] inline-block"
 								data-aos="fade-up-left"
 								data-aos-duration="700"
 							></i>
