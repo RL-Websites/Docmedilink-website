@@ -102,7 +102,7 @@
             <a href="{{ url('/') }}">
                 <img class="md:w-auto  max-w-[200px]" src="assets/img/logo.svg" alt="Docmedilink Logo" />
             </a>
-            <nav class="header__menus">
+            <nav class="header__menus" id="navbar">
                 <ul class="flex gap-7">
                     <li><a href="{{ request()->path() == '/' ? url('/#home') : '/' }}"
                             class="menu-link home {{ url()->current() === url('/') ? 'active' : '' }}">Home</a>
