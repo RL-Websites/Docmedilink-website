@@ -12,8 +12,7 @@
     <!--====||  All CSS Integration Start ||====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    {{-- <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css" />
-    <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/style.css" /> --}}
+
     <style>
         .success-animation {
             margin: 0px auto;
@@ -87,7 +86,7 @@
             }
         }
     </style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['public/assets/icons/style.css', 'resources/js/app.js', 'public/assets/css/app.css'])
     @yield('styles')
 
 </head>
@@ -122,6 +121,11 @@
                             class="dml-btn dml-btn__primary ">Login</a>
                     </li>
                 </ul>
+
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded test-button">
+                    Button
+                  </button>
+
             </nav>
 
             <div class="sm-hidden">
