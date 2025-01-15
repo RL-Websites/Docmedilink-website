@@ -14,11 +14,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css"  />
     {{-- <link rel="stylesheet" href="{{ URL::asset('assets') }}/css/app.css"  /> --}}
 
-<<<<<<< HEAD
-    @vite([ 'resources/js/app.js', 'public/assets/css/app.css'])
-=======
     @vite(['resources/css/app.css', 'resources/js/app.js'])
->>>>>>> mhannan
     @yield('styles')
 
 </head>
