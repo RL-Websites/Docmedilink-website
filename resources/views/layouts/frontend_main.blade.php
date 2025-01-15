@@ -8,93 +8,17 @@
     <title>Docmedilink | Exceptional Care, Anywhere.</title>
     <link rel="shortcut icon" href="{{ URL::asset('assets') }}/img/favicon.png" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
+
     <!--====||  All CSS Integration Start ||====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ URL::asset('assets') }}/icons/style.css"  />
 
-
-    <!-- <style>
-        .success-animation {
-            margin: 0px auto;
-        }
-
-        .checkmark {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: block;
-            stroke-width: 2;
-            stroke: #4bb71b;
-            stroke-miterlimit: 10;
-            box-shadow: inset 0px 0px 0px #4bb71b;
-            animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-            position: relative;
-            top: 5px;
-            right: 5px;
-            margin: 0 auto;
-        }
-
-        .checkmark__circle {
-            stroke-dasharray: 166;
-            stroke-dashoffset: 166;
-            stroke-width: 4;
-            stroke-miterlimit: 10;
-            stroke: #4bb71b;
-            fill: #fff;
-            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-        }
-
-        .checkmark__check {
-            transform-origin: 50% 50%;
-            stroke-dasharray: 48;
-            stroke-dashoffset: 48;
-            stroke-width: 3;
-            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-        }
-
-        .form-modal {
-            z-index: 100;
-            background: rgba(255, 255, 255, 0.92);
-
-            &--content {
-                position: relative;
-                top: 25%;
-            }
-        }
-
-        @keyframes stroke {
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        @keyframes scale {
-
-            0%,
-            100% {
-                transform: none;
-            }
-
-            50% {
-                transform: scale3d(1.1, 1.1, 1);
-            }
-        }
-
-        @keyframes fill {
-            100% {
-                box-shadow: inset 0px 0px 0px 30px #4bb71b;
-            }
-        }
-    </style> -->
     @vite([ 'resources/js/app.js', 'public/assets/css/app.css'])
     @yield('styles')
 
 </head>
 
 <body id="home">
-
-
 
     <!--====||  Header Section Start ||====-->
     <header class="header bg-black">
