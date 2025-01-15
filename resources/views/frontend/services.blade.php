@@ -236,7 +236,7 @@
                                 <span class="text-primary">Integration</span>
                             </h4>
                             <div
-                                class="all-service__card bg-aqua-2"
+                                class="all-service__card bg-light"
                                 data-aos="fade-up"
                                 data-aos-duration="1000"
                             >

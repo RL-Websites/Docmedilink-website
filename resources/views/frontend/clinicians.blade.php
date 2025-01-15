@@ -1,95 +1,21 @@
 @extends('layouts/frontend_main')
 
 @section('styles')
-    <style>
-        .success-animation {
-            margin: 0px auto;
-        }
-
-        .checkmark {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: block;
-            stroke-width: 2;
-            stroke: #4bb71b;
-            stroke-miterlimit: 10;
-            box-shadow: inset 0px 0px 0px #4bb71b;
-            animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-            position: relative;
-            top: 5px;
-            right: 5px;
-            margin: 0 auto;
-        }
-
-        .checkmark__circle {
-            stroke-dasharray: 166;
-            stroke-dashoffset: 166;
-            stroke-width: 4;
-            stroke-miterlimit: 10;
-            stroke: #4bb71b;
-            fill: #fff;
-            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-        }
-
-        .checkmark__check {
-            transform-origin: 50% 50%;
-            stroke-dasharray: 48;
-            stroke-dashoffset: 48;
-            stroke-width: 3;
-            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-        }
-
-        .form-modal {
-            z-index: 100;
-            background: rgba(255, 255, 255, 0.92);
-
-            &--content {
-                position: relative;
-                top: 25%;
-            }
-        }
-
-        @keyframes stroke {
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        @keyframes scale {
-
-            0%,
-            100% {
-                transform: none;
-            }
-
-            50% {
-                transform: scale3d(1.1, 1.1, 1);
-            }
-        }
-
-        @keyframes fill {
-            100% {
-                box-shadow: inset 0px 0px 0px 30px #4bb71b;
-            }
-        }
-    </style>
+   
 @endsection
 
 @section('content')
     <!--====||  Main Section Start ||====-->
     <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
-
-
         <!--====|| Hero Section Start ||====-->
         <section class="hero">
             <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" data-aos="fade-left"
                 data-aos-duration="800" />
-            <div class="hero__content hero__content--alt">
-                <h1 class="font-medium" data-aos="fade-up" data-aos-duration="1000"><span class="gradient-heading">
+            <div class="hero__content hero__content--alt !px-0">
+                <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up" data-aos-duration="1000"><span class="gradient-heading">
                         Clinicians</span>
                 </h1>
-                <h4 class="font-bold h4-alt" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare providers to
+                <h4 class="font-bold h4-alt mt-3" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare providers to
                     <br />
                     <span class="text-primary"> Expand Their Reach </span>
                 </h4>
@@ -314,7 +240,7 @@
         <!--====|| Contact Section Start ||====-->
         <section class="contact lg:pt-[180px] md:pt-[100px] pt-[80px] lg:pb-[150px] md:pb-[80px] pb-[50px] relative z-10">
             <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="lg:pe-24 pe-0 relative">
+                <div class="xl:pe-24 lg:pe-10 md:pe-5 pe-0 relative">
                     <!--Frame Integration Start-->
                     <div>
                         <img class="absolute -z-10 -left-20 top-12 w-[90px]" src="assets/img/frame/clip-1.svg"
