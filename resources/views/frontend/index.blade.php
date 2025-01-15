@@ -25,7 +25,7 @@
                 <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Our <span
                         class="text-primary">Services</span>
                 </h1>
-                <div class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10">
+                <div class="services__cards grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 md:gap-y-16 gap-y-10">
                     <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
                         <h5 class="services__card__heading bg-green">Virtual Consultations</h5>
                         <p>Offer seamless, secure, and HIPAA-compliant video and audio
@@ -549,7 +549,7 @@
         <!--====|| Contact Section Start ||====-->
         <section class="contact lg:py-[150px] md:py-[80px] py-[50px]" id="contact-us">
             <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="lg:pe-24 md:pe-10 pe-0">
+                <div class="xl:pe-24 lg:pe-10 pe-0">
                     <h2 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Your
                         Health, <br />
                         Your Way <span class="text-primary block">Get in Touch </span></h2>
@@ -558,7 +558,7 @@
                         and let’s create something extraordinary together!</p>
                     <div class="text-center lg:mt-12 md:mt-8 mt-0 md:block hidden" data-aos="fade-up"
                         data-aos-duration="900">
-                        <img class="max-w-[400px]" src="assets/img/contact.png" alt="Contact" />
+                        <img class="lg:max-w-[400px] max-w-[300px]" src="assets/img/contact.png" alt="Contact" />
                     </div>
                 </div>
                 <div class="relative" id="contactFormWrapper">

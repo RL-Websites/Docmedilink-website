@@ -1,6 +1,6 @@
 @extends('layouts/frontend_main')
 @section('content')
-    <main class="lg:pt-[130px] pt-[50px] overflow-x-hidden">
+    <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
         <!--====|| Hero Section Start ||====-->
         <section class="hero">
             <!--Frame Integration Start-->

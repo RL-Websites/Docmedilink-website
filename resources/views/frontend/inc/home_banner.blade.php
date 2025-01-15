@@ -46,7 +46,7 @@
         src="assets/img/hero.webp"
         alt="Hero Image"
     />
-    <div class="hero__content lg:top-[100px] md:top-20 top-[50px]">
+    <div class="hero__content lg:top-[100px] top-[50px]">
         <h1 class="font-medium" data-aos="fade-up" data-aos-duration="700"
             >Exceptional Care, <br /><span class="gradient-heading"
                 >Anywhere.</span

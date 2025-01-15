@@ -46,14 +46,17 @@ $(document).ready(function () {
         const hamburgerIcon = $(this).find(".hamburger-icon");
         const closeIcon = $(this).find(".close-icon");
 
-        if (hamburgerIcon.is(":visible")) {
+        if ($(".header__menus").hasClass("show-menu")) {
+            // Show the close icon and hide the hamburger icon
             hamburgerIcon.hide();
             closeIcon.show();
         } else {
+            // Show the hamburger icon and hide the close icon
             hamburgerIcon.show();
             closeIcon.hide();
         }
     });
+
     // Header Toggle Menu
 
     // Toggle menu Integration
@@ -78,5 +81,14 @@ $(document).ready(function () {
 AOS.init();
 
 function closeNav() {
-    $("#navbar").removeClass("show-menu");
+    const navbar = $("#navbar");
+    const hamburgerIcon = $(".toggle-menu").find(".hamburger-icon");
+    const closeIcon = $(".toggle-menu").find(".close-icon");
+
+    if (navbar.hasClass("show-menu")) {
+        navbar.removeClass("show-menu");
+        // Show the hamburger icon and hide the close icon
+        hamburgerIcon.show();
+        closeIcon.hide();
+    }
 }
