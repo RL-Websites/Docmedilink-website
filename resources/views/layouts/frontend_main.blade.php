@@ -104,21 +104,21 @@
             </a>
             <nav class="header__menus" id="navbar">
                 <ul class="flex gap-7">
-                    <li><a href="{{ request()->path() == '/' ? url('/#home') : '/' }}"
+                    <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? url('/#home') : '/' }}"
                             class="menu-link home {{ url()->current() === url('/') ? 'active' : '' }}">Home</a>
                     </li>
 
-                    <li><a href="{{ request()->path() == '/' ? '#our-services' : url('/#our-services') }}"
+                    <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#our-services' : url('/#our-services') }}"
                             class="menu-link our-services {{ request()->path() === 'our-services' ? 'active' : '' }}">Services</a>
                     </li>
 
-                    <li><a href="{{ request()->path() == '/' ? '#clinicians' : url('/#clinicians') }}"
+                    <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#clinicians' : url('/#clinicians') }}"
                             class="menu-link clinicians {{ request()->path() === 'clinicians' ? 'active' : '' }}">Clinicians</a>
                     </li>
-                    <li><a href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
-                    <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
+                    <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
+                    <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
                     <li class="sm-block w-[100px]">
-                        <a target="_blank" href="{{ url('login') }}"
+                        <a onclick="closeNav()"  target="_blank" href="{{ url('login') }}"
                             class="dml-btn dml-btn__primary ">Login</a>
                     </li>
                 </ul>

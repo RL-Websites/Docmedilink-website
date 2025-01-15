@@ -56,10 +56,6 @@ $(document).ready(function () {
     });
     // Header Toggle Menu
 
-    $("#navbar").click(function () {
-        removeClass("show-menu");
-    });
-
     // Toggle menu Integration
 
     // Add smooth scrolling to all links
@@ -80,3 +76,7 @@ $(document).ready(function () {
     // Smooth Scroll Animation
 });
 AOS.init();
+
+function closeNav() {
+    $("#navbar").removeClass("show-menu");
+}
