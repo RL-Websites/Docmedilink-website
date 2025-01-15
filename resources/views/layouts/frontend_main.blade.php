@@ -88,7 +88,7 @@
             }
         }
     </style> -->
-    @vite([ 'resources/js/app.js', "public/assets/css/app.css"])
+    @vite([ 'resources/js/app.js', 'public/assets/css/app.css'])
     @yield('styles')
 
 </head>
