@@ -78,7 +78,7 @@
 
 @section('content')
     <!--====||  Main Section Start ||====-->
-    <main class="lg:pt-[130px] pt-[50px] overflow-x-hidden">
+    <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
 
 
         <!--====|| Hero Section Start ||====-->
@@ -101,7 +101,7 @@
         <section class="services relative z-10">
             <!--Frame Integration Start-->
             <div>
-                <img class="absolute -z-10 -left-[122px] -top-20" src="assets/img/frame/gear-1.svg" alt="Frame" />
+                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg" alt="Frame" />
                 <img class="absolute -z-10 -top-20 left-3/4" src="assets/img/frame/star-1.svg" alt="Frame" />
                 <img class="absolute -z-10 top-3/4 left-7 w-8" src="assets/img/frame/clip-1.svg" alt="Frame" />
                 <img class="absolute -z-10 top-1/2 right-10 w-8" src="assets/img/frame/gear-2.svg" alt="Frame" />
@@ -113,7 +113,7 @@
                     <span class="text-primary">Key Features</span> for <br />
                     Clinicians
                 </h1>
-                <div class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10">
+                <div class="services__cards grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 md:gap-y-16 gap-y-10">
                     <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
                         <h5 class="services__card__heading bg-green">Customizable Scheduling Tools</h5>
                         <p>Manage your availability with ease and ensure a seamless
