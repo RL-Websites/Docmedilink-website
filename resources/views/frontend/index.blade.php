@@ -600,22 +600,30 @@
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="services">What services are you interested in?</label>
-                                <select class="input__box" id="services">
-                                    <option disabled selected>Select an option</option>
-                                    <option value="Telehealth Platform">Telehealth Platform</option>
-                                    <option value="Physician Services">Physician Services</option>
-                                    <option value="Pharmacy Services">Pharmacy Services</option>
-                                    <option value="Partnership Opportunities">Partnership Opportunities</option>
-                                </select>
+                                <div class="input__select">
+                                    <select class="input__box" id="services">
+                                        <option disabled selected>Select an option</option>
+                                        <option value="Telehealth Platform">Telehealth Platform</option>
+                                        <option value="Physician Services">Physician Services</option>
+                                        <option value="Pharmacy Services">Pharmacy Services</option>
+                                        <option value="Partnership Opportunities">Partnership Opportunities</option>
+                                    </select>
+                                    <i class="icon-arrow-down input__select-icon"></i>
+                                </div>
+                                
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="about">Please share a little about yourself</label>
-                                <select class="input__box" id="about">
-                                    <option disabled selected>Select an option</option>
-                                    <option value="Customer">Customer</option>
-                                    <option value="Provider">Provider</option>
-                                    <option value="Partner">Partner</option>
-                                </select>
+                                <div class="input__select">
+                                    <select class="input__box" id="about">
+                                        <option disabled selected>Select an option</option>
+                                        <option value="Customer">Customer</option>
+                                        <option value="Provider">Provider</option>
+                                        <option value="Partner">Partner</option>
+                                    </select>
+                                <i class="icon-arrow-down input__select-icon"></i>
+                                </div>
+                               
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="details">Do you want to share more details with
