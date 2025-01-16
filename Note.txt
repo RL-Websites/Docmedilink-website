@@ -22,6 +22,3 @@ git push origin dev
 git merge dev-obaed --no-ff --no-commit
 
 
-npm run dev
-php artisan serve
-
