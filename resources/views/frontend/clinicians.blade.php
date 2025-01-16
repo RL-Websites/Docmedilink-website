@@ -1,7 +1,6 @@
 @extends('layouts/frontend_main')
 
 @section('styles')
-   
 @endsection
 
 @section('content')
@@ -12,10 +11,12 @@
             <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" data-aos="fade-left"
                 data-aos-duration="800" />
             <div class="hero__content hero__content--alt !px-0">
-                <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up" data-aos-duration="1000"><span class="gradient-heading">
+                <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up"
+                    data-aos-duration="1000"><span class="gradient-heading">
                         Clinicians</span>
                 </h1>
-                <h4 class="font-bold h4-alt mt-3" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare providers to
+                <h4 class="font-bold h4-alt mt-3" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare
+                    providers to
                     <br />
                     <span class="text-primary"> Expand Their Reach </span>
                 </h4>
@@ -27,7 +28,8 @@
         <section class="services relative z-10">
             <!--Frame Integration Start-->
             <div>
-                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg" alt="Frame" />
+                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg"
+                    alt="Frame" />
                 <img class="absolute -z-10 -top-20 left-3/4" src="assets/img/frame/star-1.svg" alt="Frame" />
                 <img class="absolute -z-10 top-3/4 left-7 w-8" src="assets/img/frame/clip-1.svg" alt="Frame" />
                 <img class="absolute -z-10 top-1/2 right-10 w-8" src="assets/img/frame/gear-2.svg" alt="Frame" />
@@ -339,7 +341,8 @@
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="time">Preferred Demo Time</label>
-                                <input type="datetime-local" class="input__box min-h-[36px]" id="time" type="text" />
+                                <input type="datetime-local" class="input__box min-h-[36px]" id="time"
+                                    value="{{ old('time', $dateTime) }}" type="text" />
                             </div>
 
                             <div class="input__item">
@@ -375,23 +378,29 @@
 @endsection
 
 @section('scripts')
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
-            var now = new Date();
+            const $input = $('#time');
+            const $error = $('<p class="text-danger pt-1">You cannot select a past time and date.</p>');
+            $error.hide();
+            $input.after($error);
 
-            var year = now.getFullYear();
-            var month = String(now.getMonth() + 1).padStart(2, '0'); // Month is zero-indexed
-            var day = String(now.getDate()).padStart(2, '0');
-            var hours = String(now.getHours()).padStart(2, '0');
-            var minutes = String(now.getMinutes()).padStart(2, '0');
+            const validateTime = () => {
+                const now = new Date();
+                const selectedTime = new Date($input.val());
 
-            // Combine to get the minimum date and time
-            var minDateTime = year + '-' + month + '-' + day + 'T' + hours + ':' + minutes;
+                if (selectedTime < now) {
+                    $error.show();
+                    $input.val('');
+                } else {
+                    $error.hide();
+                }
+            };
 
-            // Set the min attribute for the datetime-local input field
-            $('#time').attr('min', minDateTime);
+            $input.on('change blur', validateTime);
         });
     </script>
+
     <script type="text/javascript">
         function formatPhoneOnChange(input) {
             let value = input.value.replace(/[^0-9]/g, '');
@@ -411,9 +420,8 @@
         }
 
         $(document).ready(function() {
-            // When the input value changes, format it
             $('#contact_phone').on('input', function() {
-                formatPhoneOnChange(this); // Pass the DOM element to the formatPhoneOnChange function
+                formatPhoneOnChange(this);
             });
 
             // Form submission handler
@@ -450,7 +458,6 @@
                     isValid = false;
                 }
 
-                // Validate Contact Phone (Phone format (XXX) XXX-XXXX, up to 12 digits)
                 const phonePattern = /^\(\d{3}\) \d{3}-\d{4,6}$/; // Allowing up to 12 digits
                 if (!contactPhone) {
                     $('#contact_phone').after('<p class="text-danger pt-1">Phone is required.</p>');
