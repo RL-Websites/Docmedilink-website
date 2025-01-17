@@ -1,95 +1,22 @@
 @extends('layouts/frontend_main')
 
 @section('styles')
-    <style>
-        .success-animation {
-            margin: 0px auto;
-        }
-
-        .checkmark {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: block;
-            stroke-width: 2;
-            stroke: #4bb71b;
-            stroke-miterlimit: 10;
-            box-shadow: inset 0px 0px 0px #4bb71b;
-            animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-            position: relative;
-            top: 5px;
-            right: 5px;
-            margin: 0 auto;
-        }
-
-        .checkmark__circle {
-            stroke-dasharray: 166;
-            stroke-dashoffset: 166;
-            stroke-width: 4;
-            stroke-miterlimit: 10;
-            stroke: #4bb71b;
-            fill: #fff;
-            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-        }
-
-        .checkmark__check {
-            transform-origin: 50% 50%;
-            stroke-dasharray: 48;
-            stroke-dashoffset: 48;
-            stroke-width: 3;
-            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-        }
-
-        .form-modal {
-            z-index: 100;
-            background: rgba(255, 255, 255, 0.92);
-
-            &--content {
-                position: relative;
-                top: 25%;
-            }
-        }
-
-        @keyframes stroke {
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        @keyframes scale {
-
-            0%,
-            100% {
-                transform: none;
-            }
-
-            50% {
-                transform: scale3d(1.1, 1.1, 1);
-            }
-        }
-
-        @keyframes fill {
-            100% {
-                box-shadow: inset 0px 0px 0px 30px #4bb71b;
-            }
-        }
-    </style>
 @endsection
 
 @section('content')
     <!--====||  Main Section Start ||====-->
     <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
-
-
         <!--====|| Hero Section Start ||====-->
         <section class="hero">
             <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" data-aos="fade-left"
                 data-aos-duration="800" />
-            <div class="hero__content hero__content--alt">
-                <h1 class="font-medium" data-aos="fade-up" data-aos-duration="1000"><span class="gradient-heading">
+            <div class="hero__content hero__content--alt !px-0">
+                <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up"
+                    data-aos-duration="1000"><span class="gradient-heading">
                         Clinicians</span>
                 </h1>
-                <h4 class="font-bold h4-alt" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare providers to
+                <h4 class="font-bold h4-alt mt-3" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare
+                    providers to
                     <br />
                     <span class="text-primary"> Expand Their Reach </span>
                 </h4>
@@ -101,7 +28,8 @@
         <section class="services relative z-10">
             <!--Frame Integration Start-->
             <div>
-                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg" alt="Frame" />
+                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg"
+                    alt="Frame" />
                 <img class="absolute -z-10 -top-20 left-3/4" src="assets/img/frame/star-1.svg" alt="Frame" />
                 <img class="absolute -z-10 top-3/4 left-7 w-8" src="assets/img/frame/clip-1.svg" alt="Frame" />
                 <img class="absolute -z-10 top-1/2 right-10 w-8" src="assets/img/frame/gear-2.svg" alt="Frame" />
@@ -314,7 +242,7 @@
         <!--====|| Contact Section Start ||====-->
         <section class="contact lg:pt-[180px] md:pt-[100px] pt-[80px] lg:pb-[150px] md:pb-[80px] pb-[50px] relative z-10">
             <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="lg:pe-24 pe-0 relative">
+                <div class="xl:pe-24 lg:pe-10 md:pe-5 pe-0 relative">
                     <!--Frame Integration Start-->
                     <div>
                         <img class="absolute -z-10 -left-20 top-12 w-[90px]" src="assets/img/frame/clip-1.svg"
@@ -413,7 +341,8 @@
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="time">Preferred Demo Time</label>
-                                <input type="datetime-local" class="input__box min-h-[36px]" id="time" type="text" />
+                                <input type="datetime-local" class="input__box min-h-[36px]" id="time"
+                                    value="{{ old('time', $dateTime) }}" type="text" />
                             </div>
 
                             <div class="input__item">
@@ -449,23 +378,29 @@
 @endsection
 
 @section('scripts')
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
-            var now = new Date();
+            const $input = $('#time');
+            const $error = $('<p class="text-danger pt-1">You cannot select a past time and date.</p>');
+            $error.hide();
+            $input.after($error);
 
-            var year = now.getFullYear();
-            var month = String(now.getMonth() + 1).padStart(2, '0'); // Month is zero-indexed
-            var day = String(now.getDate()).padStart(2, '0');
-            var hours = String(now.getHours()).padStart(2, '0');
-            var minutes = String(now.getMinutes()).padStart(2, '0');
+            const validateTime = () => {
+                const now = new Date();
+                const selectedTime = new Date($input.val());
 
-            // Combine to get the minimum date and time
-            var minDateTime = year + '-' + month + '-' + day + 'T' + hours + ':' + minutes;
+                if (selectedTime < now) {
+                    $error.show();
+                    $input.val('');
+                } else {
+                    $error.hide();
+                }
+            };
 
-            // Set the min attribute for the datetime-local input field
-            $('#time').attr('min', minDateTime);
+            $input.on('change blur', validateTime);
         });
     </script>
+
     <script type="text/javascript">
         function formatPhoneOnChange(input) {
             let value = input.value.replace(/[^0-9]/g, '');
@@ -485,9 +420,8 @@
         }
 
         $(document).ready(function() {
-            // When the input value changes, format it
             $('#contact_phone').on('input', function() {
-                formatPhoneOnChange(this); // Pass the DOM element to the formatPhoneOnChange function
+                formatPhoneOnChange(this);
             });
 
             // Form submission handler
@@ -524,7 +458,6 @@
                     isValid = false;
                 }
 
-                // Validate Contact Phone (Phone format (XXX) XXX-XXXX, up to 12 digits)
                 const phonePattern = /^\(\d{3}\) \d{3}-\d{4,6}$/; // Allowing up to 12 digits
                 if (!contactPhone) {
                     $('#contact_phone').after('<p class="text-danger pt-1">Phone is required.</p>');
