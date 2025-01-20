@@ -1,0 +1,28 @@
+.auth-title {
+    @apply text-secondary text-[36px] text-black text-start mb-[31px] pb-[11px] relative;
+    &.auth-underline {
+        @apply after:absolute after:block after:left-0 after:top-full after:h-[.5px] after:w-[65%] after:bg-[#175BCC];
+    }
+}
+.login {
+    &__left {
+        background: linear-gradient(
+                195.81deg,
+                #88b5ff 1.22%,
+                rgba(204, 51, 242, 0.75) 100%
+            ),
+            url("../../resources/img/login-bg.png");
+        @apply bg-no-repeat bg-cover bg-center flex  justify-center items-center;
+    }
+    &__right {
+        @apply p-5;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login {
+        &__left {
+            display: none;
+        }
+    }
+}
