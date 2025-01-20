@@ -32,7 +32,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button class="dml-btn dml-btn__primary hover:!bg-transparent focus:!outline-none focus:!bg-transparent focus:!shadow-none   capitalize !py-2.5">{{ __('Save') }}</x-primary-button>
+            <x-primary-button class="dml-btn dml-btn__primary hover:!bg-transparent focus:!outline-none focus:!bg-transparent focus:!shadow-none  uppercase !py-2.5" style="font-family: 'DM Sans', serif;">{{ __('Save') }}</x-primary-button>
 
             @if (session('status') === 'password-updated')
                 <p
