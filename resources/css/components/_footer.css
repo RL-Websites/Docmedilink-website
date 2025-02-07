@@ -1,26 +1,25 @@
 .footer {
-	@apply border-t border-blue-light-1 relative overflow-hidden py-[50px];
-	background: url("../../../assets/img/footer.png");
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
+    @apply border-t border-blue-light-1 relative overflow-hidden py-[50px];
+    background: url("../../../public/assets/img/footer.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 
-
-	&__content {
-		@apply px-5 relative z-10 top-0  left-1/2 translate-x-[-50%] max-w-[1240px];
-	}
-	&__menus {
-		.active {
-			@apply font-semibold text-primary;
-		}
-	}
+    &__content {
+        @apply px-5 relative z-10 top-0  left-1/2 translate-x-[-50%] max-w-[1240px];
+    }
+    &__menus {
+        .active {
+            @apply font-semibold text-primary;
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
-	.footer {
-		@apply py-[50px] bg-none;
-		&__content {
-			@apply relative top-[unset];
-		}
-	}
+    .footer {
+        @apply py-[50px] bg-none;
+        &__content {
+            @apply relative top-[unset];
+        }
+    }
 }

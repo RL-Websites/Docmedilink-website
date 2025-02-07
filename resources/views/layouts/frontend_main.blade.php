@@ -93,6 +93,8 @@
                             </li>
                             <li><a href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                             <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
+                            <li><a href="{{ request()->path() == '/' ? '#terms-and-condition' : url('/#terms-and-condition') }}" class="menu-link terms-and-condition">Terms & condition</a></li>
+                            <li><a href="{{ request()->path() == '/' ? '#privacy-policy' : url('/#privacy-policy') }}" class="menu-link privacy-policy">Privacy policy</a></li>
 
                         </ul>
 

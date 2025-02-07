@@ -111,7 +111,7 @@
                         <div class="work__card" data-aos="fade-up" data-aos-duration="500">
                             <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
                             <div class="work__content">
-                                <span class="work__number bg-light-purple">1</span>
+                                <span class="work__number bg-light-purple md:!start-[100px] !start-[70px]">1</span>
                                 <h4 class="work__heading">PATIENT REGISTERS</h4>
                                 <img class="work__img w-[100px]" src="assets/img/services/service-1.png"
                                     alt="PATIENT REGISTER" />
@@ -122,7 +122,7 @@
                         <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1000">
                             <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
                             <div class="work__content">
-                                <span class="work__number work__number--alt bg-aqua-1 -bottom-2">2</span>
+                                <span class="work__number work__number--alt bg-aqua-1 -bottom-2 md:!start-[105px] !start-[80px]">2</span>
                                 <h4 class="work__heading">CLINICIAN REVIEWS PATIENT REQUEST</h4>
                                 <img class="work__img w-[100px]" src="assets/img/services/service-2.png"
                                     alt="PATIENT REGISTER" />
