@@ -11,6 +11,7 @@ sudo /opt/lampp/xampp start
 Update note
 
 
+sudo /opt/lampp/xampp start
 
 
 Date: January 09, 2025
