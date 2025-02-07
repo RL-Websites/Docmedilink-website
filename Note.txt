@@ -14,8 +14,6 @@ Update note
 sudo /opt/lampp/xampp start
 
 
-Date: January 09, 2025
-
 git checkout dev
 git pull origin dev
 git merge dev-obaed --no-ff --no-commit
