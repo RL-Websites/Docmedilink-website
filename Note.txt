@@ -14,8 +14,6 @@ Update note
 sudo /opt/lampp/xampp start
 
 
-Date: January 09, 2025
-
 git checkout dev
 git pull origin dev
 git merge dev-obaed --no-ff --no-commit
@@ -28,3 +26,10 @@ git merge dev-obaed --no-ff --no-commit
 
 
 
+git checkout main
+git pull origin main
+git merge mhannan --no-ff --no-commit
+git status
+git reset HEAD .env
+git checkout -- .
+git push origin main

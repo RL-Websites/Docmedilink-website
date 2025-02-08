@@ -40,6 +40,24 @@ class HomeController extends Controller
         return view('frontend.clinicians', $data);
     }
 
+    public function privacyPolicy()
+    {
+        $data['page_name'] = 'privacy_policy';
+        $data['dateTime'] = now()->format('Y-m-d\TH:i');
+        return view('frontend.privacy_policy', $data);
+    }
+
+    public function termsAndCondition()
+    {
+        $data['page_name'] = 'term_page';
+        $data['dateTime'] = now()->format('Y-m-d\TH:i');
+        return view('frontend.term_page', $data);
+    }
+
+
+
+
+
     public function whyChooseDocmedilink()
     {
         $data['page_name'] = 'whyChooseDocmedilink';

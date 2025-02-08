@@ -610,7 +610,7 @@
                                     </select>
                                     <i class="icon-arrow-down input__select-icon"></i>
                                 </div>
-                                
+
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="about">Please share a little about yourself</label>
@@ -623,7 +623,7 @@
                                     </select>
                                 <i class="icon-arrow-down input__select-icon"></i>
                                 </div>
-                               
+
                             </div>
                             <div class="input__item">
                                 <label class="input__label" for="details">Do you want to share more details with
@@ -642,6 +642,11 @@
             </div>
         </section>
         <!--====|| Contact Section End ||====-->
+
+      
+
+        
+
     </main>
     <!--====||  Main Section End ||====-->
 
