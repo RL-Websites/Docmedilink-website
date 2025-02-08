@@ -37,11 +37,20 @@
                             class="menu-link our-services {{ request()->path() === 'our-services' ? 'active' : '' }}">Services</a>
                     </li>
 
-                    <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#clinicians' : url('/#clinicians') }}"
-                            class="menu-link clinicians {{ request()->path() === 'clinicians' ? 'active' : '' }}">Clinicians</a>
+                    <li>
+                        <a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#clinicians' : url('/#clinicians') }}"
+                            class="menu-link clinicians {{ request()->path() === 'clinicians' ? 'active' : '' }}">Clinicians
+                        </a>
+                    </li>
+
+                    <li>
+                        <a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#privacy' : url('/#privacy') }}"
+                            class="menu-link privacy {{ request()->path() === 'privacy' ? 'active' : '' }}">Privacy
+                        </a>
                     </li>
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
+
                     <li class="sm-block w-[100px]">
                         <a onclick="closeNav()"  target="_blank" href="https://app.docmedilink.com/login"
                             class="dml-btn dml-btn__primary ">Login</a>
