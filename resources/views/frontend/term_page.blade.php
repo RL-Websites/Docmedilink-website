@@ -24,355 +24,236 @@
         </section>
         <!--====|| Hero Section End ||====-->
 
-        <!--====|| Service Section Start ||====-->
-        <section class="services relative z-10">
+       <!--====|| Terms and Conditions Start ||====-->
+         <section class="terms-and-condition  md:pt-[80px] pt-[50px] relative z-10" id="terms-and-condition">
             <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 -top-20 left-3/4" src="assets/img/frame/star-1.svg" alt="Frame" />
-                <img class="absolute -z-10 top-3/4 left-7 w-8" src="assets/img/frame/clip-1.svg" alt="Frame" />
-                <img class="absolute -z-10 top-1/2 right-10 w-8" src="assets/img/frame/gear-2.svg" alt="Frame" />
-                <img class="absolute -z-10 top-3/4 left-2/3 w-[137px]" src="assets/img/frame/blink-1.svg" alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span class="text-primary">Key Features</span> for <br />
-                    Clinicians
-                </h1>
-                <div class="services__cards grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 md:gap-y-16 gap-y-10">
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
-                        <h5 class="services__card__heading bg-green">Customizable Scheduling Tools</h5>
-                        <p>Manage your availability with ease and ensure a seamless
-                            booking experience for your patients.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
-                        <h5 class="services__card__heading bg-yellow">Seamless Experience</h5>
-                        <p>Offer secure video consultations, messaging, and prescription
-                            management, all within a HIPAA-compliant environment.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
-                        <h5 class="services__card__heading bg-cyan">Patient Management Dashboard</h5>
-                        <p>Track patient records, medical history, and lab results—all in
-                            one place.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card"data-aos="zoom-in" data-aos-duration="900">
-                        <h5 class="services__card__heading bg-light-purple">Prescription Fulfillment</h5>
-                        <p>Simplify the e-prescription process and connect patients with
-                            their preferred pharmacies.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="900">
-                        <h5 class="services__card__heading bg-aqua-1">Data-Driven Insights</h5>
-                        <p>Gain actionable insights to optimize operations and enhance
-                            patient outcomes.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                </div>
-            </div>
-        </section>
-        <!--====|| Service Section End ||====-->
-
-        <!--====|| How It Works Section Start ||====-->
-        <section class="work lg:pt-[100px] md:pt-[80px] pt-[50px] relative z-10" relative z-10">
-            <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 lg:-right-[150px] -right-unset lg:left-[unset] -left-[120px] lg:-top-20 top-0 lg:w-[340px] md:w-[200px] rotate-[130deg]"
-                    src="assets/img/frame/dice-1.svg" alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
-            <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center md:mb-5 mb-0" data-aos="fade-up" data-aos-duration="500">How
-                    it <span class="text-primary">Works</span>
-                </h1>
-            </div>
-            <div class="work__cards">
-                <div class="container mx-auto relative z-10">
-                    <!--Frame Integration Start-->
+                <div class="inner">
+                    <h3>Terms &amp; Conditions</h3>
                     <div>
-                        <img class="absolute -z-10 -left-16 -top-16 w-[138px]" src="assets/img/frame/star-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 -right-24 -bottom-4 w-[130px]" src="assets/img/frame/blink-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 left-1/4 -bottom-16 w-[35px] rotate-45" src="assets/img/frame/d-1.svg"
-                            alt="Frame" />
-                    </div>
-                    <!--Frame Integration End-->
-                    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-[unset] gap-7  mt-20">
-                        <div class="work__card" data-aos="fade-up" data-aos-duration="500">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number bg-light-purple md:!start-[100px] !start-[70px]">1</span>
-                                <h4 class="work__heading">PATIENT REGISTERS</h4>
-                                <img class="work__img w-[100px]" src="assets/img/services/service-1.png"
-                                    alt="PATIENT REGISTER" />
-                            </div>
+                        <p class="fw-bold text-hint">Introduction:</p>
+                        <p>These Terms &amp; Conditions ("Terms") govern your access to and
+                            use of Docmedilink's web-based software solutions ("Software")
+                            designed to streamline operations for healthcare providers. By
+                            accessing or using the Software, you ("you" or "User") agree to
+                            be bound by these Terms.</p>
+
+                        <div class="item">
+                            <p class="fw-bold mb-2">1. Description of Services</p>
+                            <p class="mb-3">Docmedilink offers a suite of Software solutions tailored for
+                                various healthcare professionals:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li><span class="fw-bold">MD/DC/Lac:</span> A comprehensive
+                                    patient data management system for medical offices, enabling
+                                    efficient record-keeping, appointment scheduling, billing,
+                                    and enhancing overall patient experience.</li>
+                                <li><span class="fw-bold">Pharm:</span> Designed for pharmacies
+                                    to optimize medication management, including functionalities
+                                    for prescription fulfillment and seamless integration with
+                                    existing billing systems.</li>
+                                <li><span class="fw-bold">DME (Durable Medical Equipment):</span>
+                                    Developed for medical equipment suppliers, providing tools
+                                    for managing equipment sales, rentals (if applicable), and
+                                    ensuring efficient delivery.</li>
+                                <li><span class="fw-bold">ePrescribing Services:</span> Our
+                                    Software includes ePrescribing functionality, enabling
+                                    healthcare providers to securely transmit prescription
+                                    information directly to pharmacies. This feature is designed
+                                    to improve accuracy, efficiency, and patient safety in the
+                                    prescription process.
+                                </li>
+                            </ul>
                         </div>
-                        <!--Work Card End-->
 
-                        <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1000">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number work__number--alt bg-aqua-1 -bottom-2 md:!start-[105px] !start-[80px]">2</span>
-                                <h4 class="work__heading">CLINICIAN REVIEWS PATIENT REQUEST</h4>
-                                <img class="work__img w-[100px]" src="assets/img/services/service-2.png"
-                                    alt="PATIENT REGISTER" />
-                            </div>
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">2. User Accounts and Security</p>
+                            <p class="mb-3">You may be required to create an account to access certain
+                                features of the Software. You are responsible for maintaining
+                                the confidentiality of your account credentials and are fully
+                                responsible for all activities that occur under your account.
+                                Docmedilink will not be liable for any loss or damage arising
+                                from your failure to comply with these security
+                                obligations.</p>
                         </div>
-                        <!--Work Card End-->
 
-                        <div class="work__card" data-aos="fade-up" data-aos-duration="1300">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number bg-yellow">3</span>
-                                <h4 class="work__heading">CLINICIAN SCHEDULES A VIRTUAL CONSULT VISIT</h4>
-                                <img class="work__img" src="assets/img/consult.png"
-                                    alt="CLINICIAN SCHEDULES A VIRTUAL CONSULT VISIT" />
-                            </div>
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">3. Access and Use</p>
+                            <p class="mb-3">We grant you a non-exclusive, non-transferable right to
+                                access and use the Software for its designated purpose within
+                                your healthcare practice. You agree not to:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li>Sell, license, sublicense, or distribute the Software to
+                                    any third party.</li>
+                                <li>Use the Software for any purpose other than its intended
+                                    use within the healthcare field you practice.</li>
+                                <li>Attempt to modify, reverse engineer, decompile,
+                                    disassemble, or access the source code of the Software.</li>
+                            </ul>
                         </div>
-                        <!--Work Card End-->
 
-                        <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1600">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number work__number--alt bg-green -bottom-6">4</span>
-                                <h4 class="work__heading">Happy <br />
-                                    Patient</h4>
-                                <img class="work__img" src="assets/img/happy-patient.png" alt="Happy Patient" />
-                            </div>
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">4. Intellectual Property</p>
+                            <p>The Software and all associated intellectual property rights,
+                                including copyrights, trademarks, and patents, are owned by
+                                Docmedilink or its licensors. You agree not to infringe upon
+                                any of our intellectual property rights.</p>
                         </div>
-                        <!--Work Card End-->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--====|| How It Works Section End ||====-->
 
-        <!--====|| Docmedilink Ideology Section Start ||====-->
-        <section class="ideology lg:pt-[100px] relative z-10">
-            <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 -left-[240px] top-0 w-[340px] rotate-180" src="assets/img/frame/dice-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 -right-4 top-[100px] w-[42px] rotate-180" src="assets/img/frame/gear-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 right-4 bottom-[50px] w-[42px] rotate-45" src="assets/img/frame/d-1.svg"
-                    alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
-            <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span class="text-primary">Docmedilink</span> is Ideal For
-                </h1>
-                <div class="serve-cards grid md:grid-cols-3 md:text-start text-center lg:gap-20 md:gap-10 gap-5 mt-16">
-                    <div class="serve-card">
-                        <i class="icon-graph text-[130px] inline-block" data-aos="fade-up-right"
-                            data-aos-duration="700"></i>
-                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up-right" data-aos-duration="900">Clinics
-                            Seeking Growth</h4>
-                        <p class="text-lg" data-aos="fade-up-right" data-aos-duration="1100">Connect with more patients
-                            and expand your presence beyond
-                            physical boundaries.
-                        </p>
-                    </div>
-                    <!-- Serve Card End -->
-                    <div class="serve-card">
-                        <i class="icon-suitcase-2 text-[130px] inline-block" data-aos="fade-up"
-                            data-aos-duration="700"></i>
-                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up" data-aos-duration="900">Busy Healthcare
-                            Providers</h4>
-                        <p class="text-lg" data-aos="fade-up" data-aos-duration="1100">Simplify your workflow with tools
-                            designed to save time and
-                            improve efficiency.
-                        </p>
-                    </div>
-                    <!-- Serve Card End -->
-                    <div class="serve-card">
-                        <i class="icon-user text-[130px] inline-block" data-aos="fade-up-left"
-                            data-aos-duration="700"></i>
-                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up-left" data-aos-duration="900">Practices
-                            Focused on Patient-Centric Care</h4>
-                        <p class="text-lg" data-aos="fade-up-left" data-aos-duration="1100">Enhance patient satisfaction
-                            with modern, accessible, and
-                            secure healthcare solutions.
-                        </p>
-                    </div>
-                    <!-- Serve Card End -->
-                </div>
-            </div>
-        </section>
-        <!--====|| Docmedilink Ideology Section End ||====-->
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">5. Data Storage and Security</p>
+                            <p>Docmedilink is committed to data security. We store your data
+                                on secure servers and maintain regular backups. However, we
+                                cannot guarantee the absolute security of data transmission
+                                over the internet. You acknowledge that you are transmitting
+                                data at your own risk.</p>
+                        </div>
 
-        <!--====|| Community Section Start ||====-->
-        <section class="community lg:pt-[180px] md:pt-[100px] pt-[80px] relative z-10">
-            <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 left-20 top-1/2 w-[42px]" src="assets/img/frame/gear-1.svg" alt="Frame" />
-                <img class="absolute -z-10 left-1/3 top-[100px] w-[42px]" src="assets/img/frame/blink-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 -right-8 top-2/3" src="assets/img/frame/hash-1.svg" alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
-            <div class="container mx-auto" data-aos="zoom-in" data-aos-duration="1000">
-                <div
-                    class="bg-[#F7F4F4] lg:py-20 md:py-10 py-7  lg:px-16 md:px-8 px-5 text-center max-w-[930px] mx-auto rounded-[10px] relative -rotate-[5deg]">
-                    <img class="absolute top-[-40px] left-1/2 -translate-x-1/2 inline-block" data-aos="zoom-out"
-                        data-aos-duration="1200" src="assets/img/pin.svg" alt="Pin" />
-                    <h3 class="font-bold">Join the
-                        <span class="text-primary">Docmedilink</span> Community
-                    </h3>
-                    <p class="text-lg mt-3">Take your clinic to the next level with a platform designed to
-                        grow with you. Docmedilink ensures you have the tools to deliver
-                        outstanding care, manage your operations efficiently, and reach
-                        new patients effectively. </p>
-                </div>
-            </div>
-        </section>
-        <!--====|| Community Section End ||====-->
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">6. Integration with Third-Party Systems</p>
+                            <p>Our Software may integrate with existing billing systems and
+                                potentially with third-party solutions like legal case
+                                management software. We will collaborate with you to determine
+                                the best integration options to meet your specific needs.</p>
+                        </div>
 
-        <!--====|| Contact Section Start ||====-->
-        <section class="contact lg:pt-[180px] md:pt-[100px] pt-[80px] lg:pb-[150px] md:pb-[80px] pb-[50px] relative z-10">
-            <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="xl:pe-24 lg:pe-10 md:pe-5 pe-0 relative">
-                    <!--Frame Integration Start-->
-                    <div>
-                        <img class="absolute -z-10 -left-20 top-12 w-[90px]" src="assets/img/frame/clip-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 right-28 bottom-1/3 w-[20px]" src="assets/img/frame/d-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 left-1/2 bottom-0 w-[100px]" src="assets/img/frame/blink-1.svg"
-                            alt="Frame" />
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">7. Term and Termination</p>
+                            <p>These Terms will remain in effect until terminated by either
+                                party. We may terminate these Terms at any time for any
+                                reason, with or without notice. You may terminate these Terms
+                                by discontinuing your use of the Software.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">8. Fees and Payment</p>
+                            <p>Docmedilink offers various subscription plans for our
+                                Software. The specific fees associated with your chosen plan
+                                will be communicated to you before your subscription begins.
+                                You agree to pay the applicable fees on time and in accordance
+                                with the chosen payment schedule.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">9. Disclaimer of Warranties</p>
+                            <p>The Software is provided "as is" without warranties of any
+                                kind, express or implied. Docmedilink disclaims all
+                                warranties, including but not limited to, warranties of
+                                merchantability, fitness for a particular purpose, and
+                                non-infringement.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">10. Limitation of Liability</p>
+                            <p>Docmedilink will not be liable for any damages arising out of
+                                or related to your use of the Software, including but not
+                                limited to direct, indirect, incidental, consequential, or
+                                punitive damages.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">11. Indemnification</p>
+                            <p>You agree to indemnify and hold harmless Docmedilink, its
+                                officers, directors, employees, agents, and licensors from and
+                                against any and all claims, demands, losses, liabilities,
+                                costs, or expenses (including attorneys' fees) arising out of
+                                or related to your use of the Software.
+                            </p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">12. Governing Law and Dispute Resolution</p>
+                            <p>These Terms will be governed by and construed in accordance
+                                with the laws of the State of New York. Any dispute arising
+                                out of or related to these Terms will be resolved by binding
+                                arbitration in accordance with the rules of the American
+                                Arbitration Association.
+                            </p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">13. ePrescribing and Related Services</p>
+                            <p>Docmedilink’s Software includes ePrescribing capabilities,
+                                allowing healthcare providers to electronically transmit
+                                prescriptions to pharmacies. By using this feature, you
+                                acknowledge and agree that you are responsible for ensuring
+                                the accuracy and appropriateness of all prescription
+                                information submitted through the Software. Docmedilink will
+                                not be held liable for any errors or issues arising from the
+                                use of ePrescribing features. Users must comply with all
+                                applicable laws and regulations regarding electronic
+                                prescribing, including HIPAA and other federal or state
+                                privacy and security laws.
+                            </p>
+                        </div>
+
+                        <div class="item">
+                            <p class="fw-bold mb-2">14. Infobip SMS Campaign Policy</p>
+                            <p class="mb-3">To enhance communication and keep patients informed,
+                                Docmedilink integrates Infobip SMS Campaign services. These
+                                services allow us to provide:
+                            </p>
+                            <ul class="ms-4 d-flex flex-column gap-1 mb-4">
+                                <li><span class="fw-bold">Product Tracking Updates:</span>
+                                    Notifications on the status of patient orders.</li>
+                                <li><span class="fw-bold">Order Confirmations:</span>
+                                    Acknowledgment of successfully placed orders.</li>
+                                <li><span class="fw-bold">Appointment Reminders:</span> Timely
+                                    reminders for scheduled appointments.</li>
+                            </ul>
+                            <p class="fw-bold mb-2">Infobip Compliance Additions:</p>
+                            <ol class="ms-4 d-flex flex-column gap-1">
+                                <li><span class="fw-bold">Call-to-Action:</span> All messages
+                                    include clear identification of Docmedilink as the
+                                    sender.</li>
+                                <li><span class="fw-bold">HELP Instructions:</span> Users may
+                                    reply with "HELP" for support or contact us at
+                                    info@docmedilink.com</li>
+                                <li><span class="fw-bold">STOP Instructions:</span> Users can
+                                    opt out of receiving SMS notifications by replying "STOP" to
+                                    any message.</li>
+                                <li><span class="fw-bold">Message Frequency Disclosure: </span>
+                                    Notifications will be sent as required, but recurring
+                                    notifications will follow the disclosed schedule.</li>
+                                <li><span class="fw-bold">Cost Disclosure: </span> "Message and
+                                    data rates may apply" will be included in all relevant SMS
+                                    campaigns.</li>
+                                <li><span class="fw-bold">Privacy Assurance: </span> Mobile
+                                    opt-in data will not be shared with third parties, in
+                                    alignment with our Privacy Policy.</li>
+                            </ol>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">15. Entire Agreement</p>
+                            <p>These Terms constitute the entire agreement between you and
+                                Docmedilink regarding your use of the Software and supersede
+                                all prior or contemporaneous communications and proposals,
+                                whether oral or written.
+                            </p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">16. Updates and Changes to the Terms</p>
+                            <p>We reserve the right to modify these Terms at any time.
+                                Changes will be effective upon posting on our website.
+                                Continued use of the Software constitutes acceptance of any
+                                updates.
+                            </p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">17. Contact Us</p>
+                            <p>If you have any questions about these Terms, please contact
+                                our Administrator or Support team at
+                                <span class="fw-semibold">info@docmedilink.com</span>
+                            </p>
+                        </div>
                     </div>
-                    <!--Frame Integration End-->
-                    <h2 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Get
-                        Started <span class="text-primary block">Today
-                        </span></h2>
-                    <p class="text-lg mt-7 md:text-start text-center" data-aos="fade-up" data-aos-duration="700">Ready to
-                        transform your clinic’s operations and
-                        patient care?
-                        Join the Docmedilink network and discover the difference our
-                        platform can make. </p>
-                    <img class="w-2/3 relative -z-10 md:block hidden" src="assets/img/contact-2.png" alt="Contact"
-                        data-aos="fade-up" data-aos-duration="900" />
-                </div>
-                <div class="relative z-10" id="contact">
-                    <!--Frame Integration Start-->
-                    <div>
-                        <img class="absolute -z-10 -right-12 top-1/3 w-[60px]" src="assets/img/frame/clip-2.svg"
-                            alt="Frame" />
-                    </div>
-                    <!--Frame Integration End-->
-                    <div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5" data-aos="fade-left" data-aos-duration="800">
-                        <form id="clinicForm">
-                            <div class="md:flex lg:gap-5 gap-3">
-                                <div class="input__item">
-                                    <label class="input__label" for="clinic_name">Clinic Name
-                                        <span class="font-normal">(If applicable)</span>
-                                    </label>
-                                    <input class="input__box" id="clinic_name" type="text" />
-                                </div>
-                                <div class="input__item">
-                                    <label class="input__label" for="contact_name">
-                                        Contact Name
-                                        <span
-                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
-                                    </label>
-                                    <input class="input__box" id="contact_name" type="text" />
-                                </div>
-                            </div>
-                            <div class="md:flex lg:gap-5 gap-3">
-                                <div class="input__item">
-                                    <label class="input__label" for="contact_email">
-                                        Email Address
-                                        <span
-                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
-                                    </label>
-                                    <input class="input__box" id="contact_email" type="text" />
-                                </div>
-                                <div class="input__item">
-                                    <label class="input__label" for="contact_phone">
-                                        Phone Number
-                                        <span
-                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
-                                    </label>
-                                    <input class="input__box" id="contact_phone" type="text" maxlength="16"
-                                        onchange="formatPhoneOnChange(this)" />
-                                </div>
-                            </div>
-
-                            <div class="input__item">
-                                <label class="input__label" for="specialization">Specialization</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="specialization">
-                                        <option disabled selected>Select an option</option>
-                                        <option value="Psychiatry">Psychiatry</option>
-                                        <option value="Psychology">Psychology</option>
-                                        <option value="Therapy">Therapy</option>
-                                        <option value="Dermatology">Dermatology</option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
-                            </div>
-                            <div class="input__item">
-                                <label class="input__label" for="practice_size">Practice Size</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="practice_size">
-                                        <option disabled selected>Select an option</option>
-                                        <option value="Solo Practitioner">Solo Practitioner</option>
-                                        <option value="Small Group">Small Group</option>
-                                        <option value="Large Clinic">Large Clinic</option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
-                            </div>
-                            <div class="input__item">
-                                <label class="input__label" for="telehealth">Tell us about your current telehealth
-                                    needs</label>
-                                <textarea class="input__box" id="telehealth" rows="4"></textarea>
-                            </div>
-                            <div class="input__item">
-                                <label class="input__label" for="time">Preferred Demo Time</label>
-                                <input type="datetime-local" class="input__box min-h-[36px]" id="time"
-                                    value="{{ old('time', $dateTime) }}" type="text" />
-                            </div>
-
-                            <div class="input__item">
-                                <label class="input__label" for="about_us">How did you hear about us?</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="about_us">
-                                        <option selected disabled>Select an option</option>
-                                        <option value="Facebook Ad/Post">Facebook Ad/Post</option>
-                                        <option value="Instagram Ad/Post">Instagram Ad/Post</option>
-                                        <option value="Google Search">Google Search</option>
-                                        <option value="Newspaper Ad">Newspaper Ad</option>
-                                        <option value="Television Ad">Television Ad</option>
-                                        <option value="Word of Mouth (Through a Friend)">Word of Mouth (Through a Friend)
-                                        </option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <button name="clinicians" value="clinicians" class="dml-btn dml-btn__primary"
-                                    type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-
                 </div>
             </div>
 
         </section>
-        <!--====|| Contact Section End ||====-->
+        <!--====|| Terms and Conditions End ||====-->
     </main>
     <!--====||  Main Section End ||====-->
 @endsection

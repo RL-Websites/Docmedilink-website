@@ -24,355 +24,199 @@
         </section>
         <!--====|| Hero Section End ||====-->
 
-        <!--====|| Service Section Start ||====-->
-        <section class="services relative z-10">
+       <!--====|| Privacy policy Start ||====-->
+        <section class="privacy-policy  md:pt-[80px] pt-[50px] relative z-10" id="privacy-policy">
             <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 -left-[122px] lg:-top-20 top-10" src="assets/img/frame/gear-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 -top-20 left-3/4" src="assets/img/frame/star-1.svg" alt="Frame" />
-                <img class="absolute -z-10 top-3/4 left-7 w-8" src="assets/img/frame/clip-1.svg" alt="Frame" />
-                <img class="absolute -z-10 top-1/2 right-10 w-8" src="assets/img/frame/gear-2.svg" alt="Frame" />
-                <img class="absolute -z-10 top-3/4 left-2/3 w-[137px]" src="assets/img/frame/blink-1.svg" alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
             <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span class="text-primary">Key Features</span> for <br />
-                    Clinicians
-                </h1>
-                <div class="services__cards grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 md:gap-y-16 gap-y-10">
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
-                        <h5 class="services__card__heading bg-green">Customizable Scheduling Tools</h5>
-                        <p>Manage your availability with ease and ensure a seamless
-                            booking experience for your patients.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
-                        <h5 class="services__card__heading bg-yellow">Seamless Experience</h5>
-                        <p>Offer secure video consultations, messaging, and prescription
-                            management, all within a HIPAA-compliant environment.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="700">
-                        <h5 class="services__card__heading bg-cyan">Patient Management Dashboard</h5>
-                        <p>Track patient records, medical history, and lab results—all in
-                            one place.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card"data-aos="zoom-in" data-aos-duration="900">
-                        <h5 class="services__card__heading bg-light-purple">Prescription Fulfillment</h5>
-                        <p>Simplify the e-prescription process and connect patients with
-                            their preferred pharmacies.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                    <div class="services__card" data-aos="zoom-in" data-aos-duration="900">
-                        <h5 class="services__card__heading bg-aqua-1">Data-Driven Insights</h5>
-                        <p>Gain actionable insights to optimize operations and enhance
-                            patient outcomes.
-                        </p>
-                    </div>
-                    <!-- Single Service Card End -->
-                </div>
-            </div>
-        </section>
-        <!--====|| Service Section End ||====-->
-
-        <!--====|| How It Works Section Start ||====-->
-        <section class="work lg:pt-[100px] md:pt-[80px] pt-[50px] relative z-10" relative z-10">
-            <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 lg:-right-[150px] -right-unset lg:left-[unset] -left-[120px] lg:-top-20 top-0 lg:w-[340px] md:w-[200px] rotate-[130deg]"
-                    src="assets/img/frame/dice-1.svg" alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
-            <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center md:mb-5 mb-0" data-aos="fade-up" data-aos-duration="500">How
-                    it <span class="text-primary">Works</span>
-                </h1>
-            </div>
-            <div class="work__cards">
-                <div class="container mx-auto relative z-10">
-                    <!--Frame Integration Start-->
+                <div class="inner">
+                    <h3>Privacy Policy</h3>
                     <div>
-                        <img class="absolute -z-10 -left-16 -top-16 w-[138px]" src="assets/img/frame/star-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 -right-24 -bottom-4 w-[130px]" src="assets/img/frame/blink-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 left-1/4 -bottom-16 w-[35px] rotate-45" src="assets/img/frame/d-1.svg"
-                            alt="Frame" />
-                    </div>
-                    <!--Frame Integration End-->
-                    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-[unset] gap-7  mt-20">
-                        <div class="work__card" data-aos="fade-up" data-aos-duration="500">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number bg-light-purple md:!start-[100px] !start-[70px]">1</span>
-                                <h4 class="work__heading">PATIENT REGISTERS</h4>
-                                <img class="work__img w-[100px]" src="assets/img/services/service-1.png"
-                                    alt="PATIENT REGISTER" />
-                            </div>
+                        <p class="fw-bold text-hint">Introduction:</p>
+                        <p>At Docmedilink ("we" or "us"), we are dedicated to safeguarding
+                            the privacy of the personal information ("information") you
+                            entrust to us, including Protected Health Information (PHI). Our
+                            software solutions serve healthcare organizations and related
+                            entities ("clients"). This Privacy Practices Notice ("Notice")
+                            outlines how we collect, use, and disclose your information, and
+                            it details your rights regarding this data. We are legally
+                            obligated to provide you with this Notice and to adhere to its
+                            terms. This Notice is effective as of February 2024.</p>
+
+                        <div class="item">
+                            <p class="fw-bold mb-2">Information We Collect</p>
+                            <p class="mb-3">We collect information that you voluntarily provide through
+                                your interactions with our website and customer support
+                                channels. This information may include:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li>Contact details (name, email address, phone number)</li>
+                                <li>Company information (name, address, if applicable)</li>
+                                <li>Technical data (IP address, browser type)</li>
+                                <li>Information regarding your company’s operations (e.g.,
+                                    software usage data)</li>
+                            </ul>
+                            <p class="mb-3">Additionally, we collect and store PHI provided by our
+                                clients through the use of our software solutions or direct
+                                interactions with authorized personnel. This PHI may
+                                include:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li>Patient demographics (name, address, date of birth)</li>
+                                <li>Medical history and diagnoses (where applicable)</li>
+                                <li>Treatment information (where applicable)</li>
+                                <li>Insurance information</li>
+                            </ul>
+                            <p>We do not collect or store PHI directly from patients; this
+                                data is provided by their healthcare providers with proper
+                                authorization.</p>
                         </div>
-                        <!--Work Card End-->
 
-                        <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1000">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number work__number--alt bg-aqua-1 -bottom-2 md:!start-[105px] !start-[80px]">2</span>
-                                <h4 class="work__heading">CLINICIAN REVIEWS PATIENT REQUEST</h4>
-                                <img class="work__img w-[100px]" src="assets/img/services/service-2.png"
-                                    alt="PATIENT REGISTER" />
-                            </div>
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">How We Use Your Information and PHI</p>
+                            <p class="mb-3">Your information is used for the following purposes:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li>To deliver and support our software solutions</li>
+                                <li>To communicate with you about your account, services, and
+                                    updates</li>
+                                <li>To personalize your experience on our website</li>
+                                <li>To enhance our software and services</li>
+                                <li>To comply with legal and regulatory obligations</li>
+                            </ul>
+                            <p class="mb-3">We use and disclose PHI exclusively to provide and support
+                                our software solutions for our clients. This may include:
+                            </p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li>Processing and storing PHI on behalf of our clients</li>
+                                <li>Generating reports and analytics for our clients</li>
+                                <li>Providing technical support related to PHI</li>
+                                <li>Facilitating ePrescribing services, including transmitting
+                                    prescription information securely between healthcare
+                                    providers, pharmacies, and other relevant entities.</li>
+                            </ul>
                         </div>
-                        <!--Work Card End-->
 
-                        <div class="work__card" data-aos="fade-up" data-aos-duration="1300">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number bg-yellow">3</span>
-                                <h4 class="work__heading">CLINICIAN SCHEDULES A VIRTUAL CONSULT VISIT</h4>
-                                <img class="work__img" src="assets/img/consult.png"
-                                    alt="CLINICIAN SCHEDULES A VIRTUAL CONSULT VISIT" />
-                            </div>
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">ePrescribing and Privacy</p>
+                            <p class="mb-3">As part of our commitment to improving healthcare delivery,
+                                Docmedilink provides ePrescribing services. These services
+                                enable the secure transmission of prescription information
+                                between healthcare providers, pharmacies, and other authorized
+                                entities. When facilitating ePrescribing, we handle PHI with
+                                the highest standards of privacy and security, ensuring that
+                                all transmitted data is protected and only accessible to
+                                authorized parties.</p>
+                            <p>We adhere to all relevant legal and regulatory requirements
+                                for ePrescribing, including HIPAA and other applicable laws.
+                                We will not use or disclose prescription information for any
+                                purpose other than to provide and support our ePrescribing
+                                services, unless authorized by the individual or as required
+                                by law.</p>
                         </div>
-                        <!--Work Card End-->
 
-                        <div class="work__card work__card--alt" data-aos="fade-up" data-aos-duration="1600">
-                            <img class="work__frame" src="assets/img/frame.png" alt="Frame" />
-                            <div class="work__content">
-                                <span class="work__number work__number--alt bg-green -bottom-6">4</span>
-                                <h4 class="work__heading">Happy <br />
-                                    Patient</h4>
-                                <img class="work__img" src="assets/img/happy-patient.png" alt="Happy Patient" />
-                            </div>
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">SMS and Mobile Data Privacy </p>
+                            <p class="mb-3">Docmedilink offers SMS-based services for appointment
+                                reminders, product tracking, and order confirmations. Mobile
+                                opt-in data will not be shared with third parties and will
+                                solely be used for the purpose of delivering these services.
+                                Standard message and data rates may apply. For assistance,
+                                reply HELP or contact our support team. To opt out, reply STOP
+                                at any time.</p>
                         </div>
-                        <!--Work Card End-->
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">Message Frequency Disclosure </p>
+                            <p class="mb-3">For recurring message programs, messages will be sent based
+                                on the user’s subscription or notification preferences.
+                                Message frequency may vary based on account activity or
+                                service needs.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">How We Share Your Information and PHI</p>
+                            <p class="mb-3">We may share your information with our service providers who
+                                assist in operating our business and supporting our software.
+                                These service providers are required to maintain the
+                                confidentiality and security of your information and PHI and
+                                may only use it for authorized purposes.</p>
+                            <p>We will not sell or share your information or PHI with third
+                                parties for marketing purposes. We may disclose your
+                                information or PHI if required by law, such as in response to
+                                a court order or subpoena.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">Your Rights Regarding Your Information and PHI</p>
+                            <p class="mb-3">Your rights regarding your information include:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li><span class="fw-bold">Right to Access:</span> You may
+                                    request access to your information by submitting a written
+                                    request to [Designated Contact Person or Department]. We
+                                    will provide you with a copy of your information in a
+                                    readily understandable format.</li>
+                                <li><span class="fw-bold">Right to Rectify:</span> You may
+                                    request corrections to any inaccurate or incomplete
+                                    information we hold about you. We will review your request
+                                    and respond within a reasonable timeframe.</li>
+                                <li><span class="fw-bold">Right to Erasure:</span> You may
+                                    request that we delete your information, subject to certain
+                                    legal and regulatory exceptions.
+                                </li>
+                                <li><span class="fw-bold">Right to Restrict Processing:</span>
+                                    You may request that we restrict the processing of your
+                                    information for specific purposes. We will consider your
+                                    request and respond within a reasonable timeframe.</li>
+                                <li><span class="fw-bold">Right to Object:</span> You may
+                                    object to the processing of your information for specific
+                                    purposes, such as direct marketing. We will honor your
+                                    request unless we have compelling legitimate grounds to
+                                    continue processing your information.</li>
+                            </ul>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">Your Rights Regarding PHI</p>
+                            <p class="mb-3">Individuals whose PHI we store and process on behalf of our
+                                clients should contact their healthcare provider directly to
+                                exercise their rights under HIPAA. These rights may
+                                include:</p>
+                            <ul class="ms-4 d-flex flex-column gap-1">
+                                <li><span class="fw-bold">Right to Access:</span> The right to
+                                    access, inspect, and copy their medical records.</li>
+                                <li><span class="fw-bold">Right to Amend:</span> The right to
+                                    request corrections to inaccurate or incomplete information
+                                    in their medical records.</li>
+                                <li><span class="fw-bold">Right to an Accounting of Disclosures:</span>
+                                    The right to receive a list of entities to whom their PHI
+                                    has been disclosed.
+                                </li>
+                                <li><span class="fw-bold">Right to Request Restrictions:</span>
+                                    The right to request limitations on how their PHI is used or
+                                    disclosed.</li>
+                                <li><span class="fw-bold">Right to Request Confidential Communications:</span>
+                                    The right to request that communications regarding their PHI
+                                    be sent in a specific manner.</li>
+                            </ul>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">Changes to This Notice</p>
+                            <p class="mb-3">We reserve the right to modify this Notice at any time. We
+                                will notify you of any changes by posting the revised Notice
+                                on our website and providing a copy upon request.</p>
+                        </div>
+
+                        <div class="item mt-md-5 mt-3">
+                            <p class="fw-bold mb-2">Contact Us</p>
+                            <p class="mb-3">If you have any questions regarding this Notice, your privacy
+                                rights, or our ePrescribing services, please contact our
+                                Administrator or Support team.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--====|| How It Works Section End ||====-->
 
-        <!--====|| Docmedilink Ideology Section Start ||====-->
-        <section class="ideology lg:pt-[100px] relative z-10">
-            <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 -left-[240px] top-0 w-[340px] rotate-180" src="assets/img/frame/dice-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 -right-4 top-[100px] w-[42px] rotate-180" src="assets/img/frame/gear-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 right-4 bottom-[50px] w-[42px] rotate-45" src="assets/img/frame/d-1.svg"
-                    alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
-            <div class="container mx-auto">
-                <h1 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span class="text-primary">Docmedilink</span> is Ideal For
-                </h1>
-                <div class="serve-cards grid md:grid-cols-3 md:text-start text-center lg:gap-20 md:gap-10 gap-5 mt-16">
-                    <div class="serve-card">
-                        <i class="icon-graph text-[130px] inline-block" data-aos="fade-up-right"
-                            data-aos-duration="700"></i>
-                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up-right" data-aos-duration="900">Clinics
-                            Seeking Growth</h4>
-                        <p class="text-lg" data-aos="fade-up-right" data-aos-duration="1100">Connect with more patients
-                            and expand your presence beyond
-                            physical boundaries.
-                        </p>
-                    </div>
-                    <!-- Serve Card End -->
-                    <div class="serve-card">
-                        <i class="icon-suitcase-2 text-[130px] inline-block" data-aos="fade-up"
-                            data-aos-duration="700"></i>
-                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up" data-aos-duration="900">Busy Healthcare
-                            Providers</h4>
-                        <p class="text-lg" data-aos="fade-up" data-aos-duration="1100">Simplify your workflow with tools
-                            designed to save time and
-                            improve efficiency.
-                        </p>
-                    </div>
-                    <!-- Serve Card End -->
-                    <div class="serve-card">
-                        <i class="icon-user text-[130px] inline-block" data-aos="fade-up-left"
-                            data-aos-duration="700"></i>
-                        <h4 class="font-bold mt-2 text-[30px]" data-aos="fade-up-left" data-aos-duration="900">Practices
-                            Focused on Patient-Centric Care</h4>
-                        <p class="text-lg" data-aos="fade-up-left" data-aos-duration="1100">Enhance patient satisfaction
-                            with modern, accessible, and
-                            secure healthcare solutions.
-                        </p>
-                    </div>
-                    <!-- Serve Card End -->
-                </div>
-            </div>
-        </section>
-        <!--====|| Docmedilink Ideology Section End ||====-->
-
-        <!--====|| Community Section Start ||====-->
-        <section class="community lg:pt-[180px] md:pt-[100px] pt-[80px] relative z-10">
-            <!--Frame Integration Start-->
-            <div>
-                <img class="absolute -z-10 left-20 top-1/2 w-[42px]" src="assets/img/frame/gear-1.svg" alt="Frame" />
-                <img class="absolute -z-10 left-1/3 top-[100px] w-[42px]" src="assets/img/frame/blink-1.svg"
-                    alt="Frame" />
-                <img class="absolute -z-10 -right-8 top-2/3" src="assets/img/frame/hash-1.svg" alt="Frame" />
-            </div>
-            <!--Frame Integration End-->
-            <div class="container mx-auto" data-aos="zoom-in" data-aos-duration="1000">
-                <div
-                    class="bg-[#F7F4F4] lg:py-20 md:py-10 py-7  lg:px-16 md:px-8 px-5 text-center max-w-[930px] mx-auto rounded-[10px] relative -rotate-[5deg]">
-                    <img class="absolute top-[-40px] left-1/2 -translate-x-1/2 inline-block" data-aos="zoom-out"
-                        data-aos-duration="1200" src="assets/img/pin.svg" alt="Pin" />
-                    <h3 class="font-bold">Join the
-                        <span class="text-primary">Docmedilink</span> Community
-                    </h3>
-                    <p class="text-lg mt-3">Take your clinic to the next level with a platform designed to
-                        grow with you. Docmedilink ensures you have the tools to deliver
-                        outstanding care, manage your operations efficiently, and reach
-                        new patients effectively. </p>
-                </div>
-            </div>
-        </section>
-        <!--====|| Community Section End ||====-->
-
-        <!--====|| Contact Section Start ||====-->
-        <section class="contact lg:pt-[180px] md:pt-[100px] pt-[80px] lg:pb-[150px] md:pb-[80px] pb-[50px] relative z-10">
-            <div class="container mx-auto grid md:grid-cols-2 gird-cols-1">
-                <div class="xl:pe-24 lg:pe-10 md:pe-5 pe-0 relative">
-                    <!--Frame Integration Start-->
-                    <div>
-                        <img class="absolute -z-10 -left-20 top-12 w-[90px]" src="assets/img/frame/clip-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 right-28 bottom-1/3 w-[20px]" src="assets/img/frame/d-1.svg"
-                            alt="Frame" />
-                        <img class="absolute -z-10 left-1/2 bottom-0 w-[100px]" src="assets/img/frame/blink-1.svg"
-                            alt="Frame" />
-                    </div>
-                    <!--Frame Integration End-->
-                    <h2 class="font-bold md:text-start text-center" data-aos="fade-up" data-aos-duration="500">Get
-                        Started <span class="text-primary block">Today
-                        </span></h2>
-                    <p class="text-lg mt-7 md:text-start text-center" data-aos="fade-up" data-aos-duration="700">Ready to
-                        transform your clinic’s operations and
-                        patient care?
-                        Join the Docmedilink network and discover the difference our
-                        platform can make. </p>
-                    <img class="w-2/3 relative -z-10 md:block hidden" src="assets/img/contact-2.png" alt="Contact"
-                        data-aos="fade-up" data-aos-duration="900" />
-                </div>
-                <div class="relative z-10" id="contact">
-                    <!--Frame Integration Start-->
-                    <div>
-                        <img class="absolute -z-10 -right-12 top-1/3 w-[60px]" src="assets/img/frame/clip-2.svg"
-                            alt="Frame" />
-                    </div>
-                    <!--Frame Integration End-->
-                    <div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5" data-aos="fade-left" data-aos-duration="800">
-                        <form id="clinicForm">
-                            <div class="md:flex lg:gap-5 gap-3">
-                                <div class="input__item">
-                                    <label class="input__label" for="clinic_name">Clinic Name
-                                        <span class="font-normal">(If applicable)</span>
-                                    </label>
-                                    <input class="input__box" id="clinic_name" type="text" />
-                                </div>
-                                <div class="input__item">
-                                    <label class="input__label" for="contact_name">
-                                        Contact Name
-                                        <span
-                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
-                                    </label>
-                                    <input class="input__box" id="contact_name" type="text" />
-                                </div>
-                            </div>
-                            <div class="md:flex lg:gap-5 gap-3">
-                                <div class="input__item">
-                                    <label class="input__label" for="contact_email">
-                                        Email Address
-                                        <span
-                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
-                                    </label>
-                                    <input class="input__box" id="contact_email" type="text" />
-                                </div>
-                                <div class="input__item">
-                                    <label class="input__label" for="contact_phone">
-                                        Phone Number
-                                        <span
-                                            class="w-2 h-2 bg-danger inline-block rounded-full relative -top-[2px]"></span>
-                                    </label>
-                                    <input class="input__box" id="contact_phone" type="text" maxlength="16"
-                                        onchange="formatPhoneOnChange(this)" />
-                                </div>
-                            </div>
-
-                            <div class="input__item">
-                                <label class="input__label" for="specialization">Specialization</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="specialization">
-                                        <option disabled selected>Select an option</option>
-                                        <option value="Psychiatry">Psychiatry</option>
-                                        <option value="Psychology">Psychology</option>
-                                        <option value="Therapy">Therapy</option>
-                                        <option value="Dermatology">Dermatology</option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
-                            </div>
-                            <div class="input__item">
-                                <label class="input__label" for="practice_size">Practice Size</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="practice_size">
-                                        <option disabled selected>Select an option</option>
-                                        <option value="Solo Practitioner">Solo Practitioner</option>
-                                        <option value="Small Group">Small Group</option>
-                                        <option value="Large Clinic">Large Clinic</option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
-                            </div>
-                            <div class="input__item">
-                                <label class="input__label" for="telehealth">Tell us about your current telehealth
-                                    needs</label>
-                                <textarea class="input__box" id="telehealth" rows="4"></textarea>
-                            </div>
-                            <div class="input__item">
-                                <label class="input__label" for="time">Preferred Demo Time</label>
-                                <input type="datetime-local" class="input__box min-h-[36px]" id="time"
-                                    value="{{ old('time', $dateTime) }}" type="text" />
-                            </div>
-
-                            <div class="input__item">
-                                <label class="input__label" for="about_us">How did you hear about us?</label>
-                                <div class="input__select">
-                                    <select class="input__box" id="about_us">
-                                        <option selected disabled>Select an option</option>
-                                        <option value="Facebook Ad/Post">Facebook Ad/Post</option>
-                                        <option value="Instagram Ad/Post">Instagram Ad/Post</option>
-                                        <option value="Google Search">Google Search</option>
-                                        <option value="Newspaper Ad">Newspaper Ad</option>
-                                        <option value="Television Ad">Television Ad</option>
-                                        <option value="Word of Mouth (Through a Friend)">Word of Mouth (Through a Friend)
-                                        </option>
-                                    </select>
-                                    <i class="icon-arrow-down input__select-icon"></i>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <button name="clinicians" value="clinicians" class="dml-btn dml-btn__primary"
-                                    type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
             </div>
 
         </section>
-        <!--====|| Contact Section End ||====-->
+        <!--====|| Privacy Policy End ||====-->
     </main>
     <!--====||  Main Section End ||====-->
 @endsection
