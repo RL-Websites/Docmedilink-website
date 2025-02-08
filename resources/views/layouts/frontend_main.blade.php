@@ -43,7 +43,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    {{-- <li>
                         <a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#privacy' : url('/#privacy') }}"
                             class="menu-link privacy {{ request()->path() === 'privacy' ? 'active' : '' }}">Privacy Policy
                         </a>
@@ -52,7 +52,7 @@
                         <a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#privacy' : url('/#terms') }}"
                             class="menu-link terms {{ request()->path() === 'terms' ? 'active' : '' }}">Terms and Condition
                         </a>
-                    </li>
+                    </li> --}}
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
 
