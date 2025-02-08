@@ -11,6 +11,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('test', 'test');
     Route::get('our-services', 'services')->name('services');
     Route::get('who-we-serve', 'whoWeServe')->name('who.we.serve');
+    Route::get('privacy', 'privacyPolicy');
+    Route::get('terms', 'termsAndCondition');
     Route::get('clinicians', 'clinicians');
     Route::get('why-choose-docmedilink', 'whyChooseDocmedilink');
     Route::post('form-submissions', 'contactFormSubmit');
