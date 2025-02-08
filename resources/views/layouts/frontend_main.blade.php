@@ -98,7 +98,7 @@
                             </li>
                             <li><a href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                             <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
-                            <li><a href="{{ request()->path() == '/' ? url('terms-and-condition') : url('terms-and-condition') }}" class="menu-link terms-and-condition">Terms & condition</a></li>
+                            <li><a href="{{ url('terms-and-condition') }}" class="{{ request()->is('terms-and-condition') ? 'menu-link privacy-policy active' : 'menu-link terms-and-condition' }}">Terms & condition</a></li>
                             <li>
                                 <a
                                     href="{{ url('privacy-policy') }}"

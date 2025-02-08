@@ -7,31 +7,24 @@
     <!--====||  Main Section Start ||====-->
     <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
         <!--====|| Hero Section Start ||====-->
-        <section class="hero">
-            <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" data-aos="fade-left"
-                data-aos-duration="800" />
-            <div class="hero__content hero__content--alt !px-0">
+        <section class="hero  md:pt-[80px] pt-[50px]">
+            <div class="container mx-auto !px-0">
                 <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up"
                     data-aos-duration="1000"><span class="gradient-heading">
-                        Clinicians</span>
+                        Privacy Policy</span>
                 </h1>
-                <h4 class="font-bold h4-alt mt-3" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare
-                    providers to
-                    <br />
-                    <span class="text-primary"> Expand Their Reach </span>
-                </h4>
             </div>
         </section>
         <!--====|| Hero Section End ||====-->
 
        <!--====|| Privacy policy Start ||====-->
-        <section class="privacy-policy  md:pt-[80px] pt-[50px] relative z-10" id="privacy-policy">
+        <section class="privacy-policy  md:py-[80px] py-[50px] relative z-10" id="privacy-policy">
             <!--Frame Integration Start-->
             <div class="container mx-auto">
                 <div class="inner">
-                    <h3>Privacy Policy</h3>
+                  
                     <div>
-                        <p class="fw-bold text-hint">Introduction:</p>
+                        <h3 class="font-bold">Introduction:</h3>
                         <p>At Docmedilink ("we" or "us"), we are dedicated to safeguarding
                             the privacy of the personal information ("information") you
                             entrust to us, including Protected Health Information (PHI). Our
@@ -42,37 +35,37 @@
                             obligated to provide you with this Notice and to adhere to its
                             terms. This Notice is effective as of February 2024.</p>
 
-                        <div class="item">
-                            <p class="fw-bold mb-2">Information We Collect</p>
-                            <p class="mb-3">We collect information that you voluntarily provide through
+                        <div class="item mt-md-5 mt-3">
+                            <h3 class="font-bold">Information We Collect</h3>
+                            <p class="mb-3 font-semibold">We collect information that you voluntarily provide through
                                 your interactions with our website and customer support
                                 channels. This information may include:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li>Contact details (name, email address, phone number)</li>
                                 <li>Company information (name, address, if applicable)</li>
                                 <li>Technical data (IP address, browser type)</li>
                                 <li>Information regarding your company’s operations (e.g.,
                                     software usage data)</li>
                             </ul>
-                            <p class="mb-3">Additionally, we collect and store PHI provided by our
+                            <p class="mt-5 font-semibold">Additionally, we collect and store PHI provided by our
                                 clients through the use of our software solutions or direct
                                 interactions with authorized personnel. This PHI may
                                 include:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li>Patient demographics (name, address, date of birth)</li>
                                 <li>Medical history and diagnoses (where applicable)</li>
                                 <li>Treatment information (where applicable)</li>
                                 <li>Insurance information</li>
                             </ul>
-                            <p>We do not collect or store PHI directly from patients; this
+                            <p class="mt-3 mb-3">We do not collect or store PHI directly from patients; this
                                 data is provided by their healthcare providers with proper
                                 authorization.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">How We Use Your Information and PHI</p>
-                            <p class="mb-3">Your information is used for the following purposes:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">How We Use Your Information and PHI</h3>
+                            <p class="mb-3  font-semibold">Your information is used for the following purposes:</p>
+                            <ul class="list-disc ps-7">
                                 <li>To deliver and support our software solutions</li>
                                 <li>To communicate with you about your account, services, and
                                     updates</li>
@@ -80,10 +73,10 @@
                                 <li>To enhance our software and services</li>
                                 <li>To comply with legal and regulatory obligations</li>
                             </ul>
-                            <p class="mb-3">We use and disclose PHI exclusively to provide and support
+                            <p class="mt-5 mb-3 font-semibold">We use and disclose PHI exclusively to provide and support
                                 our software solutions for our clients. This may include:
                             </p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li>Processing and storing PHI on behalf of our clients</li>
                                 <li>Generating reports and analytics for our clients</li>
                                 <li>Providing technical support related to PHI</li>
@@ -93,8 +86,8 @@
                             </ul>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">ePrescribing and Privacy</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">ePrescribing and Privacy</h3>
                             <p class="mb-3">As part of our commitment to improving healthcare delivery,
                                 Docmedilink provides ePrescribing services. These services
                                 enable the secure transmission of prescription information
@@ -111,8 +104,8 @@
                                 by law.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">SMS and Mobile Data Privacy </p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">SMS and Mobile Data Privacy </h3>
                             <p class="mb-3">Docmedilink offers SMS-based services for appointment
                                 reminders, product tracking, and order confirmations. Mobile
                                 opt-in data will not be shared with third parties and will
@@ -122,16 +115,16 @@
                                 at any time.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">Message Frequency Disclosure </p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">Message Frequency Disclosure </h3>
                             <p class="mb-3">For recurring message programs, messages will be sent based
                                 on the user’s subscription or notification preferences.
                                 Message frequency may vary based on account activity or
                                 service needs.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">How We Share Your Information and PHI</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">How We Share Your Information and PHI</h3>
                             <p class="mb-3">We may share your information with our service providers who
                                 assist in operating our business and supporting our software.
                                 These service providers are required to maintain the
@@ -143,10 +136,10 @@
                                 a court order or subpoena.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">Your Rights Regarding Your Information and PHI</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">Your Rights Regarding Your Information and PHI</h3>
                             <p class="mb-3">Your rights regarding your information include:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li><span class="fw-bold">Right to Access:</span> You may
                                     request access to your information by submitting a written
                                     request to [Designated Contact Person or Department]. We
@@ -172,13 +165,13 @@
                             </ul>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">Your Rights Regarding PHI</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">Your Rights Regarding PHI</h3>
                             <p class="mb-3">Individuals whose PHI we store and process on behalf of our
                                 clients should contact their healthcare provider directly to
                                 exercise their rights under HIPAA. These rights may
                                 include:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li><span class="fw-bold">Right to Access:</span> The right to
                                     access, inspect, and copy their medical records.</li>
                                 <li><span class="fw-bold">Right to Amend:</span> The right to
@@ -197,15 +190,15 @@
                             </ul>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">Changes to This Notice</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">Changes to This Notice</h3>
                             <p class="mb-3">We reserve the right to modify this Notice at any time. We
                                 will notify you of any changes by posting the revised Notice
                                 on our website and providing a copy upon request.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">Contact Us</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold">Contact Us</h3>
                             <p class="mb-3">If you have any questions regarding this Notice, your privacy
                                 rights, or our ePrescribing services, please contact our
                                 Administrator or Support team.</p>
