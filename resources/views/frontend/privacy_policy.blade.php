@@ -7,7 +7,7 @@
     <!--====||  Main Section Start ||====-->
     <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
         <!--====|| Hero Section Start ||====-->
-        <section class="hero  md:pt-[80px] pt-[50px]">
+        <section class="hero  md:pt-[80px] !pt-[80px]">
             <div class="container mx-auto !px-0">
                 <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up"
                     data-aos-duration="1000"><span class="gradient-heading">
@@ -18,7 +18,7 @@
         <!--====|| Hero Section End ||====-->
 
        <!--====|| Privacy policy Start ||====-->
-        <section class="privacy-policy  md:py-[80px] py-[50px] relative z-10" id="privacy-policy">
+        <section class="privacy-policy  md:pt-[80px] md:pb-[80px] pb-[50px] relative z-10" id="privacy-policy">
             <!--Frame Integration Start-->
             <div class="container mx-auto">
                 <div class="inner">
@@ -35,7 +35,7 @@
                             obligated to provide you with this Notice and to adhere to its
                             terms. This Notice is effective as of February 2024.</p>
 
-                        <div class="item mt-md-5 mt-3">
+                        <div class="item md:mt-5 mt-3">
                             <h3 class="font-bold">Information We Collect</h3>
                             <p class="mb-3 font-semibold">We collect information that you voluntarily provide through
                                 your interactions with our website and customer support

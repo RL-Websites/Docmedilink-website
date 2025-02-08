@@ -6,43 +6,36 @@
 @section('content')
     <!--====||  Main Section Start ||====-->
     <main class="lg:pt-[130px] pt-[50px] overflow-hidden">
-        <!--====|| Hero Section Start ||====-->
-        <section class="hero">
-            <img class="hero__img" src="assets/img/clinicians.webp" alt="Hero Image" data-aos="fade-left"
-                data-aos-duration="800" />
-            <div class="hero__content hero__content--alt !px-0">
+               <!--====|| Hero Section Start ||====-->
+        <section class="hero  md:pt-[80px] !pt-[80px]">
+            <div class="container mx-auto !px-0">
                 <h1 class="font-medium inline-block" style="border-bottom: 1px solid #175BCC;" data-aos="fade-up"
                     data-aos-duration="1000"><span class="gradient-heading">
-                        Clinicians</span>
+                       Terms & Conditions</span>
                 </h1>
-                <h4 class="font-bold h4-alt mt-3" data-aos="fade-up" data-aos-duration="1200">Empowering healthcare
-                    providers to
-                    <br />
-                    <span class="text-primary"> Expand Their Reach </span>
-                </h4>
             </div>
         </section>
         <!--====|| Hero Section End ||====-->
 
        <!--====|| Terms and Conditions Start ||====-->
-         <section class="terms-and-condition  md:pt-[80px] pt-[50px] relative z-10" id="terms-and-condition">
+         <section class="terms-and-condition  md:pt-[80px] md:pb-[80px] pb-[50px] relative z-10" id="terms-and-condition">
             <!--Frame Integration Start-->
             <div class="container mx-auto">
                 <div class="inner">
-                    <h3>Terms &amp; Conditions</h3>
+            
                     <div>
-                        <p class="fw-bold text-hint">Introduction:</p>
+                        <h3 class="font-bold">Introduction:</h3>
                         <p>These Terms &amp; Conditions ("Terms") govern your access to and
                             use of Docmedilink's web-based software solutions ("Software")
                             designed to streamline operations for healthcare providers. By
                             accessing or using the Software, you ("you" or "User") agree to
                             be bound by these Terms.</p>
 
-                        <div class="item">
-                            <p class="fw-bold mb-2">1. Description of Services</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">1. Description of Services</h3>
                             <p class="mb-3">Docmedilink offers a suite of Software solutions tailored for
                                 various healthcare professionals:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li><span class="fw-bold">MD/DC/Lac:</span> A comprehensive
                                     patient data management system for medical offices, enabling
                                     efficient record-keeping, appointment scheduling, billing,
@@ -65,8 +58,8 @@
                             </ul>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">2. User Accounts and Security</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">2. User Accounts and Security</h3>
                             <p class="mb-3">You may be required to create an account to access certain
                                 features of the Software. You are responsible for maintaining
                                 the confidentiality of your account credentials and are fully
@@ -76,12 +69,12 @@
                                 obligations.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">3. Access and Use</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">3. Access and Use</h3>
                             <p class="mb-3">We grant you a non-exclusive, non-transferable right to
                                 access and use the Software for its designated purpose within
                                 your healthcare practice. You agree not to:</p>
-                            <ul class="ms-4 d-flex flex-column gap-1">
+                            <ul class="list-disc ps-7">
                                 <li>Sell, license, sublicense, or distribute the Software to
                                     any third party.</li>
                                 <li>Use the Software for any purpose other than its intended
@@ -91,16 +84,16 @@
                             </ul>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">4. Intellectual Property</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">4. Intellectual Property</h3>
                             <p>The Software and all associated intellectual property rights,
                                 including copyrights, trademarks, and patents, are owned by
                                 Docmedilink or its licensors. You agree not to infringe upon
                                 any of our intellectual property rights.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">5. Data Storage and Security</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">5. Data Storage and Security</h3>
                             <p>Docmedilink is committed to data security. We store your data
                                 on secure servers and maintain regular backups. However, we
                                 cannot guarantee the absolute security of data transmission
@@ -108,24 +101,24 @@
                                 data at your own risk.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">6. Integration with Third-Party Systems</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">6. Integration with Third-Party Systems</h3>
                             <p>Our Software may integrate with existing billing systems and
                                 potentially with third-party solutions like legal case
                                 management software. We will collaborate with you to determine
                                 the best integration options to meet your specific needs.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">7. Term and Termination</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">7. Term and Termination</h3>
                             <p>These Terms will remain in effect until terminated by either
                                 party. We may terminate these Terms at any time for any
                                 reason, with or without notice. You may terminate these Terms
                                 by discontinuing your use of the Software.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">8. Fees and Payment</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">8. Fees and Payment</h3>
                             <p>Docmedilink offers various subscription plans for our
                                 Software. The specific fees associated with your chosen plan
                                 will be communicated to you before your subscription begins.
@@ -133,8 +126,8 @@
                                 with the chosen payment schedule.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">9. Disclaimer of Warranties</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">9. Disclaimer of Warranties</h3>
                             <p>The Software is provided "as is" without warranties of any
                                 kind, express or implied. Docmedilink disclaims all
                                 warranties, including but not limited to, warranties of
@@ -142,16 +135,16 @@
                                 non-infringement.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">10. Limitation of Liability</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">10. Limitation of Liability</h3>
                             <p>Docmedilink will not be liable for any damages arising out of
                                 or related to your use of the Software, including but not
                                 limited to direct, indirect, incidental, consequential, or
                                 punitive damages.</p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">11. Indemnification</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">11. Indemnification</h3>
                             <p>You agree to indemnify and hold harmless Docmedilink, its
                                 officers, directors, employees, agents, and licensors from and
                                 against any and all claims, demands, losses, liabilities,
@@ -160,8 +153,8 @@
                             </p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">12. Governing Law and Dispute Resolution</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">12. Governing Law and Dispute Resolution</h3>
                             <p>These Terms will be governed by and construed in accordance
                                 with the laws of the State of New York. Any dispute arising
                                 out of or related to these Terms will be resolved by binding
@@ -170,8 +163,8 @@
                             </p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">13. ePrescribing and Related Services</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">13. ePrescribing and Related Services</h3>
                             <p>Docmedilink’s Software includes ePrescribing capabilities,
                                 allowing healthcare providers to electronically transmit
                                 prescriptions to pharmacies. By using this feature, you
@@ -187,12 +180,12 @@
                         </div>
 
                         <div class="item">
-                            <p class="fw-bold mb-2">14. Infobip SMS Campaign Policy</p>
+                            <h3 class="font-bold mb-2">14. Infobip SMS Campaign Policy</h3>
                             <p class="mb-3">To enhance communication and keep patients informed,
                                 Docmedilink integrates Infobip SMS Campaign services. These
                                 services allow us to provide:
                             </p>
-                            <ul class="ms-4 d-flex flex-column gap-1 mb-4">
+                            <ul class="list-disc ps-7">
                                 <li><span class="fw-bold">Product Tracking Updates:</span>
                                     Notifications on the status of patient orders.</li>
                                 <li><span class="fw-bold">Order Confirmations:</span>
@@ -200,8 +193,8 @@
                                 <li><span class="fw-bold">Appointment Reminders:</span> Timely
                                     reminders for scheduled appointments.</li>
                             </ul>
-                            <p class="fw-bold mb-2">Infobip Compliance Additions:</p>
-                            <ol class="ms-4 d-flex flex-column gap-1">
+                            <h4 class="font-bold mb-2 mt-5">Infobip Compliance Additions:</h4>
+                            <ol class="list-decimal ps-7">
                                 <li><span class="fw-bold">Call-to-Action:</span> All messages
                                     include clear identification of Docmedilink as the
                                     sender.</li>
@@ -223,8 +216,8 @@
                             </ol>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">15. Entire Agreement</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">15. Entire Agreement</h3>
                             <p>These Terms constitute the entire agreement between you and
                                 Docmedilink regarding your use of the Software and supersede
                                 all prior or contemporaneous communications and proposals,
@@ -232,8 +225,8 @@
                             </p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">16. Updates and Changes to the Terms</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">16. Updates and Changes to the Terms</h3>
                             <p>We reserve the right to modify these Terms at any time.
                                 Changes will be effective upon posting on our website.
                                 Continued use of the Software constitutes acceptance of any
@@ -241,8 +234,8 @@
                             </p>
                         </div>
 
-                        <div class="item mt-md-5 mt-3">
-                            <p class="fw-bold mb-2">17. Contact Us</p>
+                        <div class="item md:mt-5 mt-3">
+                            <h3 class="font-bold mb-2">17. Contact Us</h3>
                             <p>If you have any questions about these Terms, please contact
                                 our Administrator or Support team at
                                 <span class="fw-semibold">info@docmedilink.com</span>
