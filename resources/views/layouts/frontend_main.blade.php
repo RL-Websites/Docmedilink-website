@@ -43,16 +43,7 @@
                         </a>
                     </li>
 
-                    {{-- <li>
-                        <a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#privacy' : url('/#privacy') }}"
-                            class="menu-link privacy {{ request()->path() === 'privacy' ? 'active' : '' }}">Privacy Policy
-                        </a>
-                    </li>
-                     <li>
-                        <a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#privacy' : url('/#terms') }}"
-                            class="menu-link terms {{ request()->path() === 'terms' ? 'active' : '' }}">Terms and Condition
-                        </a>
-                    </li> --}}
+
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                     <li><a onclick="closeNav()"  href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
 
@@ -108,10 +99,16 @@
                             <li><a href="{{ request()->path() == '/' ? '#about-us' : url('/#about-us') }}" class="menu-link about-us">About us</a></li>
                             <li><a href="{{ request()->path() == '/' ? '#contact-us' : url('/#contact-us') }}" class="menu-link contact-us">Contact us</a></li>
                             <li><a href="{{ request()->path() == '/' ? url('terms-and-condition') : url('terms-and-condition') }}" class="menu-link terms-and-condition">Terms & condition</a></li>
-                            <li><a href="{{ request()->path() == '/' ? url('privacy-policy') : url('privacy-policy') }}" class="menu-link privacy-policy">Privacy policy</a></li>
+                            <li>
+                                <a
+                                    href="{{ url('privacy-policy') }}"
+                                    class="{{ request()->is('privacy-policy') ? 'menu-link privacy-policy active' : 'menu-link privacy-policy' }}"
+                                >
+                                    Privacy policy
+                                </a>
+                            </li>
 
                         </ul>
-
 
                     </div>
                     <div class="md:mt-0 mt-12">
